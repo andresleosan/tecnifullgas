@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales adicionales */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #2C3E50;
+  background-color: #FFFFFF;
+}
+
+/* Gradientes personalizados */
+.bg-gradient-tf {
+  @apply bg-gradient-to-r from-tf-primary to-tf-accent;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-tf-primary to-tf-accent text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-200 font-semibold;
+}
+
+.btn-primary:hover {
+  @apply scale-105;
+}
+
+.btn-secondary {
+  @apply border-2 border-tf-primary text-tf-primary px-6 py-3 rounded-lg hover:bg-tf-primary hover:text-white transition-all duration-200 font-semibold;
+}
+
+/* Cards */
+.card {
+  @apply bg-white border border-tf-bg-light rounded-lg p-6 sm:p-8 shadow-sm hover:shadow-lg transition-shadow duration-200;
+}
+
+/* Secciones */
+.section-title {
+  @apply text-3xl sm:text-4xl font-bold text-tf-dark;
+}
+
+.section-subtitle {
+  @apply text-xl sm:text-2xl font-semibold text-tf-accent mt-2;
+}
+
+.section-description {
+  @apply text-tf-text text-base sm:text-lg leading-relaxed mt-4;
+}
+
+/* Icono placeholder */
+.icon-placeholder {
+  @apply w-12 h-12 bg-tf-bg-light rounded-lg flex items-center justify-center text-tf-accent text-2xl font-bold;
+}
+
+/* Galería placeholder */
+.gallery-placeholder {
+  @apply bg-tf-bg-light rounded-lg flex items-center justify-center h-64 text-tf-text font-semibold;
+}
+
+/* FAQ Acordeón */
+.faq-item {
+  @apply border-b border-tf-bg-light py-4;
+}
+
+.faq-question {
+  @apply cursor-pointer flex justify-between items-center py-3 text-lg font-semibold text-tf-dark hover:text-tf-primary transition-colors;
+}
+
+.faq-answer {
+  @apply text-tf-text leading-relaxed py-3 max-h-0 overflow-hidden transition-all duration-300;
+}
+
+.faq-item.active .faq-answer {
+  @apply max-h-96;
+}
+
+.faq-icon {
+  @apply transform transition-transform duration-300;
+}
+
+.faq-item.active .faq-icon {
+  @apply rotate-180;
+}
+
+/* Botón flotante WhatsApp */
+.floating-whatsapp {
+  @apply fixed bottom-6 right-6 w-16 h-16 bg-gradient-to-r from-tf-primary to-tf-accent rounded-full shadow-lg flex items-center justify-center text-white text-2xl hover:scale-110 transition-transform duration-200 z-50 cursor-pointer;
+}
+
+.floating-whatsapp:hover {
+  @apply shadow-2xl;
+}
+
+/* Responsivo móvil */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    @apply w-full;
+  }
+
+  .section-title {
+    @apply text-2xl;
+  }
+
+  .section-subtitle {
+    @apply text-lg;
+  }
+}
