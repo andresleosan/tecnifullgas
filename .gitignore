@@ -27,3 +27,10 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+
+# graphify machine-specific cache
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/.graphify_uncached.txt
+graphify-out/.graphify_semantic_new.json
+graphify-out/cache/

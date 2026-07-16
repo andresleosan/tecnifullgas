@@ -1,5 +1,5 @@
 import Button from './common/Button'
-import { WHATSAPP_NUMBER, COMPANY_LOCATION } from '../utils/constants'
+import { WHATSAPP_URL, COMPANY_LOCATION } from '../utils/constants'
 
 export default function Hero() {
   return (
@@ -19,7 +19,7 @@ export default function Hero() {
             <Button
               variant="primary"
               text="Contáctanos por WhatsApp"
-              href="https://wa.me/573014065931"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
             />

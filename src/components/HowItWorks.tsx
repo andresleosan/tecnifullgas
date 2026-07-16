@@ -1,5 +1,5 @@
 import Section from './common/Section'
-import { HOW_IT_WORKS, WHATSAPP_NUMBER } from '../utils/constants'
+import { HOW_IT_WORKS } from '../utils/constants'
 
 export default function HowItWorks() {
   return (

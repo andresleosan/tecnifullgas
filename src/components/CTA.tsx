@@ -1,4 +1,5 @@
 import Button from './common/Button'
+import { WHATSAPP_URL } from '../utils/constants'
 
 export default function CTA() {
   return (
@@ -9,7 +10,7 @@ export default function CTA() {
         <Button
           variant="primary"
           text="Contáctanos por WhatsApp"
-          href="https://wa.me/573014065931"
+          href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-tf-primary hover:bg-gray-100"

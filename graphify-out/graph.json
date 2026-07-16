@@ -1,0 +1,1180 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "CTA",
+      "file_type": "code",
+      "source_file": "src/components/CTA.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_components_cta_cta",
+      "community": 6,
+      "norm_label": "cta"
+    },
+    {
+      "label": "FloatingWhatsApp",
+      "file_type": "code",
+      "source_file": "src/components/FloatingWhatsApp.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_components_floatingwhatsapp_floatingwhatsapp",
+      "community": 7,
+      "norm_label": "floatingwhatsapp"
+    },
+    {
+      "label": "Footer",
+      "file_type": "code",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_components_footer_footer",
+      "community": 8,
+      "norm_label": "footer"
+    },
+    {
+      "label": "Hero",
+      "file_type": "code",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_components_hero_hero",
+      "community": 9,
+      "norm_label": "hero"
+    },
+    {
+      "label": "HowItWorks",
+      "file_type": "code",
+      "source_file": "src/components/HowItWorks.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "src_components_howitworks_howitworks",
+      "community": 10,
+      "norm_label": "howitworks"
+    },
+    {
+      "label": "Services",
+      "file_type": "code",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_components_services_services",
+      "community": 11,
+      "norm_label": "services"
+    },
+    {
+      "label": "WhyChooseUs",
+      "file_type": "code",
+      "source_file": "src/components/WhyChooseUs.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_components_whychooseus_whychooseus",
+      "community": 12,
+      "norm_label": "whychooseus"
+    },
+    {
+      "label": "WorksGallery",
+      "file_type": "code",
+      "source_file": "src/components/WorksGallery.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_components_worksgallery_worksgallery",
+      "community": 13,
+      "norm_label": "worksgallery"
+    },
+    {
+      "label": "Card",
+      "file_type": "code",
+      "source_file": "src/components/common/Card.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "src_components_common_card_card",
+      "community": 5,
+      "norm_label": "card"
+    },
+    {
+      "label": "Service",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_types_index_service",
+      "community": 17,
+      "norm_label": "service"
+    },
+    {
+      "label": "WhyChooseUs",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_types_index_whychooseus",
+      "community": 19,
+      "norm_label": "whychooseus"
+    },
+    {
+      "label": "Step",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_types_index_step",
+      "community": 18,
+      "norm_label": "step"
+    },
+    {
+      "label": "FAQItem",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "src_types_index_faqitem",
+      "community": 16,
+      "norm_label": "faqitem"
+    },
+    {
+      "label": "ButtonProps",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_types_index_buttonprops",
+      "community": 14,
+      "norm_label": "buttonprops"
+    },
+    {
+      "label": "CardProps",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "src_types_index_cardprops",
+      "community": 15,
+      "norm_label": "cardprops"
+    },
+    {
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "id": "agents_agents",
+      "community": 1,
+      "norm_label": "agents.md"
+    },
+    {
+      "label": "AUDITORIA.md",
+      "file_type": "document",
+      "source_file": "AUDITORIA.md",
+      "id": "auditoria_auditoria",
+      "community": 1,
+      "norm_label": "auditoria.md"
+    },
+    {
+      "label": "MEJORAS.md",
+      "file_type": "document",
+      "source_file": "MEJORAS.md",
+      "id": "mejoras_mejoras",
+      "community": 1,
+      "norm_label": "mejoras.md"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "readme_readme",
+      "community": 0,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "SETUP.md",
+      "file_type": "document",
+      "source_file": "SETUP.md",
+      "id": "setup_setup",
+      "community": 2,
+      "norm_label": "setup.md"
+    },
+    {
+      "label": "docs/CONTINUIDAD.md",
+      "file_type": "document",
+      "source_file": "docs/CONTINUIDAD.md",
+      "id": "docs_continuidad_continuidad",
+      "community": 0,
+      "norm_label": "docs/continuidad.md"
+    },
+    {
+      "label": "docs/INDICE.md",
+      "file_type": "document",
+      "source_file": "docs/INDICE.md",
+      "id": "docs_indice_indice",
+      "community": 0,
+      "norm_label": "docs/indice.md"
+    },
+    {
+      "label": "docs/alcance-del-proyecto.md",
+      "file_type": "document",
+      "source_file": "docs/alcance-del-proyecto.md",
+      "id": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "community": 3,
+      "norm_label": "docs/alcance-del-proyecto.md"
+    },
+    {
+      "label": "docs/arquitectura-del-proyecto.md",
+      "file_type": "document",
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "id": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "community": 2,
+      "norm_label": "docs/arquitectura-del-proyecto.md"
+    },
+    {
+      "label": "docs/copy-y-contenido.md",
+      "file_type": "document",
+      "source_file": "docs/copy-y-contenido.md",
+      "id": "docs_copy_y_contenido_copy_y_contenido",
+      "community": 0,
+      "norm_label": "docs/copy-y-contenido.md"
+    },
+    {
+      "label": "docs/fases-del-proyecto.md",
+      "file_type": "document",
+      "source_file": "docs/fases-del-proyecto.md",
+      "id": "docs_fases_del_proyecto_fases_del_proyecto",
+      "community": 0,
+      "norm_label": "docs/fases-del-proyecto.md"
+    },
+    {
+      "label": "docs/sistema-de-diseno.md",
+      "file_type": "document",
+      "source_file": "docs/sistema-de-diseno.md",
+      "id": "docs_sistema_de_diseno_sistema_de_diseno",
+      "community": 0,
+      "norm_label": "docs/sistema-de-diseno.md"
+    },
+    {
+      "label": "docs/tech-stack.md",
+      "file_type": "document",
+      "source_file": "docs/tech-stack.md",
+      "id": "docs_tech_stack_tech_stack",
+      "community": 0,
+      "norm_label": "docs/tech-stack.md"
+    },
+    {
+      "label": "index.html",
+      "file_type": "document",
+      "source_file": "index.html",
+      "id": "index_index",
+      "community": 2,
+      "norm_label": "index.html"
+    },
+    {
+      "label": "DDD Document Driven Development",
+      "file_type": "rationale",
+      "source_file": "README.md",
+      "id": "readme_ddd_document_driven_development",
+      "community": 1,
+      "norm_label": "ddd document driven development"
+    },
+    {
+      "label": "Mobile First Responsive Design",
+      "file_type": "rationale",
+      "source_file": "docs/alcance-del-proyecto.md",
+      "id": "docs_alcance_del_proyecto_mobile_first_responsive",
+      "community": 2,
+      "norm_label": "mobile first responsive design"
+    },
+    {
+      "label": "SPA Single Page Application Architecture",
+      "file_type": "concept",
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "id": "docs_arquitectura_del_proyecto_spa_architecture",
+      "community": 2,
+      "norm_label": "spa single page application architecture"
+    },
+    {
+      "label": "React TypeScript Tailwind Vite Stack",
+      "file_type": "rationale",
+      "source_file": "docs/tech-stack.md",
+      "id": "docs_tech_stack_react_typescript_tailwind_vite",
+      "community": 2,
+      "norm_label": "react typescript tailwind vite stack"
+    },
+    {
+      "label": "WhatsApp Primary Contact Strategy",
+      "file_type": "rationale",
+      "source_file": "docs/alcance-del-proyecto.md",
+      "id": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "community": 3,
+      "norm_label": "whatsapp primary contact strategy"
+    },
+    {
+      "label": "No Backend No Database No Auth Constraint",
+      "file_type": "rationale",
+      "source_file": "docs/alcance-del-proyecto.md",
+      "id": "docs_alcance_del_proyecto_no_backend_database_auth",
+      "community": 3,
+      "norm_label": "no backend no database no auth constraint"
+    },
+    {
+      "label": "13 Component Architecture",
+      "file_type": "concept",
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "id": "docs_arquitectura_del_proyecto_component_architecture",
+      "community": 2,
+      "norm_label": "13 component architecture"
+    },
+    {
+      "label": "Graphify Knowledge Graph Integration",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "id": "agents_graphify_knowledge_graph",
+      "community": 1,
+      "norm_label": "graphify knowledge graph integration"
+    },
+    {
+      "label": "Critical Audit Findings A-C1 and A-C2",
+      "file_type": "concept",
+      "source_file": "AUDITORIA.md",
+      "id": "auditoria_critical_audit_findings",
+      "community": 1,
+      "norm_label": "critical audit findings a-c1 and a-c2"
+    },
+    {
+      "label": "Fase 1 Documentacion y Maquetacion",
+      "file_type": "concept",
+      "source_file": "docs/fases-del-proyecto.md",
+      "id": "docs_fases_del_proyecto_fase_1_documentacion",
+      "community": 0,
+      "norm_label": "fase 1 documentacion y maquetacion"
+    },
+    {
+      "label": "Fase 2 React TypeScript Integration",
+      "file_type": "concept",
+      "source_file": "docs/fases-del-proyecto.md",
+      "id": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "community": 0,
+      "norm_label": "fase 2 react typescript integration"
+    },
+    {
+      "label": "Fase 3 Pulido y Entrega",
+      "file_type": "concept",
+      "source_file": "docs/fases-del-proyecto.md",
+      "id": "docs_fases_del_proyecto_fase_3_pulido_entrega",
+      "community": 0,
+      "norm_label": "fase 3 pulido y entrega"
+    },
+    {
+      "label": "Custom Tailwind Color Palette tf-*",
+      "file_type": "concept",
+      "source_file": "docs/sistema-de-diseno.md",
+      "id": "docs_sistema_de_diseno_tailwind_color_palette",
+      "community": 2,
+      "norm_label": "custom tailwind color palette tf-*"
+    },
+    {
+      "label": "Medellin y Alrededores Geographic Coverage",
+      "file_type": "rationale",
+      "source_file": "docs/alcance-del-proyecto.md",
+      "id": "docs_alcance_del_proyecto_medellin_coverage",
+      "community": 3,
+      "norm_label": "medellin y alrededores geographic coverage"
+    },
+    {
+      "label": "Known Issues and Gotchas",
+      "file_type": "concept",
+      "source_file": "AGENTS.md",
+      "id": "agents_known_issues_gotchas",
+      "community": 1,
+      "norm_label": "known issues and gotchas"
+    },
+    {
+      "label": "Medium Audit Findings A-M1 through T-M2",
+      "file_type": "concept",
+      "source_file": "AUDITORIA.md",
+      "id": "auditoria_medium_audit_findings",
+      "community": 1,
+      "norm_label": "medium audit findings a-m1 through t-m2"
+    },
+    {
+      "label": "WhatsApp Instagram Only Contact Methods",
+      "file_type": "rationale",
+      "source_file": "docs/alcance-del-proyecto.md",
+      "id": "docs_alcance_del_proyecto_whatsapp_instagram_only",
+      "community": 3,
+      "norm_label": "whatsapp instagram only contact methods"
+    },
+    {
+      "label": "Security Findings C-B1 through C-B4",
+      "file_type": "concept",
+      "source_file": "AUDITORIA.md",
+      "id": "auditoria_security_findings",
+      "community": 1,
+      "norm_label": "security findings c-b1 through c-b4"
+    },
+    {
+      "label": "Referencia Visual - Dise\u00f1o de Sistema",
+      "file_type": "image",
+      "source_file": "referencia-visual.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "referencia_visual_png_referencia_visual",
+      "community": 4,
+      "norm_label": "referencia visual - diseno de sistema"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 58,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "agents_graphify_knowledge_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 44,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "agents_known_issues_gotchas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 55,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "auditoria_auditoria"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 53,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "docs_continuidad_continuidad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 54,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 56,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "mejoras_mejoras"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AGENTS.md",
+      "source_location": 41,
+      "weight": 1,
+      "source": "agents_agents",
+      "target": "readme_ddd_document_driven_development"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AUDITORIA.md",
+      "source_location": 16,
+      "weight": 1,
+      "source": "auditoria_auditoria",
+      "target": "auditoria_critical_audit_findings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AUDITORIA.md",
+      "source_location": 31,
+      "weight": 1,
+      "source": "auditoria_auditoria",
+      "target": "auditoria_medium_audit_findings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "AUDITORIA.md",
+      "source_location": 94,
+      "weight": 1,
+      "source": "auditoria_auditoria",
+      "target": "auditoria_security_findings"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "MEJORAS.md",
+      "source_location": 4,
+      "weight": 1,
+      "source": "mejoras_mejoras",
+      "target": "auditoria_auditoria"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "MEJORAS.md",
+      "source_location": 11,
+      "weight": 1,
+      "source": "mejoras_mejoras",
+      "target": "auditoria_critical_audit_findings"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "MEJORAS.md",
+      "source_location": 27,
+      "weight": 1,
+      "source": "mejoras_mejoras",
+      "target": "auditoria_medium_audit_findings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 106,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "readme_readme"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 15,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_medellin_coverage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 195,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_mobile_first_responsive"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 14,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_whatsapp_primary_contact"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 59,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 26,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_continuidad_continuidad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 61,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_copy_y_contenido_copy_y_contenido"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 106,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fase_1_documentacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 119,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fase_2_react_typescript"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 135,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fase_3_pulido_entrega"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 60,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 27,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_indice_indice"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 29,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_sistema_de_diseno_sistema_de_diseno"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 16,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 94,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "docs_tech_stack_tech_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "README.md",
+      "source_location": 210,
+      "weight": 1,
+      "source": "readme_readme",
+      "target": "readme_ddd_document_driven_development"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "SETUP.md",
+      "source_location": 135,
+      "weight": 1,
+      "source": "setup_setup",
+      "target": "docs_continuidad_continuidad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "SETUP.md",
+      "source_location": 105,
+      "weight": 1,
+      "source": "setup_setup",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "SETUP.md",
+      "source_location": 43,
+      "weight": 1,
+      "source": "setup_setup",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 106,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_continuidad_continuidad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/CONTINUIDAD.md",
+      "source_location": 91,
+      "weight": 1,
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/CONTINUIDAD.md",
+      "source_location": 112,
+      "weight": 1,
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_copy_y_contenido_copy_y_contenido"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/CONTINUIDAD.md",
+      "source_location": 270,
+      "weight": 1,
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/CONTINUIDAD.md",
+      "source_location": 84,
+      "weight": 1,
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_tech_stack_tech_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 20,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_continuidad_continuidad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/sistema-de-diseno.md",
+      "source_location": 229,
+      "weight": 1,
+      "source": "docs_sistema_de_diseno_sistema_de_diseno",
+      "target": "docs_continuidad_continuidad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 15,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_alcance_del_proyecto_alcance_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 18,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 21,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_copy_y_contenido_copy_y_contenido"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 19,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 16,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_sistema_de_diseno_sistema_de_diseno"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/INDICE.md",
+      "source_location": 17,
+      "weight": 1,
+      "source": "docs_indice_indice",
+      "target": "docs_tech_stack_tech_stack"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "README.md",
+      "source_location": 210,
+      "weight": 1,
+      "source": "readme_ddd_document_driven_development",
+      "target": "docs_indice_indice"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 63,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_medellin_coverage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 38,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_mobile_first_responsive"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 46,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_no_backend_database_auth"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 29,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_whatsapp_instagram_only"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 15,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_whatsapp_primary_contact"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/sistema-de-diseno.md",
+      "source_location": 229,
+      "weight": 1,
+      "source": "docs_sistema_de_diseno_sistema_de_diseno",
+      "target": "docs_alcance_del_proyecto_alcance_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "source_location": 49,
+      "weight": 1,
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_arquitectura_del_proyecto_component_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "source_location": 7,
+      "weight": 1,
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_arquitectura_del_proyecto_spa_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "source_location": 450,
+      "weight": 1,
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "source_location": 450,
+      "weight": 1,
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_tech_stack_tech_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/copy-y-contenido.md",
+      "source_location": 576,
+      "weight": 1,
+      "source": "docs_copy_y_contenido_copy_y_contenido",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/copy-y-contenido.md",
+      "source_location": 576,
+      "weight": 1,
+      "source": "docs_copy_y_contenido_copy_y_contenido",
+      "target": "docs_sistema_de_diseno_sistema_de_diseno"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/fases-del-proyecto.md",
+      "source_location": 22,
+      "weight": 1,
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_fases_del_proyecto_fase_1_documentacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/fases-del-proyecto.md",
+      "source_location": 185,
+      "weight": 1,
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_fases_del_proyecto_fase_2_react_typescript"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/fases-del-proyecto.md",
+      "source_location": 376,
+      "weight": 1,
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_fases_del_proyecto_fase_3_pulido_entrega"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/tech-stack.md",
+      "source_location": 291,
+      "weight": 1,
+      "source": "docs_tech_stack_tech_stack",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/sistema-de-diseno.md",
+      "source_location": 25,
+      "weight": 1,
+      "source": "docs_sistema_de_diseno_sistema_de_diseno",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "docs/tech-stack.md",
+      "source_location": 13,
+      "weight": 1,
+      "source": "docs_tech_stack_tech_stack",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "index.html",
+      "source_location": 22,
+      "weight": 1,
+      "source": "index_index",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 38,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_mobile_first_responsive",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "source_location": 7,
+      "weight": 1,
+      "source": "docs_arquitectura_del_proyecto_component_architecture",
+      "target": "docs_arquitectura_del_proyecto_spa_architecture"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/tech-stack.md",
+      "source_location": 15,
+      "weight": 1,
+      "source": "docs_tech_stack_react_typescript_tailwind_vite",
+      "target": "docs_arquitectura_del_proyecto_spa_architecture"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/tech-stack.md",
+      "source_location": 279,
+      "weight": 1,
+      "source": "docs_tech_stack_react_typescript_tailwind_vite",
+      "target": "docs_alcance_del_proyecto_no_backend_database_auth"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 15,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_no_backend_database_auth",
+      "target": "docs_alcance_del_proyecto_whatsapp_primary_contact"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/alcance-del-proyecto.md",
+      "source_location": 29,
+      "weight": 1,
+      "source": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "target": "docs_alcance_del_proyecto_whatsapp_instagram_only"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "docs/arquitectura-del-proyecto.md",
+      "source_location": 357,
+      "weight": 1,
+      "source": "docs_arquitectura_del_proyecto_component_architecture",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "AUDITORIA.md",
+      "source_location": 10,
+      "weight": 1,
+      "source": "auditoria_critical_audit_findings",
+      "target": "agents_known_issues_gotchas"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/fases-del-proyecto.md",
+      "source_location": 22,
+      "weight": 1,
+      "source": "docs_fases_del_proyecto_fase_1_documentacion",
+      "target": "docs_fases_del_proyecto_fase_2_react_typescript"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/fases-del-proyecto.md",
+      "source_location": 185,
+      "weight": 1,
+      "source": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "target": "docs_fases_del_proyecto_fase_3_pulido_entrega"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "baef07bb306555835398d1488e779ed2bac76caa"
+}
