@@ -14,7 +14,7 @@ export default function Button({
   const variantClasses = {
     primary:
       'bg-gradient-to-r from-tf-primary to-tf-accent text-white px-6 py-3 hover:shadow-lg hover:scale-105',
-    secondary: 'border-2 border-tf-primary text-tf-primary px-6 py-3 hover:bg-tf-primary hover:text-white',
+    secondary: 'border-2 border-tf-primary text-tf-primary px-6 py-3 hover:bg-tf-hover hover:text-white',
   }
 
   const finalClasses = `${baseClasses} ${variantClasses[variant]} ${className}`

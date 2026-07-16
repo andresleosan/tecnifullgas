@@ -49,7 +49,7 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="text-tf-text hover:text-tf-primary transition-colors font-medium relative group"
+              className="text-tf-text hover:text-tf-hover transition-colors font-medium relative group"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-tf-primary to-tf-accent transition-all duration-300 group-hover:w-full" />
@@ -67,7 +67,7 @@ export default function Header() {
         />
 
         <button
-          className="md:hidden text-tf-dark hover:text-tf-primary transition-colors"
+          className="md:hidden text-tf-dark hover:text-tf-hover transition-colors"
           aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -87,7 +87,7 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="block w-full text-left py-3 text-tf-text hover:text-tf-primary transition-colors font-medium"
+              className="block w-full text-left py-3 text-tf-text hover:text-tf-hover transition-colors font-medium"
             >
               {link.label}
             </button>

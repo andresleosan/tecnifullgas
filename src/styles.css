@@ -59,7 +59,7 @@ body {
 }
 
 .faq-question {
-  @apply cursor-pointer flex justify-between items-center py-3 text-lg font-semibold text-tf-dark hover:text-tf-primary transition-colors;
+  @apply cursor-pointer flex justify-between items-center py-3 text-lg font-semibold text-tf-dark hover:text-tf-hover transition-colors;
 }
 
 .faq-answer {

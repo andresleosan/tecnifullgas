@@ -29,7 +29,7 @@ export default function FAQ() {
                 <div className="border-b border-tf-bg-light">
                   <button
                     onClick={() => toggleFAQ(item.id)}
-                    className="w-full flex justify-between items-center py-4 text-left text-lg font-semibold text-tf-dark hover:text-tf-primary transition-colors"
+                    className="w-full flex justify-between items-center py-4 text-left text-lg font-semibold text-tf-dark hover:text-tf-hover transition-colors"
                     aria-expanded={activeId === item.id}
                   >
                     <span>{item.question}</span>
