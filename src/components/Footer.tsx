@@ -2,12 +2,17 @@ import { WHATSAPP_URL, INSTAGRAM_URL } from '../utils/constants'
 
 export default function Footer() {
   return (
-    <footer className="px-6 sm:px-8 lg:px-12 py-12 bg-tf-dark text-white">
+    <footer className="px-6 sm:px-8 lg:px-12 py-12 bg-gradient-to-b from-tf-dark to-[#001233] text-white">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">TecnifullGas</h3>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-r from-tf-primary to-tf-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
+                T
+              </div>
+              <h3 className="text-xl font-bold">TecnifullGas</h3>
+            </div>
             <p className="text-gray-300 text-sm">
               Servicios técnicos de gas profesionales y confiables en Medellín y sus alrededores.
             </p>

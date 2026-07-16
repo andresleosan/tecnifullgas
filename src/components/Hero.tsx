@@ -1,48 +1,71 @@
 import Button from './common/Button'
-import { WHATSAPP_URL, COMPANY_LOCATION } from '../utils/constants'
+import MetricCard from './MetricCard'
+import ScrollReveal from './ScrollReveal'
+import { WHATSAPP_URL, COMPANY_LOCATION, HERO_METRICS } from '../utils/constants'
 
 export default function Hero() {
   return (
-    <section id="hero" className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 lg:py-32 bg-white">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section id="hero" className="px-6 sm:px-8 lg:px-12 pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-24 lg:pb-32 bg-white">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Contenido Hero */}
-        <div>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-tf-dark leading-tight">
-            Servicios Técnicos de Gas
-          </h1>
-          <h2 className="text-2xl sm:text-3xl font-semibold text-tf-accent mt-4">Profesionales y Confiables</h2>
-          <p className="section-description">
-            Instalación, mantenimiento y reparación de sistemas de gas con la máxima calidad y respuesta rápida.
-            Confía en TecnifullGas para la seguridad de tu hogar y negocio.
-          </p>
-          <div className="mt-8 space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button
-              variant="primary"
-              text="Contáctanos por WhatsApp"
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            />
-          </div>
-          <p className="text-tf-text text-lg mt-6">
-            <strong>Servimos a:</strong> {COMPANY_LOCATION}
-          </p>
-          <p className="text-tf-text text-lg">
-            <strong>Para:</strong> Residencial, comercial y empresarial
-          </p>
-        </div>
+        <ScrollReveal>
+          <div>
+            <span className="inline-block px-4 py-1.5 bg-tf-primary/10 text-tf-primary text-sm font-semibold rounded-full mb-6">
+              Servicios Técnicos Certificados
+            </span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-tf-dark leading-tight">
+              Soluciones en Gas con{' '}
+              <span className="bg-gradient-to-r from-tf-primary to-tf-accent bg-clip-text text-transparent">
+                Garantía
+              </span>
+            </h1>
+            <p className="text-lg sm:text-xl text-tf-text mt-6 leading-relaxed">
+              Instalación, mantenimiento y reparación profesional de sistemas de gas.
+              Confía en TecnifullGas para la seguridad de tu hogar y negocio.
+            </p>
 
-        {/* Imagen Hero (Placeholder) */}
-        <div className="hidden lg:block">
-          <div className="bg-gradient-tf rounded-lg h-96 flex items-center justify-center">
-            <div className="text-center text-white">
-              <svg className="w-32 h-32 mx-auto opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m0 0l7-7 7 7" />
-              </svg>
-              <p className="mt-4 font-semibold">Imagen Hero</p>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Button
+                variant="primary"
+                text="Solicitar Ahora"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+              <Button
+                variant="secondary"
+                text="WhatsApp"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            </div>
+
+            <p className="text-tf-text mt-6">
+              <strong>Servimos a:</strong> {COMPANY_LOCATION}
+            </p>
+
+            {/* Métricas */}
+            <div className="grid grid-cols-3 gap-6 mt-10 pt-8 border-t border-tf-bg-light">
+              {HERO_METRICS.map((metric) => (
+                <MetricCard key={metric.label} metric={metric} />
+              ))}
             </div>
           </div>
-        </div>
+        </ScrollReveal>
+
+        {/* Imagen Hero */}
+        <ScrollReveal delay={200}>
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-tf-primary/10 to-tf-accent/10 rounded-3xl transform rotate-3 scale-105" />
+            <img
+              src="/img/Cocina.png"
+              alt="Servicio técnico profesional de gas"
+              className="relative w-full h-auto rounded-2xl shadow-2xl"
+              loading="eager"
+            />
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   )

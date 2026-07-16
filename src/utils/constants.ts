@@ -1,3 +1,5 @@
+import { Metric, Service } from '../types'
+
 export const WHATSAPP_NUMBER = '3014065931'
 export const WHATSAPP_URL = 'https://wa.me/573014065931'
 export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas'
@@ -116,5 +118,50 @@ export const FAQ_ITEMS = [
     question: '¿Puedo contactar de noche?',
     answer:
       'Sí, puedes escribirnos por WhatsApp en cualquier momento. Nuestro equipo responde lo más pronto posible, priorizando emergencias.',
+  },
+]
+
+export const HERO_METRICS: Metric[] = [
+  { value: '+2,000', label: 'Equipos Reparados' },
+  { value: '+1,500', label: 'Clientes Atendidos' },
+  { value: '100%', label: 'Garantía' },
+]
+
+export const SERVICES_EXPANDED: Service[] = [
+  {
+    id: 'estufas',
+    title: 'Estufas',
+    icon: '🔥',
+    description: 'Instalación, mantenimiento y reparación de estufas de gas.',
+  },
+  {
+    id: 'calentadores',
+    title: 'Calentadores',
+    icon: '♨️',
+    description: 'Servicio técnico especializado en calentadores a gas.',
+  },
+  {
+    id: 'campanas',
+    title: 'Campanas',
+    icon: '🌀',
+    description: 'Instalación y reparación de campanas extractoras.',
+  },
+  {
+    id: 'fugas',
+    title: 'Fugas',
+    icon: '💧',
+    description: 'Detección y reparación de fugas de gas.',
+  },
+  {
+    id: 'reparaciones',
+    title: 'Reparaciones',
+    icon: '🔧',
+    description: 'Reparación general de todos los sistemas de gas.',
+  },
+  {
+    id: 'repuestos',
+    title: 'Repuestos',
+    icon: '⚙️',
+    description: 'Suministro e instalación de repuestos originales.',
   },
 ]

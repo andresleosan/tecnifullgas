@@ -1,26 +1,43 @@
 import Button from './common/Button'
+import ScrollReveal from './ScrollReveal'
 import { WHATSAPP_URL } from '../utils/constants'
 
 export default function CTA() {
   return (
-    <section id="cta-final" className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 bg-gradient-to-r from-tf-primary to-tf-accent text-white">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold mb-6">¿Listo para empezar?</h2>
-        <p className="text-xl sm:text-2xl mb-8 opacity-90">Contáctanos hoy mismo y resuelve tu problema</p>
-        <Button
-          variant="primary"
-          text="Contáctanos por WhatsApp"
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white text-tf-primary hover:bg-gray-100"
-        />
-        <div className="mt-12 text-center">
-          <p className="text-lg font-semibold mb-2">📱 Número de contacto:</p>
-          <p className="text-2xl font-bold">3014065931</p>
-          <p className="text-sm opacity-75 mt-4">Ubicación: Medellín y alrededores</p>
+    <section id="cta-final" className="px-6 sm:px-8 lg:px-12 py-20 sm:py-24 bg-gradient-to-br from-tf-dark via-tf-dark to-[#002970] rounded-t-3xl text-white">
+      <ScrollReveal>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">¿Listo para empezar?</h2>
+          <p className="text-xl sm:text-2xl mb-8 opacity-80">
+            Contáctanos hoy y resuelve tu problema
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              variant="primary"
+              text="Solicitar Ahora"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-tf-dark hover:bg-gray-100"
+            />
+            <Button
+              variant="secondary"
+              text="WhatsApp"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-white text-white hover:bg-white hover:text-tf-dark"
+            />
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-lg opacity-80 mb-2">📱 Número de contacto:</p>
+            <p className="text-2xl font-bold">3014065931</p>
+            <p className="text-sm opacity-60 mt-4">Ubicación: Medellín y alrededores</p>
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   )
 }

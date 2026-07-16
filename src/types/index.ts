@@ -41,3 +41,8 @@ export interface CardProps {
   image?: string
   children?: React.ReactNode
 }
+
+export interface Metric {
+  value: string
+  label: string
+}

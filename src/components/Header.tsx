@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { smoothScroll } from '../utils/helpers'
 import { WHATSAPP_URL } from '../utils/constants'
 import Button from './common/Button'
@@ -7,12 +7,18 @@ const NAV_LINKS = [
   { id: 'servicios', label: 'Servicios' },
   { id: 'por-que-elegirnos', label: '¿Por qué?' },
   { id: 'como-funciona', label: 'Cómo funciona' },
-  { id: 'trabajos', label: 'Trabajos' },
   { id: 'faq', label: 'Preguntas' },
 ]
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleNav = (id: string) => {
     smoothScroll(id)
@@ -20,13 +26,21 @@ export default function Header() {
   }
 
   return (
-    <header id="header" className="sticky top-0 z-40 bg-white border-b border-tf-bg-light shadow-sm">
-      <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
+    <header
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+        scrolled
+          ? 'bg-white/85 backdrop-blur-md shadow-md py-2'
+          : 'bg-white/85 backdrop-blur-md py-4'
+      }`}
+    >
+      <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-r from-tf-primary to-tf-accent rounded-lg flex items-center justify-center text-white font-bold text-lg">
+          <div className="w-10 h-10 bg-gradient-to-r from-tf-primary to-tf-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
             T
           </div>
-          <span className="text-xl sm:text-2xl font-bold text-tf-dark hidden sm:inline">TecnifullGas</span>
+          <span className="text-xl sm:text-2xl font-bold text-tf-dark hidden sm:inline">
+            TecnifullGas
+          </span>
           <span className="text-lg sm:text-xl font-bold text-tf-dark sm:hidden">TG</span>
         </div>
 
@@ -35,9 +49,10 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="text-tf-text hover:text-tf-primary transition-colors font-medium"
+              className="text-tf-text hover:text-tf-primary transition-colors font-medium relative group"
             >
               {link.label}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-tf-primary to-tf-accent transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
         </div>
@@ -67,7 +82,7 @@ export default function Header() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-tf-bg-light bg-white px-6 pb-4">
+        <div className="md:hidden border-t border-tf-bg-light bg-white/90 backdrop-blur-md px-6 pb-4">
           {NAV_LINKS.map((link) => (
             <button
               key={link.id}
