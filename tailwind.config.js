@@ -3,11 +3,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'tf-primary': '#25D366',
-        'tf-accent': '#FF9500',
-        'tf-dark': '#001A4D',
-        'tf-text': '#2C3E50',
-        'tf-bg-light': '#ECF0F1',
+        'tf-primary': '#0B2E6B',
+        'tf-accent': '#F57C00',
+        'tf-dark': '#1E293B',
+        'tf-text': '#64748B',
+        'tf-bg-light': '#F8FAFC',
+        'tf-border': '#E2E8F0',
+        'tf-hover': '#0D3A7A',
       },
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
