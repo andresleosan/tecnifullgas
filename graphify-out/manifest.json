@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/components/Hero.tsx": {
-    "mtime": 1784322981.1989076,
-    "ast_hash": "52b745d3e37889c19d7421608d77df0f",
+    "mtime": 1784326575.395617,
+    "ast_hash": "5b788605f8eff5dbb5496a85aea3dc50",
     "semantic_hash": ""
   },
   "src/components/HowItWorks.tsx": {
@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "src/components/WorksGallery.tsx": {
-    "mtime": 1784322379.4838264,
-    "ast_hash": "f28a77abc3e634e4d54b8985dff0c894",
+    "mtime": 1784327724.8795643,
+    "ast_hash": "d98329878b9a8c46525f1cd130929e81",
     "semantic_hash": ""
   },
   "src/components/common/Button.tsx": {
@@ -302,6 +302,36 @@
   "public/img/Servicios.png": {
     "mtime": 1784175896.292329,
     "ast_hash": "edbb42d8dcb858ccfd80f1a8f4093a6d",
+    "semantic_hash": ""
+  },
+  "src/components/HeroCarousel.tsx": {
+    "mtime": 1784326570.4991522,
+    "ast_hash": "2b6db41a2eb6efb6bdc74510f4d5faad",
+    "semantic_hash": ""
+  },
+  "public/videos/Video1.mp4": {
+    "mtime": 1784325417.0201747,
+    "ast_hash": "0bf6a623bcd4ade74130748f30818e83",
+    "semantic_hash": ""
+  },
+  "public/videos/Video2.mp4": {
+    "mtime": 1784324751.4347363,
+    "ast_hash": "21ba21c26ade4de648cc011ab7ad4017",
+    "semantic_hash": ""
+  },
+  "public/videos/Video3.mp4": {
+    "mtime": 1784325153.2858267,
+    "ast_hash": "4351d8c6f99ab3fecb6372861c2ab528",
+    "semantic_hash": ""
+  },
+  "public/videos/Video4.mp4": {
+    "mtime": 1784325361.3341799,
+    "ast_hash": "5d2b383808e903ca8e094c7310be9259",
+    "semantic_hash": ""
+  },
+  "public/videos/Video5.mp4": {
+    "mtime": 1784327223.4971988,
+    "ast_hash": "3783218a465a18f24a671a63b4fffd1e",
     "semantic_hash": ""
   }
 }

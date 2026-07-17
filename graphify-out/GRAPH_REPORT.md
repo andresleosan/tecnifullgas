@@ -1,16 +1,16 @@
 # Graph Report - tecnifullgas  (2026-07-17)
 
 ## Corpus Check
-- 49 files · ~127,007 words
+- 50 files · ~127,575 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 613 nodes · 692 edges · 41 communities (37 shown, 4 thin omitted)
+- 617 nodes · 696 edges · 40 communities (36 shown, 4 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 11 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d15d743c`
+- Built from commit: `963cae76`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -48,7 +48,6 @@
 - Archivos Afectados
 - ✅ SÍ CONSTRUIMOS
 - 📦 DEPENDENCIAS PRINCIPALES
-- 🔧 CONFIGURACIONES IMPORTANTES
 - opencode.json
 - graphify.js
 - Section.tsx
@@ -81,11 +80,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (41 total, 4 thin omitted)
+## Communities (40 total, 4 thin omitted)
 
 ### Community 0 - "Project Documentation"
-Cohesion: 0.10
-Nodes (32): 📋 ALCANCE DEL PROYECTO, 🎨 CARACTERÍSTICAS DE DISEÑO, 📍 COBERTURA GEOGRÁFICA, ⚡ CRITERIOS DE ÉXITO FINAL, 📌 DECISIONES CLAVE DOCUMENTADAS, Medellin y Alrededores Geographic Coverage, Mobile First Responsive Design, No Backend No Database No Auth Constraint (+24 more)
+Cohesion: 0.09
+Nodes (36): 📋 ALCANCE DEL PROYECTO, 🎨 CARACTERÍSTICAS DE DISEÑO, 📍 COBERTURA GEOGRÁFICA, ⚡ CRITERIOS DE ÉXITO FINAL, 📌 DECISIONES CLAVE DOCUMENTADAS, Medellin y Alrededores Geographic Coverage, Mobile First Responsive Design, No Backend No Database No Auth Constraint (+28 more)
 
 ### Community 1 - "Agent Instructions & Audit"
 Cohesion: 0.11
@@ -100,8 +99,8 @@ Cohesion: 0.04
 Nodes (49): Animación, 📌 CONSTANTES GLOBALES, Contacto directo, Contenido, ✍️ COPY Y CONTENIDO, Copyright, CTA Button, CTA Principal (+41 more)
 
 ### Community 5 - "Card Component"
-Cohesion: 0.07
-Nodes (23): CLIENT_IMAGES, ClientCarousel(), CTA(), FloatingWhatsApp(), Footer(), Header(), NAV_LINKS, Hero() (+15 more)
+Cohesion: 0.06
+Nodes (25): CLIENT_IMAGES, ClientCarousel(), CTA(), FloatingWhatsApp(), Footer(), Header(), NAV_LINKS, Hero() (+17 more)
 
 ### Community 6 - "CTA Component"
 Cohesion: 0.06
@@ -211,16 +210,12 @@ Nodes (5): Características técnicas, Elementos fijos, Objetivo principal, Secc
 Cohesion: 0.40
 Nodes (5): Build & DevOps, 📦 DEPENDENCIAS PRINCIPALES, Deployment, Frontend, Testing & QA (Fase 2+)
 
-### Community 33 - "🔧 CONFIGURACIONES IMPORTANTES"
-Cohesion: 0.50
-Nodes (4): 🔧 CONFIGURACIONES IMPORTANTES, Tailwind Configuration (tailwind.config.js), TypeScript Configuration (tsconfig.json), Vite Configuration (vite.config.ts)
-
 ### Community 34 - "opencode.json"
 Cohesion: 0.50
 Nodes (3): plugin, $schema, .opencode/plugins/graphify.js
 
 ## Knowledge Gaps
-- **402 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `$schema`, `model`, `rm -rf *` (+397 more)
+- **404 isolated node(s):** `$schema`, `.opencode/plugins/graphify.js`, `$schema`, `model`, `rm -rf *` (+399 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -228,15 +223,15 @@ Nodes (3): plugin, $schema, .opencode/plugins/graphify.js
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `✍️ COPY Y CONTENIDO` connect `Scope & Business Rules` to `Project Documentation`, `Cards (4 servicios)`, `Acordeones (FAQs)`, `Los 4 Pilares`?**
-  _High betweenness centrality (0.118) - this node is a cross-community bridge._
+  _High betweenness centrality (0.116) - this node is a cross-community bridge._
 - **Why does `🏗️ ARQUITECTURA DEL PROYECTO` connect `Architecture & Setup` to `Project Documentation`, `CardProps Type`?**
   _High betweenness centrality (0.071) - this node is a cross-community bridge._
 - **Why does `📋 CONTINUIDAD DEL PROYECTO` connect `FloatingWhatsApp Component` to `Project Documentation`?**
   _High betweenness centrality (0.051) - this node is a cross-community bridge._
 - **What connects `$schema`, `.opencode/plugins/graphify.js`, `$schema` to the rest of the system?**
-  _402 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _404 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Project Documentation` be split into smaller, more focused modules?**
-  _Cohesion score 0.09966777408637874 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
 - **Should `Agent Instructions & Audit` be split into smaller, more focused modules?**
   _Cohesion score 0.10822510822510822 - nodes in this community are weakly interconnected._
 - **Should `Architecture & Setup` be split into smaller, more focused modules?**

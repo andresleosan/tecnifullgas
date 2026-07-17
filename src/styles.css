@@ -24,15 +24,75 @@ section[id] {
   background-size: auto, 18px 18px, auto;
 }
 
-.hero-image {
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-  transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.hero-carousel {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(245, 130, 32, 0.16), transparent 32%),
+    linear-gradient(135deg, rgba(6, 19, 39, 0.9), rgba(16, 42, 85, 0.94));
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  isolation: isolate;
+  outline: none;
 }
 
-.hero-image:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.42);
+.hero-carousel:focus-visible {
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 4px rgba(245, 130, 32, 0.45);
+}
+
+.hero-carousel-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateX(24px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+
+.hero-carousel-slide.is-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hero-carousel-control,
+.media-carousel-control {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  background: rgba(11, 30, 58, 0.72);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  transform: translateY(-50%);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.hero-carousel-control:hover,
+.media-carousel-control:hover {
+  background: rgba(245, 130, 32, 0.92);
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.hero-carousel-control:focus-visible,
+.media-carousel-control:focus-visible {
+  outline: 3px solid rgba(245, 130, 32, 0.8);
+  outline-offset: 3px;
 }
 
 .services-surface,
@@ -45,14 +105,80 @@ section[id] {
     auto;
 }
 
-.how-it-works-surface,
-.works-surface {
+.how-it-works-surface {
   background:
     radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(135deg, #0b1e3a 0%, #173b78 100%);
   background-size:
     18px 18px,
     auto;
+}
+
+.works-surface {
+  background:
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, #0b1e3a 0%, #173b78 100%);
+  background-size:
+    18px 18px,
+    auto;
+}
+
+.video-carousel {
+  height: clamp(340px, 62vw, 680px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(245, 130, 32, 0.14), transparent 36%),
+    linear-gradient(135deg, rgba(3, 10, 22, 0.98), rgba(11, 30, 58, 0.95));
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.video-carousel:hover {
+  border-color: rgba(245, 130, 32, 0.35);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.36);
+  transform: translateY(-6px);
+}
+
+.video-carousel:focus-visible {
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.3),
+    0 0 0 4px rgba(245, 130, 32, 0.45);
+}
+
+.work-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: transparent;
+}
+
+.video-carousel-dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.video-carousel-dot.is-active {
+  border-color: #f58220;
+  background: #f58220;
+  transform: scale(1.25);
+}
+
+.video-carousel-dot:focus-visible {
+  outline: 3px solid rgba(245, 130, 32, 0.8);
+  outline-offset: 3px;
 }
 
 .social-surface,

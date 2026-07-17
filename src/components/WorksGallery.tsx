@@ -1,6 +1,95 @@
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type KeyboardEvent,
+  type TouchEvent,
+} from 'react';
 import ScrollReveal from './ScrollReveal';
 
+const WORK_VIDEOS = [
+  {
+    src: '/videos/Video1.mp4',
+    title: 'Resultado TecnifullGas 1',
+  },
+  {
+    src: '/videos/Video2.mp4',
+    title: 'Resultado TecnifullGas 2',
+  },
+  {
+    src: '/videos/Video3.mp4',
+    title: 'Resultado TecnifullGas 3',
+  },
+  {
+    src: '/videos/Video4.mp4',
+    title: 'Resultado TecnifullGas 4',
+  },
+  {
+    src: '/videos/Video5.mp4',
+    title: 'Resultado TecnifullGas 5',
+  },
+];
+
 export default function WorksGallery() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [shouldContinuePlaying, setShouldContinuePlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const touchStartX = useRef<number | null>(null);
+
+  const goToVideo = useCallback((direction: 1 | -1) => {
+    setActiveIndex((current) => (current + direction + WORK_VIDEOS.length) % WORK_VIDEOS.length);
+  }, []);
+
+  const handleControl = (direction: 1 | -1) => {
+    setShouldContinuePlaying(false);
+    goToVideo(direction);
+  };
+
+  const handleEnded = () => {
+    setShouldContinuePlaying(true);
+    goToVideo(1);
+  };
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      handleControl(-1);
+    }
+
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      handleControl(1);
+    }
+  };
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    touchStartX.current = event.touches[0]?.clientX ?? null;
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    if (touchStartX.current === null) return;
+
+    const touchEndX = event.changedTouches[0]?.clientX ?? touchStartX.current;
+    const deltaX = touchEndX - touchStartX.current;
+
+    if (Math.abs(deltaX) > 48) {
+      handleControl(deltaX > 0 ? -1 : 1);
+    }
+
+    touchStartX.current = null;
+  };
+
+  useEffect(() => {
+    if (!shouldContinuePlaying) return;
+
+    videoRef.current?.play().catch(() => {
+      setShouldContinuePlaying(false);
+    });
+  }, [activeIndex, shouldContinuePlaying]);
+
+  const activeVideo = WORK_VIDEOS[activeIndex];
+
   return (
     <section
       id="trabajos"
@@ -17,28 +106,67 @@ export default function WorksGallery() {
         </ScrollReveal>
 
         <ScrollReveal delay={200}>
-          <div className="relative rounded-3xl overflow-hidden h-[350px] sm:h-[400px] lg:h-[480px] shadow-2xl shadow-black/30 border border-white/10">
-            <img
-              src="/img/Calentador.png"
-              alt="Resultado de servicio — calentador restaurado"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E3A]/95 via-[#173B78]/80 to-[#0B1E3A]/35" />
-            <div className="absolute inset-0 flex items-center">
-              <div className="px-8 sm:px-12 lg:px-16 max-w-xl">
-                <div className="flex flex-wrap gap-3 mt-6">
-                  <span className="px-4 py-2 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full">
-                    Equipo Restaurado
-                  </span>
-                  <span className="px-4 py-2 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full">
-                    Funcionamiento Óptimo
-                  </span>
-                  <span className="px-4 py-2 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full">
-                    Garantía Incluida
-                  </span>
-                </div>
-              </div>
+          <div
+            className="video-carousel relative"
+            role="region"
+            aria-label="Galería de videos TecnifullGas"
+            tabIndex={0}
+            onKeyDown={handleKeyDown}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <video
+              key={activeVideo.src}
+              ref={videoRef}
+              className="work-video"
+              controls
+              preload="metadata"
+              playsInline
+              aria-label={`${activeVideo.title}. Video ${activeIndex + 1} de ${WORK_VIDEOS.length}`}
+              onEnded={handleEnded}
+              onPlay={() => setShouldContinuePlaying(true)}
+              onPause={(event) => {
+                if (!event.currentTarget.ended) {
+                  setShouldContinuePlaying(false);
+                }
+              }}
+            >
+              <source src={activeVideo.src} type="video/mp4" />
+              Tu navegador no soporta la reproducción de video.
+            </video>
+
+            <button
+              type="button"
+              className="media-carousel-control left-4 sm:left-6"
+              aria-label="Ver video anterior"
+              onClick={() => handleControl(-1)}
+            >
+              <span aria-hidden="true">‹</span>
+            </button>
+
+            <button
+              type="button"
+              className="media-carousel-control right-4 sm:right-6"
+              aria-label="Ver video siguiente"
+              onClick={() => handleControl(1)}
+            >
+              <span aria-hidden="true">›</span>
+            </button>
+
+            <div className="absolute top-5 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+              {WORK_VIDEOS.map((video, index) => (
+                <button
+                  key={video.src}
+                  type="button"
+                  className={`video-carousel-dot ${index === activeIndex ? 'is-active' : ''}`}
+                  aria-label={`Ver video ${index + 1}`}
+                  aria-current={index === activeIndex ? 'true' : undefined}
+                  onClick={() => {
+                    setShouldContinuePlaying(false);
+                    setActiveIndex(index);
+                  }}
+                />
+              ))}
             </div>
           </div>
         </ScrollReveal>

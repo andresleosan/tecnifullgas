@@ -1096,12 +1096,45 @@
       "label": "Hero()",
       "file_type": "code",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_hero_hero",
       "community": 5,
       "community_name": "Card Component",
       "norm_label": "hero()"
+    },
+    {
+      "label": "HeroCarousel.tsx",
+      "file_type": "code",
+      "source_file": "src/components/HeroCarousel.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_herocarousel",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "herocarousel.tsx"
+    },
+    {
+      "label": "HERO_SLIDES",
+      "file_type": "code",
+      "source_file": "src/components/HeroCarousel.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_components_herocarousel_hero_slides",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "hero_slides"
+    },
+    {
+      "label": "HeroCarousel()",
+      "file_type": "code",
+      "source_file": "src/components/HeroCarousel.tsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "src_components_herocarousel_herocarousel",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "herocarousel()"
     },
     {
       "label": "HowItWorks.tsx",
@@ -1214,10 +1247,21 @@
       "norm_label": "worksgallery.tsx"
     },
     {
+      "label": "WORK_VIDEOS",
+      "file_type": "code",
+      "source_file": "src/components/WorksGallery.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_components_worksgallery_work_videos",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "work_videos"
+    },
+    {
       "label": "WorksGallery()",
       "file_type": "code",
       "source_file": "src/components/WorksGallery.tsx",
-      "source_location": "L3",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "src_components_worksgallery_worksgallery",
       "community": 5,
@@ -6390,8 +6434,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "docs_tech_stack_configuraciones_importantes",
-      "community": 33,
-      "community_name": "\ud83d\udd27 CONFIGURACIONES IMPORTANTES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "\ud83d\udd27 configuraciones importantes"
     },
     {
@@ -6401,8 +6445,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "docs_tech_stack_tailwind_configuration_tailwind_config_js",
-      "community": 33,
-      "community_name": "\ud83d\udd27 CONFIGURACIONES IMPORTANTES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "tailwind configuration (tailwind.config.js)"
     },
     {
@@ -6412,8 +6456,8 @@
       "source_location": "L172",
       "_origin": "ast",
       "id": "docs_tech_stack_typescript_configuration_tsconfig_json",
-      "community": 33,
-      "community_name": "\ud83d\udd27 CONFIGURACIONES IMPORTANTES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "typescript configuration (tsconfig.json)"
     },
     {
@@ -6423,8 +6467,8 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "docs_tech_stack_vite_configuration_vite_config_ts",
-      "community": 33,
-      "community_name": "\ud83d\udd27 CONFIGURACIONES IMPORTANTES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "vite configuration (vite.config.ts)"
     },
     {
@@ -6488,8 +6532,8 @@
       "source_file": "AGENTS.md",
       "community": 1,
       "norm_label": "agents.md",
-      "id": "agents_agents",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "agents_agents"
     },
     {
       "label": "docs/CONTINUIDAD.md",
@@ -6497,8 +6541,8 @@
       "source_file": "docs/CONTINUIDAD.md",
       "community": 0,
       "norm_label": "docs/continuidad.md",
-      "id": "docs_continuidad_continuidad",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_continuidad_continuidad"
     },
     {
       "label": "docs/INDICE.md",
@@ -6506,8 +6550,8 @@
       "source_file": "docs/INDICE.md",
       "community": 0,
       "norm_label": "docs/indice.md",
-      "id": "docs_indice_indice",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_indice_indice"
     },
     {
       "label": "docs/sistema-de-diseno.md",
@@ -6515,8 +6559,8 @@
       "source_file": "docs/sistema-de-diseno.md",
       "community": 0,
       "norm_label": "docs/sistema-de-diseno.md",
-      "id": "docs_sistema_de_diseno_sistema_de_diseno",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_sistema_de_diseno_sistema_de_diseno"
     },
     {
       "label": "index.html",
@@ -6524,8 +6568,8 @@
       "source_file": "index.html",
       "community": 0,
       "norm_label": "index.html",
-      "id": "index_index",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "index_index"
     },
     {
       "label": "DDD Document Driven Development",
@@ -6533,8 +6577,8 @@
       "source_file": "README.md",
       "community": 1,
       "norm_label": "ddd document driven development",
-      "id": "readme_ddd_document_driven_development",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "readme_ddd_document_driven_development"
     },
     {
       "label": "Mobile First Responsive Design",
@@ -6542,8 +6586,8 @@
       "source_file": "docs/alcance-del-proyecto.md",
       "community": 0,
       "norm_label": "mobile first responsive design",
-      "id": "docs_alcance_del_proyecto_mobile_first_responsive",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_alcance_del_proyecto_mobile_first_responsive"
     },
     {
       "label": "SPA Single Page Application Architecture",
@@ -6551,8 +6595,8 @@
       "source_file": "docs/arquitectura-del-proyecto.md",
       "community": 2,
       "norm_label": "spa single page application architecture",
-      "id": "docs_arquitectura_del_proyecto_spa_architecture",
-      "community_name": "Architecture & Setup"
+      "community_name": "Architecture & Setup",
+      "id": "docs_arquitectura_del_proyecto_spa_architecture"
     },
     {
       "label": "React TypeScript Tailwind Vite Stack",
@@ -6560,8 +6604,8 @@
       "source_file": "docs/tech-stack.md",
       "community": 0,
       "norm_label": "react typescript tailwind vite stack",
-      "id": "docs_tech_stack_react_typescript_tailwind_vite",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_tech_stack_react_typescript_tailwind_vite"
     },
     {
       "label": "WhatsApp Primary Contact Strategy",
@@ -6569,8 +6613,8 @@
       "source_file": "docs/alcance-del-proyecto.md",
       "community": 0,
       "norm_label": "whatsapp primary contact strategy",
-      "id": "docs_alcance_del_proyecto_whatsapp_primary_contact",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_alcance_del_proyecto_whatsapp_primary_contact"
     },
     {
       "label": "No Backend No Database No Auth Constraint",
@@ -6578,8 +6622,8 @@
       "source_file": "docs/alcance-del-proyecto.md",
       "community": 0,
       "norm_label": "no backend no database no auth constraint",
-      "id": "docs_alcance_del_proyecto_no_backend_database_auth",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_alcance_del_proyecto_no_backend_database_auth"
     },
     {
       "label": "13 Component Architecture",
@@ -6587,8 +6631,8 @@
       "source_file": "docs/arquitectura-del-proyecto.md",
       "community": 2,
       "norm_label": "13 component architecture",
-      "id": "docs_arquitectura_del_proyecto_component_architecture",
-      "community_name": "Architecture & Setup"
+      "community_name": "Architecture & Setup",
+      "id": "docs_arquitectura_del_proyecto_component_architecture"
     },
     {
       "label": "Graphify Knowledge Graph Integration",
@@ -6596,8 +6640,8 @@
       "source_file": "AGENTS.md",
       "community": 1,
       "norm_label": "graphify knowledge graph integration",
-      "id": "agents_graphify_knowledge_graph",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "agents_graphify_knowledge_graph"
     },
     {
       "label": "Critical Audit Findings A-C1 and A-C2",
@@ -6605,8 +6649,8 @@
       "source_file": "AUDITORIA.md",
       "community": 1,
       "norm_label": "critical audit findings a-c1 and a-c2",
-      "id": "auditoria_critical_audit_findings",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "auditoria_critical_audit_findings"
     },
     {
       "label": "Fase 1 Documentacion y Maquetacion",
@@ -6614,8 +6658,8 @@
       "source_file": "docs/fases-del-proyecto.md",
       "community": 0,
       "norm_label": "fase 1 documentacion y maquetacion",
-      "id": "docs_fases_del_proyecto_fase_1_documentacion",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_fases_del_proyecto_fase_1_documentacion"
     },
     {
       "label": "Fase 2 React TypeScript Integration",
@@ -6623,8 +6667,8 @@
       "source_file": "docs/fases-del-proyecto.md",
       "community": 0,
       "norm_label": "fase 2 react typescript integration",
-      "id": "docs_fases_del_proyecto_fase_2_react_typescript",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_fases_del_proyecto_fase_2_react_typescript"
     },
     {
       "label": "Fase 3 Pulido y Entrega",
@@ -6632,8 +6676,8 @@
       "source_file": "docs/fases-del-proyecto.md",
       "community": 0,
       "norm_label": "fase 3 pulido y entrega",
-      "id": "docs_fases_del_proyecto_fase_3_pulido_entrega",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_fases_del_proyecto_fase_3_pulido_entrega"
     },
     {
       "label": "Custom Tailwind Color Palette tf-*",
@@ -6641,8 +6685,8 @@
       "source_file": "docs/sistema-de-diseno.md",
       "community": 0,
       "norm_label": "custom tailwind color palette tf-*",
-      "id": "docs_sistema_de_diseno_tailwind_color_palette",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_sistema_de_diseno_tailwind_color_palette"
     },
     {
       "label": "Medellin y Alrededores Geographic Coverage",
@@ -6650,8 +6694,8 @@
       "source_file": "docs/alcance-del-proyecto.md",
       "community": 0,
       "norm_label": "medellin y alrededores geographic coverage",
-      "id": "docs_alcance_del_proyecto_medellin_coverage",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_alcance_del_proyecto_medellin_coverage"
     },
     {
       "label": "Known Issues and Gotchas",
@@ -6659,8 +6703,8 @@
       "source_file": "AGENTS.md",
       "community": 1,
       "norm_label": "known issues and gotchas",
-      "id": "agents_known_issues_gotchas",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "agents_known_issues_gotchas"
     },
     {
       "label": "Medium Audit Findings A-M1 through T-M2",
@@ -6668,8 +6712,8 @@
       "source_file": "AUDITORIA.md",
       "community": 1,
       "norm_label": "medium audit findings a-m1 through t-m2",
-      "id": "auditoria_medium_audit_findings",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "auditoria_medium_audit_findings"
     },
     {
       "label": "WhatsApp Instagram Only Contact Methods",
@@ -6677,8 +6721,8 @@
       "source_file": "docs/alcance-del-proyecto.md",
       "community": 0,
       "norm_label": "whatsapp instagram only contact methods",
-      "id": "docs_alcance_del_proyecto_whatsapp_instagram_only",
-      "community_name": "Project Documentation"
+      "community_name": "Project Documentation",
+      "id": "docs_alcance_del_proyecto_whatsapp_instagram_only"
     },
     {
       "label": "Security Findings C-B1 through C-B4",
@@ -6686,8 +6730,8 @@
       "source_file": "AUDITORIA.md",
       "community": 1,
       "norm_label": "security findings c-b1 through c-b4",
-      "id": "auditoria_security_findings",
-      "community_name": "Agent Instructions & Audit"
+      "community_name": "Agent Instructions & Audit",
+      "id": "auditoria_security_findings"
     },
     {
       "label": "Referencia Visual - Dise\u00f1o de Sistema",
@@ -6700,8 +6744,8 @@
       "contributor": null,
       "community": 4,
       "norm_label": "referencia visual - diseno de sistema",
-      "id": "referencia_visual_png_referencia_visual",
-      "community_name": "Visual Design Reference"
+      "community_name": "Visual Design Reference",
+      "id": "referencia_visual_png_referencia_visual"
     }
   ],
   "links": [
@@ -8069,7 +8113,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Hero.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero",
@@ -8085,7 +8129,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero",
-      "target": "src_components_scrollreveal",
+      "target": "src_components_herocarousel",
       "confidence_score": 1.0
     },
     {
@@ -8097,7 +8141,41 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_hero",
+      "target": "src_components_scrollreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_hero",
       "target": "src_utils_constants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HeroCarousel.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_herocarousel",
+      "target": "src_components_herocarousel_hero_slides",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/HeroCarousel.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_herocarousel",
+      "target": "src_components_herocarousel_herocarousel",
       "confidence_score": 1.0
     },
     {
@@ -8221,7 +8299,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/components/WorksGallery.tsx",
-      "source_location": "L1",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_worksgallery",
@@ -8267,7 +8345,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/WorksGallery.tsx",
-      "source_location": "L3",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_worksgallery",
+      "target": "src_components_worksgallery_work_videos",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/WorksGallery.tsx",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_worksgallery",
@@ -9248,17 +9337,6 @@
       "target": "mejoras"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "MEJORAS.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "mejoras",
-      "target": "mejoras_mejoras_md_tecnifullgas_landing_page",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "cites",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -9277,6 +9355,17 @@
       "weight": 1,
       "source": "mejoras",
       "target": "auditoria_medium_audit_findings"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MEJORAS.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "mejoras",
+      "target": "mejoras_mejoras_md_tecnifullgas_landing_page",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9434,83 +9523,6 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L154",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "docs_continuidad",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L100",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "docs_copy_y_contenido",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L153",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "docs_fases_del_proyecto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L151",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "docs_indice",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L95",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "docs_sistema_de_diseno",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L94",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "docs_tech_stack",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "readme",
-      "target": "readme_tecnifullgas_landing_page",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "README.md",
       "source_location": 15,
@@ -9551,6 +9563,17 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "docs_continuidad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "README.md",
       "source_location": 26,
@@ -9561,12 +9584,34 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "docs_copy_y_contenido",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "README.md",
       "source_location": 61,
       "weight": 1,
       "source": "readme",
       "target": "docs_copy_y_contenido_copy_y_contenido"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "docs_fases_del_proyecto",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -9611,6 +9656,17 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "docs_indice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "README.md",
       "source_location": 27,
@@ -9621,12 +9677,34 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "docs_sistema_de_diseno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "confidence_score": 1,
       "source_file": "README.md",
       "source_location": 29,
       "weight": 1,
       "source": "readme",
       "target": "docs_sistema_de_diseno_sistema_de_diseno"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "docs_tech_stack",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -9657,6 +9735,17 @@
       "weight": 1,
       "source": "readme",
       "target": "readme_ddd_document_driven_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme",
+      "target": "readme_tecnifullgas_landing_page",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -9890,17 +9979,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "SETUP.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "setup",
-      "target": "setup_gu\u00eda_c\u00f3mo_ejecutar_el_proyecto",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1,
@@ -9929,6 +10007,17 @@
       "weight": 1,
       "source": "setup",
       "target": "docs_tech_stack_react_typescript_tailwind_vite"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "SETUP.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "setup",
+      "target": "setup_gu\u00eda_c\u00f3mo_ejecutar_el_proyecto",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14317,5 +14406,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d15d743cf152ef31361f2480f14cdc05fb21ce04"
+  "built_at_commit": "963cae76e6d17cb4ee51d6b8b86bba07699177d4"
 }
