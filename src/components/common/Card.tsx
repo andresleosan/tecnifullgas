@@ -1,4 +1,4 @@
-import { CardProps } from '../../types'
+import { CardProps } from '../../types';
 
 export default function Card({ title, description, icon, image, children }: CardProps) {
   return (
@@ -9,5 +9,5 @@ export default function Card({ title, description, icon, image, children }: Card
       <p className="text-tf-text text-sm leading-relaxed">{description}</p>
       {children && <div className="mt-4">{children}</div>}
     </div>
-  )
+  );
 }

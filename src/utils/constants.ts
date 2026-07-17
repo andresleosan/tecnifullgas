@@ -1,10 +1,10 @@
-import { Service } from '../types'
+import { Service } from '../types';
 
-export const WHATSAPP_NUMBER = '3014065931'
-export const WHATSAPP_URL = 'https://wa.me/573014065931'
-export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas'
-export const COMPANY_NAME = 'TecnifullGas'
-export const COMPANY_LOCATION = 'Medellín y alrededores'
+export const WHATSAPP_NUMBER = '3014065931';
+export const WHATSAPP_URL = 'https://wa.me/573014065931';
+export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas';
+export const COMPANY_NAME = 'TecnifullGas';
+export const COMPANY_LOCATION = 'Medellín y alrededores';
 
 export const SERVICES = [
   {
@@ -35,7 +35,7 @@ export const SERVICES = [
     description:
       'Combinamos revisiones preventivas con soluciones correctivas. Evita problemas antes de que ocurran y resuelve los existentes rápidamente.',
   },
-]
+];
 
 export const WHY_CHOOSE_US = [
   {
@@ -66,7 +66,7 @@ export const WHY_CHOOSE_US = [
     description:
       'Equipo capacitado, respetuoso y siempre dispuesto a aclarar tus dudas. Nos preocupamos por tu satisfacción en cada interacción.',
   },
-]
+];
 
 export const HOW_IT_WORKS = [
   {
@@ -86,7 +86,7 @@ export const HOW_IT_WORKS = [
     description:
       'Ejecutamos el trabajo con calidad y profesionalismo. Te quedas con la tranquilidad de que todo está en orden.',
   },
-]
+];
 
 export const FAQ_ITEMS = [
   {
@@ -119,7 +119,7 @@ export const FAQ_ITEMS = [
     answer:
       'Sí, puedes escribirnos por WhatsApp en cualquier momento. Nuestro equipo responde lo más pronto posible, priorizando emergencias.',
   },
-]
+];
 
 export const SERVICES_EXPANDED: Service[] = [
   {
@@ -158,4 +158,4 @@ export const SERVICES_EXPANDED: Service[] = [
     icon: '⚙️',
     description: 'Suministro e instalación de repuestos originales.',
   },
-]
+];

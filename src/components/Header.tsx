@@ -1,45 +1,50 @@
-import { useState, useEffect } from 'react'
-import { smoothScroll } from '../utils/helpers'
-import { WHATSAPP_URL } from '../utils/constants'
-import Button from './common/Button'
+import { useState, useEffect } from 'react';
+import { smoothScroll } from '../utils/helpers';
+import { WHATSAPP_URL } from '../utils/constants';
+import Button from './common/Button';
 
 const NAV_LINKS = [
   { id: 'servicios', label: 'Servicios' },
-  { id: 'por-que-elegirnos', label: '¿Por qué?' },
+  { id: 'nuestros-servicios', label: 'Nuestros Servicios' },
+  { id: 'trabajos', label: 'Trabajos' },
   { id: 'como-funciona', label: 'Cómo funciona' },
   { id: 'faq', label: 'Preguntas' },
-]
+];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleNav = (id: string) => {
-    smoothScroll(id)
-    setMenuOpen(false)
-  }
+    smoothScroll(id);
+    setMenuOpen(false);
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/85 backdrop-blur-md shadow-md py-2'
-          : 'bg-white/85 backdrop-blur-md py-4'
+          ? 'bg-[#0B1E3A]/95 backdrop-blur-md shadow-xl shadow-[#0B1E3A]/20 py-2'
+          : 'bg-[#0B1E3A]/88 backdrop-blur-md py-4'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <img src="/img/Logo.png" alt="TecnifullGas" className="w-10 h-10 rounded-full object-cover" />
-          <span className="text-xl sm:text-2xl font-bold text-tf-dark hidden sm:inline">
+          <img
+            src="/img/Logo.png"
+            alt="TecnifullGas"
+            className="w-10 h-10 rounded-full object-cover"
+          />
+          <span className="text-xl sm:text-2xl font-bold text-white hidden sm:inline">
             TecnifullGas
           </span>
-          <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-tf-primary to-tf-accent bg-clip-text text-transparent sm:hidden">TecniFullGas</span>
+          <span className="text-lg sm:text-xl font-bold text-white sm:hidden">TecniFullGas</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
@@ -47,10 +52,10 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="text-tf-text hover:text-tf-hover transition-colors font-medium relative group"
+              className="text-white/75 hover:text-white transition-colors font-medium relative group"
             >
               {link.label}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-tf-primary to-tf-accent transition-all duration-300 group-hover:w-full" />
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-tf-accent transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
         </div>
@@ -65,27 +70,37 @@ export default function Header() {
         />
 
         <button
-          className="md:hidden text-tf-dark hover:text-tf-hover transition-colors"
+          className="md:hidden text-white hover:text-tf-accent transition-colors"
           aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-tf-bg-light bg-white/90 backdrop-blur-md px-6 pb-4">
+        <div className="md:hidden border-t border-white/10 bg-[#102A55]/95 backdrop-blur-md px-6 pb-4">
           {NAV_LINKS.map((link) => (
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="block w-full text-left py-3 text-tf-text hover:text-tf-hover transition-colors font-medium"
+              className="block w-full text-left py-3 text-white/80 hover:text-white transition-colors font-medium"
             >
               {link.label}
             </button>
@@ -101,5 +116,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

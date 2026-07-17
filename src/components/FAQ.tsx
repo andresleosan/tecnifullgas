@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import ScrollReveal from './ScrollReveal'
-import { FAQ_ITEMS } from '../utils/constants'
+import { useState } from 'react';
+import ScrollReveal from './ScrollReveal';
+import { FAQ_ITEMS } from '../utils/constants';
 
 export default function FAQ() {
-  const [activeId, setActiveId] = useState<string | null>(null)
+  const [activeId, setActiveId] = useState<string | null>(null);
 
   const toggleFAQ = (id: string) => {
-    setActiveId(activeId === id ? null : id)
-  }
+    setActiveId(activeId === id ? null : id);
+  };
 
   return (
-    <section id="faq" className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 bg-[#F0F7FF]">
+    <section id="faq" className="faq-surface px-6 sm:px-8 lg:px-12 py-16 sm:py-20">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-12">
@@ -23,10 +23,10 @@ export default function FAQ() {
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
           {/* FAQ Acordeón */}
-          <div className="lg:col-span-3 space-y-0">
+          <div className="lg:col-span-3 space-y-3">
             {FAQ_ITEMS.map((item, index) => (
               <ScrollReveal key={item.id} delay={index * 80}>
-                <div className="border-b border-tf-bg-light">
+                <div className="rounded-xl border border-white/80 bg-white/75 px-5 shadow-sm">
                   <button
                     onClick={() => toggleFAQ(item.id)}
                     className="w-full flex justify-between items-center py-4 text-left text-lg font-semibold text-tf-dark hover:text-tf-hover transition-colors"
@@ -64,5 +64,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-  )
+  );
 }

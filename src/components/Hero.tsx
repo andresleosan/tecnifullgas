@@ -1,16 +1,19 @@
-import Button from './common/Button'
-import ClientCarousel from './ClientCarousel'
-import ScrollReveal from './ScrollReveal'
-import { WHATSAPP_URL, COMPANY_LOCATION } from '../utils/constants'
+import Button from './common/Button';
+import ClientCarousel from './ClientCarousel';
+import ScrollReveal from './ScrollReveal';
+import { WHATSAPP_URL, COMPANY_LOCATION } from '../utils/constants';
 
 export default function Hero() {
   return (
-    <section id="hero" className="px-6 sm:px-8 lg:px-12 pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-24 lg:pb-32 bg-white">
+    <section
+      id="servicios"
+      className="hero-surface px-6 sm:px-8 lg:px-12 pt-28 sm:pt-32 lg:pt-36 pb-16 sm:pb-20 lg:pb-24"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Contenido Hero */}
         <ScrollReveal>
           <div className="text-center lg:text-left">
-            <span className="inline-block px-4 py-1.5 bg-tf-primary/10 text-tf-primary text-sm font-semibold rounded-full mb-6">
+            <span className="inline-block px-4 py-1.5 bg-tf-accent/15 text-tf-accent text-sm font-semibold rounded-full mb-6">
               Servicios Técnicos Certificados
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-tf-dark leading-tight">
@@ -19,9 +22,9 @@ export default function Hero() {
                 Garantía
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-tf-text mt-6 leading-relaxed">
-              Instalación, mantenimiento y reparación profesional de sistemas de gas.
-              Confía en TecnifullGas para la seguridad de tu hogar y negocio.
+            <p className="text-lg sm:text-xl text-slate-600 mt-6 leading-relaxed">
+              Instalación, mantenimiento y reparación profesional de sistemas de gas. Confía en
+              TecnifullGas para la seguridad de tu hogar y negocio.
             </p>
 
             <div className="mt-8 flex justify-center lg:justify-start">
@@ -34,7 +37,7 @@ export default function Hero() {
               />
             </div>
 
-            <p className="text-tf-text mt-6">
+            <p className="text-slate-600 mt-6">
               <strong>Servimos a:</strong> {COMPANY_LOCATION}
             </p>
 
@@ -56,5 +59,5 @@ export default function Hero() {
         </ScrollReveal>
       </div>
     </section>
-  )
+  );
 }

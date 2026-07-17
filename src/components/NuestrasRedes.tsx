@@ -1,13 +1,16 @@
-import { FaInstagram, FaFacebookF } from 'react-icons/fa'
-import Button from './common/Button'
-import ScrollReveal from './ScrollReveal'
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
+import Button from './common/Button';
+import ScrollReveal from './ScrollReveal';
 
 export default function NuestrasRedes() {
   return (
-    <section id="nuestras-redes" className="px-6 sm:px-8 lg:px-12 py-20 sm:py-24 bg-gradient-to-br from-tf-dark via-tf-dark to-[#002970] text-white">
+    <section
+      id="nuestras-redes"
+      className="social-surface px-6 sm:px-8 lg:px-12 py-16 sm:py-20 text-white"
+    >
       <ScrollReveal>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 sm:mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">Nuestras Redes</h2>
             <p className="text-xl sm:text-2xl opacity-80 max-w-3xl mx-auto">
               Síguenos y mantente informado sobre nuestros servicios, promociones y novedades.
@@ -16,7 +19,7 @@ export default function NuestrasRedes() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Instagram Card */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 flex items-center justify-center">
                   <FaInstagram className="text-3xl text-white" />
@@ -37,7 +40,7 @@ export default function NuestrasRedes() {
             </div>
 
             {/* Facebook Card */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center">
                   <FaFacebookF className="text-3xl text-white" />
@@ -60,5 +63,5 @@ export default function NuestrasRedes() {
         </div>
       </ScrollReveal>
     </section>
-  )
+  );
 }

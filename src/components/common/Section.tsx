@@ -1,10 +1,10 @@
 interface SectionProps {
-  id: string
-  title: string
-  subtitle?: string
-  children: React.ReactNode
-  backgroundColor?: string
-  textColor?: string
+  id: string;
+  title: string;
+  subtitle?: string;
+  children: React.ReactNode;
+  backgroundColor?: string;
+  textColor?: string;
 }
 
 export default function Section({
@@ -27,5 +27,5 @@ export default function Section({
         {children}
       </div>
     </section>
-  )
+  );
 }

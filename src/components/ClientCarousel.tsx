@@ -1,57 +1,57 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
 
 const CLIENT_IMAGES = [
   { src: '/img/Cliente1.png', alt: 'Cliente TecnifullGas' },
   { src: '/img/Cliente2.png', alt: 'Cliente TecnifullGas' },
   { src: '/img/Cliente3.png', alt: 'Cliente TecnifullGas' },
   { src: '/img/Cliente4.png', alt: 'Cliente TecnifullGas' },
-]
+];
 
-const DURATION = 20000
+const DURATION = 20000;
 
 export default function ClientCarousel() {
-  const trackRef = useRef<HTMLDivElement>(null)
+  const trackRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const track = trackRef.current
-    if (!track) return
+    const track = trackRef.current;
+    if (!track) return;
 
-    let animId = 0
-    let startTime: number | null = null
-    let paused = false
-    let pausedAt = 0
+    let animId = 0;
+    let startTime: number | null = null;
+    let paused = false;
+    let pausedAt = 0;
 
     const start = (time: number) => {
-      if (startTime === null) startTime = time - pausedAt
-      const elapsed = time - startTime
-      const progress = (elapsed % DURATION) / DURATION
-      track.style.transform = `translateX(${-progress * 50}%)`
-      animId = requestAnimationFrame(start)
-    }
+      if (startTime === null) startTime = time - pausedAt;
+      const elapsed = time - startTime;
+      const progress = (elapsed % DURATION) / DURATION;
+      track.style.transform = `translateX(${-progress * 50}%)`;
+      animId = requestAnimationFrame(start);
+    };
 
     const onMouseEnter = () => {
-      paused = true
-      pausedAt = performance.now() - (startTime ?? 0)
-    }
+      paused = true;
+      pausedAt = performance.now() - (startTime ?? 0);
+    };
 
     const onMouseLeave = () => {
-      startTime = null
-      paused = false
-      animId = requestAnimationFrame(start)
-    }
+      startTime = null;
+      paused = false;
+      animId = requestAnimationFrame(start);
+    };
 
-    animId = requestAnimationFrame(start)
-    track.addEventListener('mouseenter', onMouseEnter)
-    track.addEventListener('mouseleave', onMouseLeave)
+    animId = requestAnimationFrame(start);
+    track.addEventListener('mouseenter', onMouseEnter);
+    track.addEventListener('mouseleave', onMouseLeave);
 
     return () => {
-      cancelAnimationFrame(animId)
-      track.removeEventListener('mouseenter', onMouseEnter)
-      track.removeEventListener('mouseleave', onMouseLeave)
-    }
-  }, [])
+      cancelAnimationFrame(animId);
+      track.removeEventListener('mouseenter', onMouseEnter);
+      track.removeEventListener('mouseleave', onMouseLeave);
+    };
+  }, []);
 
-  const images = CLIENT_IMAGES.concat(CLIENT_IMAGES)
+  const images = CLIENT_IMAGES.concat(CLIENT_IMAGES);
 
   return (
     <div className="mt-8">
@@ -72,5 +72,5 @@ export default function ClientCarousel() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,9 +1,12 @@
-import ScrollReveal from './ScrollReveal'
-import { HOW_IT_WORKS } from '../utils/constants'
+import ScrollReveal from './ScrollReveal';
+import { HOW_IT_WORKS } from '../utils/constants';
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 bg-gradient-to-b from-[#F8FAFC] to-white">
+    <section
+      id="como-funciona"
+      className="how-it-works-surface px-6 sm:px-8 lg:px-12 py-16 sm:py-20"
+    >
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <div className="text-center mb-12">
@@ -24,13 +27,13 @@ export default function HowItWorks() {
                 <div className="w-16 h-16 bg-gradient-to-br from-tf-primary to-tf-accent rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 shadow-lg relative z-10">
                   {String(step.number).padStart(2, '0')}
                 </div>
-                <h3 className="text-2xl font-bold text-tf-dark mb-3">{step.title}</h3>
-                <p className="text-tf-text leading-relaxed max-w-xs mx-auto">{step.description}</p>
+                <h3 className="text-2xl font-bold text-white mb-3">{step.title}</h3>
+                <p className="text-white/70 leading-relaxed max-w-xs mx-auto">{step.description}</p>
               </div>
             </ScrollReveal>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

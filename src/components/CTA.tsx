@@ -1,12 +1,12 @@
-import Button from './common/Button'
-import ScrollReveal from './ScrollReveal'
-import { WHATSAPP_URL } from '../utils/constants'
+import Button from './common/Button';
+import ScrollReveal from './ScrollReveal';
+import { WHATSAPP_URL } from '../utils/constants';
 
 export default function CTA() {
   return (
-    <section id="cta-final" className="px-6 sm:px-8 lg:px-12 py-20 sm:py-24 bg-gradient-to-br from-tf-dark via-tf-dark to-[#002970] rounded-t-3xl text-white">
+    <section id="cta-final" className="cta-surface px-6 sm:px-8 lg:px-12 py-14 sm:py-16 text-white">
       <ScrollReveal>
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="cta-card max-w-4xl mx-auto text-center px-6 py-10 sm:px-12 sm:py-14">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">¿Listo para empezar?</h2>
           <p className="text-xl sm:text-2xl mb-8 opacity-80">
             Contáctanos hoy y resuelve tu problema
@@ -19,7 +19,7 @@ export default function CTA() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-tf-dark hover:bg-gray-100"
+              className="shadow-lg shadow-black/20"
             />
           </div>
 
@@ -31,5 +31,5 @@ export default function CTA() {
         </div>
       </ScrollReveal>
     </section>
-  )
+  );
 }
