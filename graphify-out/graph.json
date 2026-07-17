@@ -1261,7 +1261,7 @@
       "label": "WorksGallery()",
       "file_type": "code",
       "source_file": "src/components/WorksGallery.tsx",
-      "source_location": "L34",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "src_components_worksgallery_worksgallery",
       "community": 5,
@@ -8356,7 +8356,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/WorksGallery.tsx",
-      "source_location": "L34",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_worksgallery",
@@ -14406,5 +14406,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "963cae76e6d17cb4ee51d6b8b86bba07699177d4"
+  "built_at_commit": "1b6fa2300927629b0a7d79733a46b60616e20b46"
 }

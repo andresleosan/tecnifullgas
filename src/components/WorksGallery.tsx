@@ -14,10 +14,6 @@ const WORK_VIDEOS = [
     title: 'Resultado TecnifullGas 1',
   },
   {
-    src: '/videos/Video2.mp4',
-    title: 'Resultado TecnifullGas 2',
-  },
-  {
     src: '/videos/Video3.mp4',
     title: 'Resultado TecnifullGas 3',
   },
@@ -48,6 +44,11 @@ export default function WorksGallery() {
   };
 
   const handleEnded = () => {
+    if (activeIndex === WORK_VIDEOS.length - 1) {
+      setShouldContinuePlaying(false);
+      return;
+    }
+
     setShouldContinuePlaying(true);
     goToVideo(1);
   };
