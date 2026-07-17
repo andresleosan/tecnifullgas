@@ -16,21 +16,17 @@ export default function ClientCarousel() {
     const track = trackRef.current
     if (!track) return
 
-    let animId: number
+    let animId = 0
     let startTime: number | null = null
     let paused = false
     let pausedAt = 0
 
-    const animate = (time: number) => {
-      if (paused) {
-        animId = requestAnimationFrame(animate)
-        return
-      }
+    const start = (time: number) => {
       if (startTime === null) startTime = time - pausedAt
       const elapsed = time - startTime
       const progress = (elapsed % DURATION) / DURATION
       track.style.transform = `translateX(${-progress * 50}%)`
-      animId = requestAnimationFrame(animate)
+      animId = requestAnimationFrame(start)
     }
 
     const onMouseEnter = () => {
@@ -41,10 +37,10 @@ export default function ClientCarousel() {
     const onMouseLeave = () => {
       startTime = null
       paused = false
-      animId = requestAnimationFrame(animate)
+      animId = requestAnimationFrame(start)
     }
 
-    animId = requestAnimationFrame(animate)
+    animId = requestAnimationFrame(start)
     track.addEventListener('mouseenter', onMouseEnter)
     track.addEventListener('mouseleave', onMouseLeave)
 
