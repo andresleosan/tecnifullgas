@@ -121,7 +121,7 @@ body {
 }
 
 /* Carrusel de clientes */
-@keyframes marquee {
+@keyframes client-marquee {
   0% {
     transform: translateX(0);
   }
@@ -130,18 +130,8 @@ body {
   }
 }
 
-.client-track {
-  display: flex;
-  animation: marquee 20s linear infinite;
-  width: max-content;
-}
-
-.client-carousel:hover .client-track {
-  animation-play-state: paused;
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .client-track {
-    animation: none;
+  [style*="client-marquee"] {
+    animation: none !important;
   }
 }
