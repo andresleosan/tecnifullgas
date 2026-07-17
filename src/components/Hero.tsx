@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Contenido Hero */}
         <ScrollReveal>
-          <div>
+          <div className="text-center lg:text-left">
             <span className="inline-block px-4 py-1.5 bg-tf-primary/10 text-tf-primary text-sm font-semibold rounded-full mb-6">
               Servicios Técnicos Certificados
             </span>
@@ -24,17 +24,10 @@ export default function Hero() {
               Confía en TecnifullGas para la seguridad de tu hogar y negocio.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 flex justify-center lg:justify-start">
               <Button
                 variant="primary"
                 text="Solicitar Ahora"
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              />
-              <Button
-                variant="secondary"
-                text="WhatsApp"
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
