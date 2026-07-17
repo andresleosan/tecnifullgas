@@ -136,23 +136,12 @@ body {
   width: max-content;
 }
 
-.client-track:hover {
+.client-carousel:hover .client-track {
   animation-play-state: paused;
 }
 
-.client-carousel img {
-  height: 3rem;
-  object-fit: contain;
-  filter: grayscale(100%) opacity(0.5);
-  transition: filter 0.3s ease;
-}
-
-@media (min-width: 640px) {
-  .client-carousel img {
-    height: 4rem;
+@media (prefers-reduced-motion: reduce) {
+  .client-track {
+    animation: none;
   }
-}
-
-.client-carousel img:hover {
-  filter: grayscale(0%) opacity(1);
 }

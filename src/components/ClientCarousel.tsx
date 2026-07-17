@@ -18,7 +18,7 @@ export default function ClientCarousel() {
               key={i}
               src={img.src}
               alt={img.alt}
-              className="mx-4 sm:mx-6 shrink-0"
+              className="mx-4 sm:mx-6 shrink-0 h-12 sm:h-16 object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               loading="lazy"
             />
           ))}
