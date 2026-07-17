@@ -28,10 +28,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-40 border-b border-white/[0.08] transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0B1E3A]/95 backdrop-blur-md shadow-xl shadow-[#0B1E3A]/20 py-2'
-          : 'bg-[#0B1E3A]/88 backdrop-blur-md py-4'
+          ? 'bg-[#0B1E3A]/95 backdrop-blur-[14px] shadow-xl shadow-[#0B1E3A]/20 py-2'
+          : 'bg-[#0B1E3A]/[0.88] backdrop-blur-[14px] py-4'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -39,7 +39,7 @@ export default function Header() {
           <img
             src="/img/Logo.png"
             alt="TecnifullGas"
-            className="w-10 h-10 rounded-full object-cover"
+            className="w-12 h-12 rounded-full object-cover shadow-lg shadow-black/30 ring-1 ring-white/30"
           />
           <span className="text-xl sm:text-2xl font-bold text-white hidden sm:inline">
             TecnifullGas
@@ -52,7 +52,7 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="text-white/75 hover:text-white transition-colors font-medium relative group"
+              className="text-white hover:text-tf-accent active:text-tf-accent focus-visible:text-tf-accent transition-colors font-semibold relative group"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-tf-accent transition-all duration-300 group-hover:w-full" />
@@ -100,7 +100,7 @@ export default function Header() {
             <button
               key={link.id}
               onClick={() => handleNav(link.id)}
-              className="block w-full text-left py-3 text-white/80 hover:text-white transition-colors font-medium"
+              className="block w-full text-left py-3 text-white hover:text-tf-accent active:text-tf-accent transition-colors font-semibold"
             >
               {link.label}
             </button>

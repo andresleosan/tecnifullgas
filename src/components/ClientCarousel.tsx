@@ -55,7 +55,7 @@ export default function ClientCarousel() {
 
   return (
     <div className="mt-8">
-      <p className="text-center text-xs font-medium text-tf-text/60 uppercase tracking-wider mb-4">
+      <p className="text-center lg:text-left text-xs font-medium text-white/60 uppercase tracking-wider mb-4">
         Confían en nosotros
       </p>
       <div style={{ overflow: 'hidden' }}>

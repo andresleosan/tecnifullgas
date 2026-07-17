@@ -1,0 +1,1012 @@
+{
+  "nodes": [
+    {
+      "id": "agents_agents",
+      "label": "AGENTS.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md"
+    },
+    {
+      "id": "auditoria_auditoria",
+      "label": "AUDITORIA.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md"
+    },
+    {
+      "id": "mejoras_mejoras",
+      "label": "MEJORAS.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\MEJORAS.md"
+    },
+    {
+      "id": "readme_readme",
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md"
+    },
+    {
+      "id": "setup_setup",
+      "label": "SETUP.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\SETUP.md"
+    },
+    {
+      "id": "docs_continuidad_continuidad",
+      "label": "docs/CONTINUIDAD.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\CONTINUIDAD.md"
+    },
+    {
+      "id": "docs_indice_indice",
+      "label": "docs/INDICE.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md"
+    },
+    {
+      "id": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "label": "docs/alcance-del-proyecto.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md"
+    },
+    {
+      "id": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "label": "docs/arquitectura-del-proyecto.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md"
+    },
+    {
+      "id": "docs_copy_y_contenido_copy_y_contenido",
+      "label": "docs/copy-y-contenido.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\copy-y-contenido.md"
+    },
+    {
+      "id": "docs_fases_del_proyecto_fases_del_proyecto",
+      "label": "docs/fases-del-proyecto.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md"
+    },
+    {
+      "id": "docs_sistema_de_diseno_sistema_de_diseno",
+      "label": "docs/sistema-de-diseno.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\sistema-de-diseno.md"
+    },
+    {
+      "id": "docs_tech_stack_tech_stack",
+      "label": "docs/tech-stack.md",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md"
+    },
+    {
+      "id": "index_index",
+      "label": "index.html",
+      "file_type": "document",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\index.html"
+    },
+    {
+      "id": "readme_ddd_document_driven_development",
+      "label": "DDD Document Driven Development",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md"
+    },
+    {
+      "id": "docs_alcance_del_proyecto_mobile_first_responsive",
+      "label": "Mobile First Responsive Design",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md"
+    },
+    {
+      "id": "docs_arquitectura_del_proyecto_spa_architecture",
+      "label": "SPA Single Page Application Architecture",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md"
+    },
+    {
+      "id": "docs_tech_stack_react_typescript_tailwind_vite",
+      "label": "React TypeScript Tailwind Vite Stack",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md"
+    },
+    {
+      "id": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "label": "WhatsApp Primary Contact Strategy",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md"
+    },
+    {
+      "id": "docs_alcance_del_proyecto_no_backend_database_auth",
+      "label": "No Backend No Database No Auth Constraint",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md"
+    },
+    {
+      "id": "docs_arquitectura_del_proyecto_component_architecture",
+      "label": "13 Component Architecture",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md"
+    },
+    {
+      "id": "agents_graphify_knowledge_graph",
+      "label": "Graphify Knowledge Graph Integration",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md"
+    },
+    {
+      "id": "auditoria_critical_audit_findings",
+      "label": "Critical Audit Findings A-C1 and A-C2",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md"
+    },
+    {
+      "id": "docs_fases_del_proyecto_fase_1_documentacion",
+      "label": "Fase 1 Documentacion y Maquetacion",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md"
+    },
+    {
+      "id": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "label": "Fase 2 React TypeScript Integration",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md"
+    },
+    {
+      "id": "docs_fases_del_proyecto_fase_3_pulido_entrega",
+      "label": "Fase 3 Pulido y Entrega",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md"
+    },
+    {
+      "id": "docs_sistema_de_diseno_tailwind_color_palette",
+      "label": "Custom Tailwind Color Palette tf-*",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\sistema-de-diseno.md"
+    },
+    {
+      "id": "docs_alcance_del_proyecto_medellin_coverage",
+      "label": "Medellin y Alrededores Geographic Coverage",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md"
+    },
+    {
+      "id": "agents_known_issues_gotchas",
+      "label": "Known Issues and Gotchas",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md"
+    },
+    {
+      "id": "auditoria_medium_audit_findings",
+      "label": "Medium Audit Findings A-M1 through T-M2",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md"
+    },
+    {
+      "id": "docs_alcance_del_proyecto_whatsapp_instagram_only",
+      "label": "WhatsApp Instagram Only Contact Methods",
+      "file_type": "rationale",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md"
+    },
+    {
+      "id": "auditoria_security_findings",
+      "label": "Security Findings C-B1 through C-B4",
+      "file_type": "concept",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md"
+    },
+    {
+      "id": "referencia_visual_png_referencia_visual",
+      "label": "Referencia Visual - Diseño de Sistema",
+      "file_type": "image",
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\referencia-visual.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "agents_agents",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 53,
+      "weight": 1
+    },
+    {
+      "source": "agents_agents",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 54,
+      "weight": 1
+    },
+    {
+      "source": "agents_agents",
+      "target": "auditoria_auditoria",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 55,
+      "weight": 1
+    },
+    {
+      "source": "agents_agents",
+      "target": "mejoras_mejoras",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 56,
+      "weight": 1
+    },
+    {
+      "source": "mejoras_mejoras",
+      "target": "auditoria_auditoria",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\MEJORAS.md",
+      "source_location": 4,
+      "weight": 1
+    },
+    {
+      "source": "agents_agents",
+      "target": "agents_known_issues_gotchas",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 44,
+      "weight": 1
+    },
+    {
+      "source": "agents_agents",
+      "target": "agents_graphify_knowledge_graph",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 58,
+      "weight": 1
+    },
+    {
+      "source": "agents_agents",
+      "target": "readme_ddd_document_driven_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AGENTS.md",
+      "source_location": 41,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 26,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_indice_indice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 27,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 28,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_sistema_de_diseno_sistema_de_diseno",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 29,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_tech_stack_tech_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 94,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 59,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 60,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_copy_y_contenido_copy_y_contenido",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 61,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 16,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 14,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "readme_ddd_document_driven_development",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 210,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_mobile_first_responsive",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 195,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_alcance_del_proyecto_medellin_coverage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 15,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fase_1_documentacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 106,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 119,
+      "weight": 1
+    },
+    {
+      "source": "readme_readme",
+      "target": "docs_fases_del_proyecto_fase_3_pulido_entrega",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 135,
+      "weight": 1
+    },
+    {
+      "source": "auditoria_auditoria",
+      "target": "auditoria_critical_audit_findings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md",
+      "source_location": 16,
+      "weight": 1
+    },
+    {
+      "source": "auditoria_auditoria",
+      "target": "auditoria_medium_audit_findings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md",
+      "source_location": 31,
+      "weight": 1
+    },
+    {
+      "source": "auditoria_auditoria",
+      "target": "auditoria_security_findings",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md",
+      "source_location": 94,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 15,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_sistema_de_diseno_sistema_de_diseno",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 16,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_tech_stack_tech_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 17,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 18,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 19,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 20,
+      "weight": 1
+    },
+    {
+      "source": "docs_indice_indice",
+      "target": "docs_copy_y_contenido_copy_y_contenido",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\INDICE.md",
+      "source_location": 21,
+      "weight": 1
+    },
+    {
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_tech_stack_tech_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\CONTINUIDAD.md",
+      "source_location": 84,
+      "weight": 1
+    },
+    {
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\CONTINUIDAD.md",
+      "source_location": 91,
+      "weight": 1
+    },
+    {
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\CONTINUIDAD.md",
+      "source_location": 98,
+      "weight": 1
+    },
+    {
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_copy_y_contenido_copy_y_contenido",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\CONTINUIDAD.md",
+      "source_location": 112,
+      "weight": 1
+    },
+    {
+      "source": "docs_continuidad_continuidad",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\CONTINUIDAD.md",
+      "source_location": 270,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "readme_readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 106,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 106,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 15,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_no_backend_database_auth",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 46,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_medellin_coverage",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 63,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_mobile_first_responsive",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 38,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "target": "docs_alcance_del_proyecto_whatsapp_instagram_only",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 29,
+      "weight": 1
+    },
+    {
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_tech_stack_tech_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md",
+      "source_location": 450,
+      "weight": 1
+    },
+    {
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md",
+      "source_location": 450,
+      "weight": 1
+    },
+    {
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_arquitectura_del_proyecto_spa_architecture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md",
+      "source_location": 7,
+      "weight": 1
+    },
+    {
+      "source": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "target": "docs_arquitectura_del_proyecto_component_architecture",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md",
+      "source_location": 49,
+      "weight": 1
+    },
+    {
+      "source": "docs_copy_y_contenido_copy_y_contenido",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\copy-y-contenido.md",
+      "source_location": 576,
+      "weight": 1
+    },
+    {
+      "source": "docs_copy_y_contenido_copy_y_contenido",
+      "target": "docs_sistema_de_diseno_sistema_de_diseno",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\copy-y-contenido.md",
+      "source_location": 576,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 589,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 589,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_fases_del_proyecto_fase_1_documentacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 22,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 185,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fases_del_proyecto",
+      "target": "docs_fases_del_proyecto_fase_3_pulido_entrega",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 376,
+      "weight": 1
+    },
+    {
+      "source": "docs_sistema_de_diseno_sistema_de_diseno",
+      "target": "docs_alcance_del_proyecto_alcance_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\sistema-de-diseno.md",
+      "source_location": 229,
+      "weight": 1
+    },
+    {
+      "source": "docs_sistema_de_diseno_sistema_de_diseno",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\sistema-de-diseno.md",
+      "source_location": 229,
+      "weight": 1
+    },
+    {
+      "source": "docs_sistema_de_diseno_sistema_de_diseno",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\sistema-de-diseno.md",
+      "source_location": 25,
+      "weight": 1
+    },
+    {
+      "source": "docs_tech_stack_tech_stack",
+      "target": "docs_arquitectura_del_proyecto_arquitectura_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md",
+      "source_location": 291,
+      "weight": 1
+    },
+    {
+      "source": "docs_tech_stack_tech_stack",
+      "target": "docs_fases_del_proyecto_fases_del_proyecto",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md",
+      "source_location": 291,
+      "weight": 1
+    },
+    {
+      "source": "docs_tech_stack_tech_stack",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md",
+      "source_location": 13,
+      "weight": 1
+    },
+    {
+      "source": "setup_setup",
+      "target": "docs_continuidad_continuidad",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\SETUP.md",
+      "source_location": 135,
+      "weight": 1
+    },
+    {
+      "source": "setup_setup",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\SETUP.md",
+      "source_location": 43,
+      "weight": 1
+    },
+    {
+      "source": "setup_setup",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\SETUP.md",
+      "source_location": 105,
+      "weight": 1
+    },
+    {
+      "source": "index_index",
+      "target": "docs_tech_stack_react_typescript_tailwind_vite",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\index.html",
+      "source_location": 22,
+      "weight": 1
+    },
+    {
+      "source": "mejoras_mejoras",
+      "target": "auditoria_critical_audit_findings",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\MEJORAS.md",
+      "source_location": 11,
+      "weight": 1
+    },
+    {
+      "source": "mejoras_mejoras",
+      "target": "auditoria_medium_audit_findings",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\MEJORAS.md",
+      "source_location": 27,
+      "weight": 1
+    },
+    {
+      "source": "docs_tech_stack_react_typescript_tailwind_vite",
+      "target": "docs_alcance_del_proyecto_no_backend_database_auth",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md",
+      "source_location": 279,
+      "weight": 1
+    },
+    {
+      "source": "docs_tech_stack_react_typescript_tailwind_vite",
+      "target": "docs_arquitectura_del_proyecto_spa_architecture",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\tech-stack.md",
+      "source_location": 15,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fase_1_documentacion",
+      "target": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 22,
+      "weight": 1
+    },
+    {
+      "source": "docs_fases_del_proyecto_fase_2_react_typescript",
+      "target": "docs_fases_del_proyecto_fase_3_pulido_entrega",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\fases-del-proyecto.md",
+      "source_location": 185,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "target": "docs_alcance_del_proyecto_whatsapp_instagram_only",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 29,
+      "weight": 1
+    },
+    {
+      "source": "auditoria_critical_audit_findings",
+      "target": "agents_known_issues_gotchas",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\AUDITORIA.md",
+      "source_location": 10,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_mobile_first_responsive",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 38,
+      "weight": 1
+    },
+    {
+      "source": "docs_arquitectura_del_proyecto_component_architecture",
+      "target": "docs_sistema_de_diseno_tailwind_color_palette",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md",
+      "source_location": 357,
+      "weight": 1
+    },
+    {
+      "source": "readme_ddd_document_driven_development",
+      "target": "docs_indice_indice",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\README.md",
+      "source_location": 210,
+      "weight": 1
+    },
+    {
+      "source": "docs_alcance_del_proyecto_no_backend_database_auth",
+      "target": "docs_alcance_del_proyecto_whatsapp_primary_contact",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\alcance-del-proyecto.md",
+      "source_location": 15,
+      "weight": 1
+    },
+    {
+      "source": "docs_arquitectura_del_proyecto_component_architecture",
+      "target": "docs_arquitectura_del_proyecto_spa_architecture",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "S:\\Respaldo\\Los Titanes\\agencia-los-titanes\\proyectos\\tecnifullgas\\docs\\arquitectura-del-proyecto.md",
+      "source_location": 7,
+      "weight": 1
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

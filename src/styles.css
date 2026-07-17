@@ -18,8 +18,21 @@ section[id] {
 
 .hero-surface {
   background:
-    radial-gradient(circle at 85% 18%, rgba(245, 130, 32, 0.15), transparent 25%),
-    linear-gradient(180deg, #f8fafc 0%, #eef3f8 100%);
+    radial-gradient(circle at top right, rgba(245, 130, 32, 0.18), transparent 30%),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(135deg, #0b1e3a 0%, #102a55 35%, #173b78 70%, #214b8a 100%);
+  background-size: auto, 18px 18px, auto;
+}
+
+.hero-image {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.42);
 }
 
 .services-surface,

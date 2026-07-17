@@ -1,0 +1,15 @@
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\AGENTS.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\AUDITORIA.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\MEJORAS.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\README.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\SETUP.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\CONTINUIDAD.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\INDICE.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\alcance-del-proyecto.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\arquitectura-del-proyecto.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\copy-y-contenido.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\fases-del-proyecto.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\sistema-de-diseno.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\docs\tech-stack.md
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\index.html
+S:\Respaldo\Los Titanes\agencia-los-titanes\proyectos\tecnifullgas\referencia-visual.png

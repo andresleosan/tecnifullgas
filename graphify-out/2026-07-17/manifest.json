@@ -1,0 +1,207 @@
+{
+  ".opencode/opencode.json": {
+    "mtime": 1784099524.64695,
+    "ast_hash": "1efe24ecf938911d4f23e4b1c6ec91f7",
+    "semantic_hash": "1efe24ecf938911d4f23e4b1c6ec91f7"
+  },
+  ".opencode/plugins/graphify.js": {
+    "mtime": 1784099722.3152764,
+    "ast_hash": "b33d000860642c6f4907a877e0387a21",
+    "semantic_hash": "b33d000860642c6f4907a877e0387a21"
+  },
+  "package.json": {
+    "mtime": 1783899724.773823,
+    "ast_hash": "f05aac428ab598e3a757908e81b41f6d",
+    "semantic_hash": "f05aac428ab598e3a757908e81b41f6d"
+  },
+  "postcss.config.js": {
+    "mtime": 1779600520.7616842,
+    "ast_hash": "5b84f4567208c7c747079c0477373231",
+    "semantic_hash": "5b84f4567208c7c747079c0477373231"
+  },
+  "src/App.tsx": {
+    "mtime": 1783899628.641791,
+    "ast_hash": "392c55747f94700f769f188fe2ce61af",
+    "semantic_hash": "392c55747f94700f769f188fe2ce61af"
+  },
+  "src/components/CTA.tsx": {
+    "mtime": 1783899635.8846793,
+    "ast_hash": "f6d346426246396e7420ac9370f8fcd8",
+    "semantic_hash": "f6d346426246396e7420ac9370f8fcd8"
+  },
+  "src/components/FAQ.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "10ee565ea15f2019d4fba67530aaec84",
+    "semantic_hash": "10ee565ea15f2019d4fba67530aaec84"
+  },
+  "src/components/FloatingWhatsApp.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "9f24636831da1c2bbf58815db317ca16",
+    "semantic_hash": "9f24636831da1c2bbf58815db317ca16"
+  },
+  "src/components/Footer.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "fbb94a1dd5a51a72822b502632fbb1e5",
+    "semantic_hash": "fbb94a1dd5a51a72822b502632fbb1e5"
+  },
+  "src/components/Header.tsx": {
+    "mtime": 1783899745.2777681,
+    "ast_hash": "a5d58447930399b74822ea7bbe6efd92",
+    "semantic_hash": "a5d58447930399b74822ea7bbe6efd92"
+  },
+  "src/components/Hero.tsx": {
+    "mtime": 1783899628.836131,
+    "ast_hash": "61b990c2a5a4bfd9454e57a6b9acdf32",
+    "semantic_hash": "61b990c2a5a4bfd9454e57a6b9acdf32"
+  },
+  "src/components/HowItWorks.tsx": {
+    "mtime": 1783899628.641791,
+    "ast_hash": "8f87686f64cf889774af34090336a543",
+    "semantic_hash": "8f87686f64cf889774af34090336a543"
+  },
+  "src/components/Services.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "2b6948ee3eceffdea77d96a9ae667626",
+    "semantic_hash": "2b6948ee3eceffdea77d96a9ae667626"
+  },
+  "src/components/WhyChooseUs.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "3e1159e21938099971c639d8bf4c023f",
+    "semantic_hash": "3e1159e21938099971c639d8bf4c023f"
+  },
+  "src/components/WorksGallery.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "17d5f2dd6baba7d87c5a221abb468292",
+    "semantic_hash": "17d5f2dd6baba7d87c5a221abb468292"
+  },
+  "src/components/common/Button.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "4c69a43d0aa89ba6c956eee45f813c19",
+    "semantic_hash": "4c69a43d0aa89ba6c956eee45f813c19"
+  },
+  "src/components/common/Card.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "93412a5055d5b7586fb429a1b465e531",
+    "semantic_hash": "93412a5055d5b7586fb429a1b465e531"
+  },
+  "src/components/common/Section.tsx": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "09915721c55db89bb13ca667426510d1",
+    "semantic_hash": "09915721c55db89bb13ca667426510d1"
+  },
+  "src/main.tsx": {
+    "mtime": 1783899618.8851354,
+    "ast_hash": "deca177af8b4bb7a7e5942960ceeb361",
+    "semantic_hash": "deca177af8b4bb7a7e5942960ceeb361"
+  },
+  "src/types/index.ts": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "c6c47360ed25facf68650c4175d761a3",
+    "semantic_hash": "c6c47360ed25facf68650c4175d761a3"
+  },
+  "src/utils/constants.ts": {
+    "mtime": 1779600662.122869,
+    "ast_hash": "6c98063835f00c84c7a7d61edb3b16bc",
+    "semantic_hash": "6c98063835f00c84c7a7d61edb3b16bc"
+  },
+  "src/utils/helpers.ts": {
+    "mtime": 1779600662.1596472,
+    "ast_hash": "716fffe9722242f463f2cb2f47105c2e",
+    "semantic_hash": "716fffe9722242f463f2cb2f47105c2e"
+  },
+  "tailwind.config.js": {
+    "mtime": 1779600520.7616842,
+    "ast_hash": "11582e200d1e63b93d5a025da88caa79",
+    "semantic_hash": "11582e200d1e63b93d5a025da88caa79"
+  },
+  "tsconfig.json": {
+    "mtime": 1779600520.7038891,
+    "ast_hash": "076d3b9d4c546c68a49c8bca65046f67",
+    "semantic_hash": "076d3b9d4c546c68a49c8bca65046f67"
+  },
+  "tsconfig.node.json": {
+    "mtime": 1779600520.72798,
+    "ast_hash": "281e378713152cccc7860c818db55849",
+    "semantic_hash": "281e378713152cccc7860c818db55849"
+  },
+  "vite.config.ts": {
+    "mtime": 1779600520.7038891,
+    "ast_hash": "f1f2f6c762c4908991b93c1ff9387232",
+    "semantic_hash": "f1f2f6c762c4908991b93c1ff9387232"
+  },
+  "AGENTS.md": {
+    "mtime": 1784167638.775953,
+    "ast_hash": "3f1401f6204ef4e47c3a98ddf7edea71",
+    "semantic_hash": "3f1401f6204ef4e47c3a98ddf7edea71"
+  },
+  "AUDITORIA.md": {
+    "mtime": 1783899179.526714,
+    "ast_hash": "9d07b921f73a215542272515ac43e108",
+    "semantic_hash": "9d07b921f73a215542272515ac43e108"
+  },
+  "MEJORAS.md": {
+    "mtime": 1783899179.528535,
+    "ast_hash": "9505a72bc1555bd02e52ee629f66f11f",
+    "semantic_hash": "9505a72bc1555bd02e52ee629f66f11f"
+  },
+  "README.md": {
+    "mtime": 1779601539.5426898,
+    "ast_hash": "ebc01a58c1d09ccf41023e8247f8556a",
+    "semantic_hash": "ebc01a58c1d09ccf41023e8247f8556a"
+  },
+  "SETUP.md": {
+    "mtime": 1779600662.3894613,
+    "ast_hash": "2ea072f03b0f9ca87082e1b3ab927fe1",
+    "semantic_hash": "2ea072f03b0f9ca87082e1b3ab927fe1"
+  },
+  "docs/CONTINUIDAD.md": {
+    "mtime": 1779601541.964275,
+    "ast_hash": "329b3807d2700a1ae744d49446f5106e",
+    "semantic_hash": "329b3807d2700a1ae744d49446f5106e"
+  },
+  "docs/INDICE.md": {
+    "mtime": 1779600390.9768996,
+    "ast_hash": "238ae8506b646e14838e580716ef70d0",
+    "semantic_hash": "238ae8506b646e14838e580716ef70d0"
+  },
+  "docs/alcance-del-proyecto.md": {
+    "mtime": 1779600391.0012307,
+    "ast_hash": "5991b71a29767ff175da0ed74e3db909",
+    "semantic_hash": "5991b71a29767ff175da0ed74e3db909"
+  },
+  "docs/arquitectura-del-proyecto.md": {
+    "mtime": 1779600391.8201294,
+    "ast_hash": "d738a4284c7036f1cca77d1b9026e0d0",
+    "semantic_hash": "d738a4284c7036f1cca77d1b9026e0d0"
+  },
+  "docs/copy-y-contenido.md": {
+    "mtime": 1779600391.47713,
+    "ast_hash": "320aff7e6c84b3e810a42144833694d4",
+    "semantic_hash": "320aff7e6c84b3e810a42144833694d4"
+  },
+  "docs/fases-del-proyecto.md": {
+    "mtime": 1779600391.734213,
+    "ast_hash": "0ad66cd01934c7c99ecc190c7932e173",
+    "semantic_hash": "0ad66cd01934c7c99ecc190c7932e173"
+  },
+  "docs/sistema-de-diseno.md": {
+    "mtime": 1779600391.2361932,
+    "ast_hash": "1c90a41f44fae4f1f87912b8b44eacb5",
+    "semantic_hash": "1c90a41f44fae4f1f87912b8b44eacb5"
+  },
+  "docs/tech-stack.md": {
+    "mtime": 1779600391.442611,
+    "ast_hash": "64c06d1b56ce3ce5343453eea5ca3c78",
+    "semantic_hash": "64c06d1b56ce3ce5343453eea5ca3c78"
+  },
+  "index.html": {
+    "mtime": 1779601209.8956728,
+    "ast_hash": "82cb10901ed04b978eb7cf6082186f0d",
+    "semantic_hash": "82cb10901ed04b978eb7cf6082186f0d"
+  },
+  "referencia-visual.png": {
+    "mtime": 1779598258.859199,
+    "ast_hash": "2ad5ed6ba3a9a6f99ab926be0aa48e65",
+    "semantic_hash": "2ad5ed6ba3a9a6f99ab926be0aa48e65"
+  }
+}
