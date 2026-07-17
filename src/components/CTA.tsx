@@ -21,18 +21,10 @@ export default function CTA() {
               rel="noopener noreferrer"
               className="bg-white text-tf-dark hover:bg-gray-100"
             />
-            <Button
-              variant="secondary"
-              text="WhatsApp"
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-white text-white hover:bg-white hover:text-tf-dark"
-            />
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-lg opacity-80 mb-2">📱 Número de contacto:</p>
+            <p className="text-lg opacity-80 mb-2">Número de contacto:</p>
             <p className="text-2xl font-bold">3014065931</p>
             <p className="text-sm opacity-60 mt-4">Ubicación: Medellín y alrededores</p>
           </div>
