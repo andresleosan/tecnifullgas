@@ -120,18 +120,4 @@ body {
   }
 }
 
-/* Carrusel de clientes */
-@keyframes client-marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  [style*="client-marquee"] {
-    animation: none !important;
-  }
-}
