@@ -42,7 +42,4 @@ export interface CardProps {
   children?: React.ReactNode
 }
 
-export interface Metric {
-  value: string
-  label: string
-}
+

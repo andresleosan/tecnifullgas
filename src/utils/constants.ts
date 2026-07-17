@@ -1,4 +1,4 @@
-import { Metric, Service } from '../types'
+import { Service } from '../types'
 
 export const WHATSAPP_NUMBER = '3014065931'
 export const WHATSAPP_URL = 'https://wa.me/573014065931'
@@ -119,12 +119,6 @@ export const FAQ_ITEMS = [
     answer:
       'Sí, puedes escribirnos por WhatsApp en cualquier momento. Nuestro equipo responde lo más pronto posible, priorizando emergencias.',
   },
-]
-
-export const HERO_METRICS: Metric[] = [
-  { value: '+2,000', label: 'Equipos Reparados' },
-  { value: '+1,500', label: 'Clientes Atendidos' },
-  { value: '100%', label: 'Garantía' },
 ]
 
 export const SERVICES_EXPANDED: Service[] = [

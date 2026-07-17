@@ -39,7 +39,7 @@ export default function Header() {
           <span className="text-xl sm:text-2xl font-bold text-tf-dark hidden sm:inline">
             TecnifullGas
           </span>
-          <span className="text-lg sm:text-xl font-bold text-tf-dark sm:hidden">TG</span>
+          <span className="text-lg sm:text-xl font-bold text-tf-dark sm:hidden">TecniFullGas</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
