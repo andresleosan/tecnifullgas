@@ -8,9 +8,7 @@ export default function Footer() {
           {/* Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-tf-primary to-tf-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
-                T
-              </div>
+              <img src="/img/Logo.png" alt="TecnifullGas" className="w-10 h-10 rounded-full object-cover" />
               <h3 className="text-xl font-bold">TecnifullGas</h3>
             </div>
             <p className="text-gray-300 text-sm">

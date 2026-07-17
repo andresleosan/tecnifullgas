@@ -35,9 +35,7 @@ export default function Header() {
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-gradient-to-r from-tf-primary to-tf-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
-            T
-          </div>
+          <img src="/img/Logo.png" alt="TecnifullGas" className="w-10 h-10 rounded-full object-cover" />
           <span className="text-xl sm:text-2xl font-bold text-tf-dark hidden sm:inline">
             TecnifullGas
           </span>
