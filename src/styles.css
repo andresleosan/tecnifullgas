@@ -119,3 +119,40 @@ body {
     @apply text-lg;
   }
 }
+
+/* Carrusel de clientes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.client-track {
+  display: flex;
+  animation: marquee 20s linear infinite;
+  width: max-content;
+}
+
+.client-track:hover {
+  animation-play-state: paused;
+}
+
+.client-carousel img {
+  height: 3rem;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.5);
+  transition: filter 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .client-carousel img {
+    height: 4rem;
+  }
+}
+
+.client-carousel img:hover {
+  filter: grayscale(0%) opacity(1);
+}
