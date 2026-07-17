@@ -1,7 +1,7 @@
 import Button from './common/Button'
-import MetricCard from './MetricCard'
+import ClientCarousel from './ClientCarousel'
 import ScrollReveal from './ScrollReveal'
-import { WHATSAPP_URL, COMPANY_LOCATION, HERO_METRICS } from '../utils/constants'
+import { WHATSAPP_URL, COMPANY_LOCATION } from '../utils/constants'
 
 export default function Hero() {
   return (
@@ -45,12 +45,7 @@ export default function Hero() {
               <strong>Servimos a:</strong> {COMPANY_LOCATION}
             </p>
 
-            {/* Métricas */}
-            <div className="grid grid-cols-3 gap-6 mt-10 pt-8 border-t border-tf-bg-light">
-              {HERO_METRICS.map((metric) => (
-                <MetricCard key={metric.label} metric={metric} />
-              ))}
-            </div>
+            <ClientCarousel />
           </div>
         </ScrollReveal>
 
