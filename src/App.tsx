@@ -4,6 +4,7 @@ import Services from './components/Services'
 import HowItWorks from './components/HowItWorks'
 import WorksGallery from './components/WorksGallery'
 import FAQ from './components/FAQ'
+import NuestrasRedes from './components/NuestrasRedes'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
@@ -17,6 +18,7 @@ function App() {
       <HowItWorks />
       <WorksGallery />
       <FAQ />
+      <NuestrasRedes />
       <CTA />
       <Footer />
       <FloatingWhatsApp />
