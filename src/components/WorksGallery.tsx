@@ -34,6 +34,7 @@ const WORK_VIDEOS = [
 export default function WorksGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [shouldContinuePlaying, setShouldContinuePlaying] = useState(false);
+  const carouselRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const touchStartX = useRef<number | null>(null);
 
@@ -42,7 +43,7 @@ export default function WorksGallery() {
   }, []);
 
   const handleControl = (direction: 1 | -1) => {
-    setShouldContinuePlaying(false);
+    setShouldContinuePlaying(true);
     goToVideo(direction);
   };
 
@@ -83,10 +84,38 @@ export default function WorksGallery() {
   useEffect(() => {
     if (!shouldContinuePlaying) return;
 
-    videoRef.current?.play().catch(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    video.muted = true;
+    video.play().catch(() => {
       setShouldContinuePlaying(false);
     });
   }, [activeIndex, shouldContinuePlaying]);
+
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldContinuePlaying(true);
+          return;
+        }
+
+        videoRef.current?.pause();
+        setShouldContinuePlaying(false);
+      },
+      {
+        threshold: 0.45,
+      }
+    );
+
+    observer.observe(carousel);
+
+    return () => observer.disconnect();
+  }, []);
 
   const activeVideo = WORK_VIDEOS[activeIndex];
 
@@ -107,6 +136,7 @@ export default function WorksGallery() {
 
         <ScrollReveal delay={200}>
           <div
+            ref={carouselRef}
             className="video-carousel relative"
             role="region"
             aria-label="Galería de videos TecnifullGas"
@@ -120,6 +150,7 @@ export default function WorksGallery() {
               ref={videoRef}
               className="work-video"
               controls
+              muted
               preload="metadata"
               playsInline
               aria-label={`${activeVideo.title}. Video ${activeIndex + 1} de ${WORK_VIDEOS.length}`}
@@ -162,7 +193,7 @@ export default function WorksGallery() {
                   aria-label={`Ver video ${index + 1}`}
                   aria-current={index === activeIndex ? 'true' : undefined}
                   onClick={() => {
-                    setShouldContinuePlaying(false);
+                    setShouldContinuePlaying(true);
                     setActiveIndex(index);
                   }}
                 />
