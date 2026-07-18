@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/components/Services.tsx": {
-    "mtime": 1784322379.4357018,
-    "ast_hash": "767ca476515dd04c2d9ca18320021fb6",
+    "mtime": 1784343510.2559822,
+    "ast_hash": "aedcdc1449ea8c0737b7997cea70d26e",
     "semantic_hash": ""
   },
   "src/components/WorksGallery.tsx": {
@@ -75,8 +75,8 @@
     "semantic_hash": ""
   },
   "src/components/common/Card.tsx": {
-    "mtime": 1784322378.5402014,
-    "ast_hash": "22e659feca78cc9a03fe86f3d673dca0",
+    "mtime": 1784343310.4768324,
+    "ast_hash": "6d1eee7052b1e05c834f96c77e992cc5",
     "semantic_hash": ""
   },
   "src/components/common/Section.tsx": {
@@ -90,13 +90,13 @@
     "semantic_hash": ""
   },
   "src/types/index.ts": {
-    "mtime": 1784322379.8091333,
-    "ast_hash": "081a66b34099f2c18e443ade9526b73b",
+    "mtime": 1784343310.4688375,
+    "ast_hash": "5a0ba89d9ae614238f1cb758a92fafb4",
     "semantic_hash": ""
   },
   "src/utils/constants.ts": {
-    "mtime": 1784322379.8690972,
-    "ast_hash": "72d3e6264794dbb01e6759c594424b34",
+    "mtime": 1784343310.4038775,
+    "ast_hash": "f5d7eb1443f141032a9db740659757e1",
     "semantic_hash": ""
   },
   "src/utils/helpers.ts": {
@@ -332,6 +332,36 @@
   "public/videos/Video5.mp4": {
     "mtime": 1784327223.4971988,
     "ast_hash": "3783218a465a18f24a671a63b4fffd1e",
+    "semantic_hash": ""
+  },
+  "public/img/Calentadores.png": {
+    "mtime": 1784341819.889089,
+    "ast_hash": "c8e60d91be38cff7a94f85b60bff47f5",
+    "semantic_hash": ""
+  },
+  "public/img/Campanas.png": {
+    "mtime": 1784341819.9792135,
+    "ast_hash": "93dbba129c2d4c9e678cadf7b92c8fd9",
+    "semantic_hash": ""
+  },
+  "public/img/Estufas.png": {
+    "mtime": 1784341819.811248,
+    "ast_hash": "5fc20e29231c2fcc9d7a37facc70b95c",
+    "semantic_hash": ""
+  },
+  "public/img/Fugas.png": {
+    "mtime": 1784341820.068276,
+    "ast_hash": "ec8e8f8e4555b5465cbf298ddc70d125",
+    "semantic_hash": ""
+  },
+  "public/img/Reparaciones.png": {
+    "mtime": 1784341820.174795,
+    "ast_hash": "938fb226e29a5610f9c57b59e33d4b01",
+    "semantic_hash": ""
+  },
+  "public/img/Repuestos.png": {
+    "mtime": 1784341820.247371,
+    "ast_hash": "c3df6afbe5b173ff7acf5220caed0153",
     "semantic_hash": ""
   }
 }

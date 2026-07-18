@@ -1151,7 +1151,7 @@
       "label": "HowItWorks()",
       "file_type": "code",
       "source_file": "src/components/HowItWorks.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_howitworks_howitworks",
       "community": 5,
@@ -8171,7 +8171,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/HowItWorks.tsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_howitworks",
@@ -14384,5 +14384,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "cfde3cfab8e79c3a8fb1dd4041676b81c4f0dbb5"
+  "built_at_commit": "e810f6fd13bec93792a1f40bac3daccf77e94b36"
 }

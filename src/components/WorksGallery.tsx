@@ -11,19 +11,19 @@ import ScrollReveal from './ScrollReveal';
 const WORK_VIDEOS = [
   {
     src: '/videos/Video1.mp4',
-    title: 'Resultado TecnifullGas 1',
+    title: 'Resultado Tecni Full Gas 1',
   },
   {
     src: '/videos/Video3.mp4',
-    title: 'Resultado TecnifullGas 3',
+    title: 'Resultado Tecni Full Gas 3',
   },
   {
     src: '/videos/Video4.mp4',
-    title: 'Resultado TecnifullGas 4',
+    title: 'Resultado Tecni Full Gas 4',
   },
   {
     src: '/videos/Video5.mp4',
-    title: 'Resultado TecnifullGas 5',
+    title: 'Resultado Tecni Full Gas 5',
   },
 ];
 
@@ -140,7 +140,7 @@ export default function WorksGallery() {
             ref={carouselRef}
             className="video-carousel relative"
             role="region"
-            aria-label="Galería de videos TecnifullGas"
+            aria-label="Galería de videos Tecni Full Gas"
             tabIndex={0}
             onKeyDown={handleKeyDown}
             onTouchStart={handleTouchStart}

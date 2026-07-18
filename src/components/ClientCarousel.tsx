@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 
 const CLIENT_IMAGES = [
-  { src: '/img/Cliente1.png', alt: 'Cliente TecnifullGas' },
-  { src: '/img/Cliente2.png', alt: 'Cliente TecnifullGas' },
-  { src: '/img/Cliente3.png', alt: 'Cliente TecnifullGas' },
-  { src: '/img/Cliente4.png', alt: 'Cliente TecnifullGas' },
+  { src: '/img/Cliente1.png', alt: 'Cliente Tecni Full Gas' },
+  { src: '/img/Cliente2.png', alt: 'Cliente Tecni Full Gas' },
+  { src: '/img/Cliente3.png', alt: 'Cliente Tecni Full Gas' },
+  { src: '/img/Cliente4.png', alt: 'Cliente Tecni Full Gas' },
 ];
 
 const DURATION = 20000;

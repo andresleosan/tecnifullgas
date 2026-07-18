@@ -10,7 +10,7 @@ import {
 const HERO_SLIDES = [
   {
     src: '/img/Calentador.png',
-    alt: 'Calentador atendido por TecnifullGas',
+    alt: 'Calentador atendido por Tecni Full Gas',
   },
   {
     src: '/img/Cocina.png',
@@ -18,7 +18,7 @@ const HERO_SLIDES = [
   },
   {
     src: '/img/Servicios.png',
-    alt: 'Servicios TecnifullGas para sistemas de gas',
+    alt: 'Servicios Tecni Full Gas para sistemas de gas',
   },
 ];
 
@@ -88,7 +88,7 @@ export default function HeroCarousel() {
     <div
       className="hero-carousel group relative h-[300px] sm:h-[380px] lg:h-[600px] rounded-[32px] overflow-hidden"
       role="region"
-      aria-label="Galería principal de servicios TecnifullGas"
+      aria-label="Galería principal de servicios Tecni Full Gas"
       tabIndex={0}
       onKeyDown={handleKeyDown}
       onTouchStart={handleTouchStart}

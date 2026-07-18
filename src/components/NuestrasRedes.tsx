@@ -1,6 +1,7 @@
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 import Button from './common/Button';
 import ScrollReveal from './ScrollReveal';
+import { INSTAGRAM_URL } from '../utils/constants';
 
 export default function NuestrasRedes() {
   return (
@@ -32,7 +33,7 @@ export default function NuestrasRedes() {
               <Button
                 variant="secondary"
                 text="Seguir en Instagram"
-                href="https://www.instagram.com/tecnifullgas/"
+                href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full border-white text-white hover:bg-white hover:text-tf-dark"

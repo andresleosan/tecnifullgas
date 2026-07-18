@@ -1,0 +1,17 @@
+{
+  "name": "Tecni Full Gas",
+  "short_name": "Tecni Full Gas",
+  "description": "Servicios técnicos de gas, instalación, mantenimiento y reparación en Medellín y alrededores.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1E3A",
+  "theme_color": "#0B1E3A",
+  "icons": [
+    {
+      "src": "/img/FavIcon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

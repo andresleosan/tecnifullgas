@@ -1,6 +1,6 @@
 import Button from './common/Button';
 import ScrollReveal from './ScrollReveal';
-import { WHATSAPP_URL } from '../utils/constants';
+import { WHATSAPP_URL, WHATSAPP_NUMBER, COMPANY_LOCATION } from '../utils/constants';
 
 export default function CTA() {
   return (
@@ -25,8 +25,8 @@ export default function CTA() {
 
           <div className="mt-12 text-center">
             <p className="text-lg opacity-80 mb-2">Número de contacto:</p>
-            <p className="text-2xl font-bold">3014065931</p>
-            <p className="text-sm opacity-60 mt-4">Ubicación: Medellín y alrededores</p>
+            <p className="text-2xl font-bold">{WHATSAPP_NUMBER}</p>
+            <p className="text-sm opacity-60 mt-4">Ubicación: {COMPANY_LOCATION}</p>
           </div>
         </div>
       </ScrollReveal>

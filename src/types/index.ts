@@ -5,13 +5,6 @@ export interface Service {
   description: string;
 }
 
-export interface WhyChooseUs {
-  id: string;
-  title: string;
-  emoji: string;
-  description: string;
-}
-
 export interface Step {
   number: number;
   title: string;

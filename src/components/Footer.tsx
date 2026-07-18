@@ -1,4 +1,5 @@
-import { WHATSAPP_URL, INSTAGRAM_URL } from '../utils/constants';
+import { WHATSAPP_URL, INSTAGRAM_URL, COMPANY_NAME } from '../utils/constants';
+import { smoothScroll } from '../utils/helpers';
 
 export default function Footer() {
   return (
@@ -10,10 +11,10 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <img
                 src="/img/Logo.png"
-                alt="TecnifullGas"
+                alt={COMPANY_NAME}
                 className="w-10 h-10 rounded-full object-cover"
               />
-              <h3 className="text-xl font-bold">TecnifullGas</h3>
+              <h3 className="text-xl font-bold">{COMPANY_NAME}</h3>
             </div>
             <p className="text-gray-300 text-sm">
               Servicios técnicos de gas profesionales y confiables en Medellín y sus alrededores.
@@ -25,41 +26,44 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Enlaces rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a
-                  href="#servicios"
+                <button
+                  onClick={() => smoothScroll('servicios')}
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Servicios
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#nuestros-servicios"
+                <button
+                  onClick={() => smoothScroll('nuestros-servicios')}
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Nuestros servicios
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#trabajos"
+                <button
+                  onClick={() => smoothScroll('trabajos')}
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Trabajos
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="#como-funciona"
+                <button
+                  onClick={() => smoothScroll('como-funciona')}
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Cómo funciona
-                </a>
+                </button>
               </li>
               <li>
-                <a href="#faq" className="text-gray-300 hover:text-tf-accent transition-colors">
+                <button
+                  onClick={() => smoothScroll('faq')}
+                  className="text-gray-300 hover:text-tf-accent transition-colors"
+                >
                   Preguntas frecuentes
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -96,7 +100,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2026 TecnifullGas. Todos los derechos reservados.
+            © 2026 {COMPANY_NAME}. Todos los derechos reservados.
           </p>
         </div>
       </div>

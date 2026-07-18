@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { smoothScroll } from '../utils/helpers';
-import { WHATSAPP_URL } from '../utils/constants';
+import { COMPANY_NAME, WHATSAPP_URL } from '../utils/constants';
 import Button from './common/Button';
 
 const NAV_LINKS = [
@@ -38,13 +38,13 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <img
             src="/img/Logo.png"
-            alt="TecnifullGas"
+            alt={COMPANY_NAME}
             className="w-12 h-12 rounded-full object-cover shadow-lg shadow-black/30 ring-1 ring-white/30"
           />
           <span className="text-xl sm:text-2xl font-bold text-white hidden sm:inline">
-            TecnifullGas
+            {COMPANY_NAME}
           </span>
-          <span className="text-lg sm:text-xl font-bold text-white sm:hidden">TecniFullGas</span>
+          <span className="text-lg sm:text-xl font-bold text-white sm:hidden">{COMPANY_NAME}</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">

@@ -3,39 +3,8 @@ import { Service } from '../types';
 export const WHATSAPP_NUMBER = '3014065931';
 export const WHATSAPP_URL = 'https://wa.me/573014065931';
 export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas';
-export const COMPANY_NAME = 'TecnifullGas';
+export const COMPANY_NAME = 'Tecni Full Gas';
 export const COMPANY_LOCATION = 'Medellín y alrededores';
-
-export const WHY_CHOOSE_US = [
-  {
-    id: 'experience',
-    title: 'Experiencia',
-    emoji: '⭐',
-    description:
-      'Años de trayectoria en servicios técnicos de gas. Conocemos cada detalle del mercado y las necesidades de nuestros clientes.',
-  },
-  {
-    id: 'trust',
-    title: 'Confianza',
-    emoji: '✅',
-    description:
-      'Trabajamos con transparencia total. Nuestros clientes nos recomiendan porque cumplimos lo que prometemos, siempre.',
-  },
-  {
-    id: 'speed',
-    title: 'Respuesta Rápida',
-    emoji: '⚡',
-    description:
-      'Tu tiempo es valioso. Nos caracterizamos por responder de inmediato a tus llamadas y resolver problemas en el menor tiempo posible.',
-  },
-  {
-    id: 'professionalism',
-    title: 'Atención Profesional',
-    emoji: '👨‍💼',
-    description:
-      'Equipo capacitado, respetuoso y siempre dispuesto a aclarar tus dudas. Nos preocupamos por tu satisfacción en cada interacción.',
-  },
-];
 
 export const HOW_IT_WORKS = [
   {

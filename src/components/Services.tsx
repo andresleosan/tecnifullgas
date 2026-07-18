@@ -10,16 +10,16 @@ export default function Services() {
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-            <p className="text-sm font-semibold uppercase text-tf-accent">
+            <p className="text-sm font-semibold uppercase tracking-wider text-tf-accent">
               Servicios técnicos de gas
             </p>
-            <h2 className="mt-3 text-3xl font-black text-tf-dark sm:text-5xl">
+            <h2 className="mt-4 text-3xl font-black text-tf-dark sm:text-5xl">
               Nuestros Servicios
             </h2>
-            <p className="mt-3 text-lg font-semibold text-[#173B78] sm:text-2xl">
+            <p className="mt-4 text-lg font-semibold text-[#173B78] sm:text-2xl">
               Soluciones completas para cada necesidad
             </p>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
               Atención técnica confiable, con diagnóstico claro y soluciones pensadas para la
               seguridad de tu espacio.
             </p>
@@ -32,7 +32,7 @@ export default function Services() {
               <article className="group relative min-h-[360px] overflow-hidden rounded-[28px] bg-slate-950 shadow-[0_22px_60px_rgba(15,23,42,0.14)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(15,23,42,0.24)] sm:min-h-[420px]">
                 <img
                   src={service.image}
-                  alt={`Servicio de ${service.title} TecnifullGas`}
+                  alt={`Servicio de ${service.title} Tecni Full Gas`}
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />

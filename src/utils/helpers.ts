@@ -6,10 +6,3 @@ export const smoothScroll = (elementId: string) => {
   const top = element.getBoundingClientRect().top + window.scrollY - headerOffset;
   window.scrollTo({ top, behavior: 'smooth' });
 };
-
-export const openWhatsApp = (number: string, message?: string) => {
-  const url = message
-    ? `https://wa.me/${number}?text=${encodeURIComponent(message)}`
-    : `https://wa.me/${number}`;
-  window.open(url, '_blank');
-};
