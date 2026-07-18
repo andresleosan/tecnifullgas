@@ -6,37 +6,6 @@ export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas';
 export const COMPANY_NAME = 'TecnifullGas';
 export const COMPANY_LOCATION = 'Medellín y alrededores';
 
-export const SERVICES = [
-  {
-    id: 'installation',
-    title: 'Instalación',
-    icon: '⚙️',
-    description:
-      'Instalación profesional de sistemas de gas adaptados a tus necesidades. Cumplimos con todos los estándares de seguridad y regulaciones vigentes.',
-  },
-  {
-    id: 'maintenance',
-    title: 'Mantenimiento',
-    icon: '🔧',
-    description:
-      'Mantenimiento periódico para garantizar el funcionamiento óptimo de tus sistemas. Revisamos conexiones, fugas y válvulas de seguridad.',
-  },
-  {
-    id: 'repair',
-    title: 'Reparación',
-    icon: '🔨',
-    description:
-      'Reparación rápida y efectiva de cualquier problema en tus sistemas de gas. Diagnóstico profesional e intervención inmediata.',
-  },
-  {
-    id: 'preventive',
-    title: 'Preventivo y Correctivo',
-    icon: '🛡️',
-    description:
-      'Combinamos revisiones preventivas con soluciones correctivas. Evita problemas antes de que ocurran y resuelve los existentes rápidamente.',
-  },
-];
-
 export const WHY_CHOOSE_US = [
   {
     id: 'experience',
@@ -125,37 +94,37 @@ export const SERVICES_EXPANDED: Service[] = [
   {
     id: 'estufas',
     title: 'Estufas',
-    icon: '🔥',
+    image: '/img/Estufas.png',
     description: 'Instalación, mantenimiento y reparación de estufas de gas.',
   },
   {
     id: 'calentadores',
     title: 'Calentadores',
-    icon: '♨️',
+    image: '/img/Calentadores.png',
     description: 'Servicio técnico especializado en calentadores a gas.',
   },
   {
     id: 'campanas',
     title: 'Campanas',
-    icon: '🌀',
+    image: '/img/Campanas.png',
     description: 'Instalación y reparación de campanas extractoras.',
   },
   {
     id: 'fugas',
     title: 'Fugas',
-    icon: '💧',
+    image: '/img/Fugas.png',
     description: 'Detección y reparación de fugas de gas.',
   },
   {
     id: 'reparaciones',
     title: 'Reparaciones',
-    icon: '🔧',
+    image: '/img/Reparaciones.png',
     description: 'Reparación general de todos los sistemas de gas.',
   },
   {
     id: 'repuestos',
     title: 'Repuestos',
-    icon: '⚙️',
+    image: '/img/Repuestos.png',
     description: 'Suministro e instalación de repuestos originales.',
   },
 ];

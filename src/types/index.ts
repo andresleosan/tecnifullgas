@@ -1,7 +1,7 @@
 export interface Service {
   id: string;
   title: string;
-  icon: string;
+  image: string;
   description: string;
 }
 
@@ -37,7 +37,6 @@ export interface ButtonProps {
 export interface CardProps {
   title: string;
   description: string;
-  icon?: string;
   image?: string;
   children?: React.ReactNode;
 }

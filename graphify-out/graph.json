@@ -1445,21 +1445,10 @@
       "norm_label": "constants.ts"
     },
     {
-      "label": "SERVICES",
-      "file_type": "code",
-      "source_file": "src/utils/constants.ts",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "src_utils_constants_services",
-      "community": 5,
-      "community_name": "Card Component",
-      "norm_label": "services"
-    },
-    {
       "label": "WHY_CHOOSE_US",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L40",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "src_utils_constants_why_choose_us",
       "community": 5,
@@ -1470,7 +1459,7 @@
       "label": "HOW_IT_WORKS",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L71",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "src_utils_constants_how_it_works",
       "community": 5,
@@ -1481,7 +1470,7 @@
       "label": "FAQ_ITEMS",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L91",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "src_utils_constants_faq_items",
       "community": 5,
@@ -1492,7 +1481,7 @@
       "label": "SERVICES_EXPANDED",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L124",
+      "source_location": "L93",
       "_origin": "ast",
       "id": "src_utils_constants_services_expanded",
       "community": 5,
@@ -6434,8 +6423,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "docs_tech_stack_configuraciones_importantes",
-      "community": 0,
-      "community_name": "Project Documentation",
+      "community": 32,
+      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
       "norm_label": "\ud83d\udd27 configuraciones importantes"
     },
     {
@@ -6445,8 +6434,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "docs_tech_stack_tailwind_configuration_tailwind_config_js",
-      "community": 0,
-      "community_name": "Project Documentation",
+      "community": 32,
+      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
       "norm_label": "tailwind configuration (tailwind.config.js)"
     },
     {
@@ -6456,8 +6445,8 @@
       "source_location": "L172",
       "_origin": "ast",
       "id": "docs_tech_stack_typescript_configuration_tsconfig_json",
-      "community": 0,
-      "community_name": "Project Documentation",
+      "community": 32,
+      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
       "norm_label": "typescript configuration (tsconfig.json)"
     },
     {
@@ -6467,8 +6456,8 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "docs_tech_stack_vite_configuration_vite_config_ts",
-      "community": 0,
-      "community_name": "Project Documentation",
+      "community": 32,
+      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
       "norm_label": "vite configuration (vite.config.ts)"
     },
     {
@@ -8549,7 +8538,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L91",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
@@ -8560,7 +8549,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L71",
+      "source_location": "L40",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
@@ -8571,18 +8560,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_utils_constants",
-      "target": "src_utils_constants_services",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/utils/constants.ts",
-      "source_location": "L124",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
@@ -8593,7 +8571,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L40",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
@@ -14406,5 +14384,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1b6fa2300927629b0a7d79733a46b60616e20b46"
+  "built_at_commit": "cfde3cfab8e79c3a8fb1dd4041676b81c4f0dbb5"
 }
