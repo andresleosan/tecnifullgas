@@ -29,19 +29,19 @@ export default function Services() {
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {SERVICES_EXPANDED.map((service, index) => (
             <ScrollReveal key={service.id} delay={index * 100}>
-              <article className="group relative min-h-[360px] overflow-hidden rounded-[28px] bg-slate-950 shadow-[0_22px_60px_rgba(15,23,42,0.14)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(15,23,42,0.24)] sm:min-h-[420px]">
+              <article className="group relative overflow-hidden rounded-[28px] bg-slate-950 shadow-[0_22px_60px_rgba(15,23,42,0.14)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(15,23,42,0.24)]">
                 <img
                   src={service.image}
                   alt={`Servicio de ${service.title} Tecni Full Gas`}
                   loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="block h-auto w-full transition-transform duration-500 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent transition-colors duration-500 group-hover:from-black/80 group-hover:via-black/25" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-colors duration-500 group-hover:from-black/80 group-hover:via-black/30" />
                 <div className="absolute inset-0 bg-white/0 transition-colors duration-500 group-hover:bg-white/5" />
 
-                <div className="relative flex min-h-[360px] flex-col justify-end p-6 sm:min-h-[420px] sm:p-8">
-                  <h3 className="text-3xl font-black text-white sm:text-4xl">{service.title}</h3>
-                  <p className="mt-3 max-w-sm text-base leading-7 text-white/85">
+                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7">
+                  <h3 className="text-2xl font-black text-white sm:text-3xl">{service.title}</h3>
+                  <p className="mt-2 max-w-sm text-sm leading-6 text-white/85 sm:text-base sm:leading-7">
                     {service.description}
                   </p>
                 </div>

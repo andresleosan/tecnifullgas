@@ -42,7 +42,9 @@ export default function FAQ() {
                     </span>
                   </button>
                   {activeId === item.id && (
-                    <div className="text-tf-text leading-relaxed pb-4">{item.answer}</div>
+                    <div className="whitespace-pre-line text-tf-text leading-relaxed pb-4">
+                      {item.answer}
+                    </div>
                   )}
                 </div>
               </ScrollReveal>

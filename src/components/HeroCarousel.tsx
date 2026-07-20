@@ -106,7 +106,7 @@ export default function HeroCarousel() {
 
       <button
         type="button"
-        className="hero-carousel-control left-4 sm:left-5"
+              className="hero-carousel-control left-1 sm:left-2"
         aria-label="Ver imagen anterior"
         onClick={() => handleControl(-1)}
       >
@@ -115,7 +115,7 @@ export default function HeroCarousel() {
 
       <button
         type="button"
-        className="hero-carousel-control right-4 sm:right-5"
+              className="hero-carousel-control right-1 sm:right-2"
         aria-label="Ver imagen siguiente"
         onClick={() => handleControl(1)}
       >

@@ -22,19 +22,21 @@ export default function HowItWorks() {
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 relative">
-          <div className="hidden md:block absolute top-16 left-[18%] right-[18%] h-px bg-white/15" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 relative">
+          <div className="hidden md:block absolute top-14 left-[16%] right-[16%] h-px bg-white/15" />
           {HOW_IT_WORKS.map((step, index) => (
             <ScrollReveal key={step.number} delay={index * 150}>
               <div className="text-center relative">
-                <div className="relative z-10 mx-auto mb-7 flex h-28 w-28 items-center justify-center rounded-full bg-white shadow-2xl shadow-black/25 ring-4 ring-white/15">
-                  <img
-                    src={LOGO_SRC}
-                    alt={COMPANY_NAME}
-                    className="h-20 w-20 object-contain"
-                    loading="lazy"
-                  />
-                  <span className="absolute -right-1 -bottom-1 flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-[#0B1E3A] text-xs font-black text-tf-accent shadow-lg">
+                <div className="relative z-10 mx-auto mb-7 h-28 w-28 sm:h-32 sm:w-32">
+                  <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-white shadow-2xl shadow-black/25 ring-4 ring-white/15">
+                    <img
+                      src={LOGO_SRC}
+                      alt={COMPANY_NAME}
+                      className="h-full w-full scale-[2.75] object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <span className="absolute -right-1 -bottom-1 flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-[#0B1E3A] text-xs font-black text-tf-accent shadow-lg sm:h-10 sm:w-10 sm:text-sm">
                     {String(step.number).padStart(2, '0')}
                   </span>
                 </div>

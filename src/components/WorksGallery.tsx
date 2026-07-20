@@ -33,23 +33,49 @@ export default function WorksGallery() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const touchStartX = useRef<number | null>(null);
+  const shouldPlayRef = useRef(false);
+  const soundBlockedRef = useRef(false);
 
   const goToVideo = useCallback((direction: 1 | -1) => {
     setActiveIndex((current) => (current + direction + WORK_VIDEOS.length) % WORK_VIDEOS.length);
   }, []);
 
+  const playWithSound = useCallback(async (video: HTMLVideoElement) => {
+    video.defaultMuted = false;
+    video.muted = false;
+    video.volume = 1;
+
+    try {
+      await video.play();
+      soundBlockedRef.current = false;
+      return true;
+    } catch {
+      soundBlockedRef.current = true;
+      video.muted = true;
+      try {
+        await video.play();
+        return true;
+      } catch {
+        return false;
+      }
+    }
+  }, []);
+
   const handleControl = (direction: 1 | -1) => {
     setShouldContinuePlaying(true);
+    shouldPlayRef.current = true;
     goToVideo(direction);
   };
 
   const handleEnded = () => {
     if (activeIndex === WORK_VIDEOS.length - 1) {
       setShouldContinuePlaying(false);
+      shouldPlayRef.current = false;
       return;
     }
 
     setShouldContinuePlaying(true);
+    shouldPlayRef.current = true;
     goToVideo(1);
   };
 
@@ -83,16 +109,25 @@ export default function WorksGallery() {
   };
 
   useEffect(() => {
+    shouldPlayRef.current = shouldContinuePlaying;
+  }, [shouldContinuePlaying]);
+
+  useEffect(() => {
     if (!shouldContinuePlaying) return;
 
     const video = videoRef.current;
     if (!video) return;
 
-    video.muted = true;
-    video.play().catch(() => {
-      setShouldContinuePlaying(false);
+    let cancelled = false;
+
+    void playWithSound(video).then((played) => {
+      if (!cancelled && !played) setShouldContinuePlaying(false);
     });
-  }, [activeIndex, shouldContinuePlaying]);
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeIndex, playWithSound, shouldContinuePlaying]);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -101,11 +136,16 @@ export default function WorksGallery() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          shouldPlayRef.current = true;
           setShouldContinuePlaying(true);
           return;
         }
 
-        videoRef.current?.pause();
+        const video = videoRef.current;
+        if (video) {
+          video.pause();
+        }
+        shouldPlayRef.current = false;
         setShouldContinuePlaying(false);
       },
       {
@@ -117,6 +157,26 @@ export default function WorksGallery() {
 
     return () => observer.disconnect();
   }, []);
+
+  // Si el autoplay con sonido fue bloqueado, desbloquear en la primera interacción.
+  useEffect(() => {
+    const unlockSound = () => {
+      if (!shouldPlayRef.current || !soundBlockedRef.current) return;
+
+      const video = videoRef.current;
+      if (!video) return;
+
+      void playWithSound(video);
+    };
+
+    document.addEventListener('pointerdown', unlockSound);
+    document.addEventListener('keydown', unlockSound);
+
+    return () => {
+      document.removeEventListener('pointerdown', unlockSound);
+      document.removeEventListener('keydown', unlockSound);
+    };
+  }, [playWithSound]);
 
   const activeVideo = WORK_VIDEOS[activeIndex];
 
@@ -151,8 +211,7 @@ export default function WorksGallery() {
               ref={videoRef}
               className="work-video"
               controls
-              muted
-              preload="metadata"
+              preload="auto"
               playsInline
               aria-label={`${activeVideo.title}. Video ${activeIndex + 1} de ${WORK_VIDEOS.length}`}
               onEnded={handleEnded}
@@ -162,6 +221,11 @@ export default function WorksGallery() {
                   setShouldContinuePlaying(false);
                 }
               }}
+              onVolumeChange={(event) => {
+                if (!event.currentTarget.muted) {
+                  setShouldContinuePlaying(true);
+                }
+              }}
             >
               <source src={activeVideo.src} type="video/mp4" />
               Tu navegador no soporta la reproducción de video.
@@ -169,7 +233,7 @@ export default function WorksGallery() {
 
             <button
               type="button"
-              className="media-carousel-control left-4 sm:left-6"
+              className="media-carousel-control left-1 sm:left-2"
               aria-label="Ver video anterior"
               onClick={() => handleControl(-1)}
             >
@@ -178,7 +242,7 @@ export default function WorksGallery() {
 
             <button
               type="button"
-              className="media-carousel-control right-4 sm:right-6"
+              className="media-carousel-control right-1 sm:right-2"
               aria-label="Ver video siguiente"
               onClick={() => handleControl(1)}
             >

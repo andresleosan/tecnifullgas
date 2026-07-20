@@ -31,7 +31,7 @@ export const FAQ_ITEMS = [
     id: 'q1',
     question: '¿Cuál es el horario de atención?',
     answer:
-      'Estamos disponibles para emergencias. Contacta con nosotros por WhatsApp y te responderemos con la mayor brevedad posible.',
+      'Lunes a Viernes: 08:00 AM - 06:00 PM\nSábados: 08:00 AM - 03:00 PM\nDomingos y festivos: No laboramos',
   },
   {
     id: 'q2',
@@ -55,7 +55,7 @@ export const FAQ_ITEMS = [
     id: 'q5',
     question: '¿Puedo contactar de noche?',
     answer:
-      'Sí, puedes escribirnos por WhatsApp en cualquier momento. Nuestro equipo responde lo más pronto posible, priorizando emergencias.',
+      'Sí, puedes escribirnos por WhatsApp en cualquier momento. Nuestro equipo responde lo más pronto posible.',
   },
 ];
 
