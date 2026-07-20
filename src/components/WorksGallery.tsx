@@ -29,53 +29,109 @@ const WORK_VIDEOS = [
 
 export default function WorksGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [shouldContinuePlaying, setShouldContinuePlaying] = useState(false);
-  const carouselRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const touchStartX = useRef<number | null>(null);
-  const shouldPlayRef = useRef(false);
+  const inViewRef = useRef(false);
+  const userPausedRef = useRef(false);
+  const ignorePauseRef = useRef(false);
   const soundBlockedRef = useRef(false);
 
   const goToVideo = useCallback((direction: 1 | -1) => {
     setActiveIndex((current) => (current + direction + WORK_VIDEOS.length) % WORK_VIDEOS.length);
   }, []);
 
-  const playWithSound = useCallback(async (video: HTMLVideoElement) => {
-    video.defaultMuted = false;
-    video.muted = false;
+  const playActiveVideo = useCallback(async () => {
+    const video = videoRef.current;
+    if (!video || !inViewRef.current || userPausedRef.current) return;
+
+    ignorePauseRef.current = true;
+
+    // 1) Arrancar muteado: autoplay confiable en desktop y mobile
+    video.defaultMuted = true;
+    video.muted = true;
     video.volume = 1;
 
     try {
+      if (video.readyState < 2) {
+        await new Promise<void>((resolve, reject) => {
+          const onReady = () => {
+            cleanup();
+            resolve();
+          };
+          const onError = () => {
+            cleanup();
+            reject(new Error('video error'));
+          };
+          const cleanup = () => {
+            video.removeEventListener('loadeddata', onReady);
+            video.removeEventListener('canplay', onReady);
+            video.removeEventListener('error', onError);
+          };
+
+          video.addEventListener('loadeddata', onReady, { once: true });
+          video.addEventListener('canplay', onReady, { once: true });
+          video.addEventListener('error', onError, { once: true });
+          video.load();
+        });
+      }
+
       await video.play();
-      soundBlockedRef.current = false;
-      return true;
     } catch {
-      soundBlockedRef.current = true;
+      ignorePauseRef.current = false;
+      return;
+    }
+
+    if (!inViewRef.current || userPausedRef.current) {
+      ignorePauseRef.current = false;
+      return;
+    }
+
+    // 2) Intentar activar sonido tras el play muteado
+    video.defaultMuted = false;
+    video.muted = false;
+
+    if (video.paused) {
       video.muted = true;
+      soundBlockedRef.current = true;
       try {
         await video.play();
-        return true;
       } catch {
-        return false;
+        ignorePauseRef.current = false;
+        return;
       }
+    } else {
+      soundBlockedRef.current = video.muted;
     }
+
+    window.setTimeout(() => {
+      ignorePauseRef.current = false;
+    }, 100);
+  }, []);
+
+  const pauseActiveVideo = useCallback(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    ignorePauseRef.current = true;
+    video.pause();
+    window.setTimeout(() => {
+      ignorePauseRef.current = false;
+    }, 0);
   }, []);
 
   const handleControl = (direction: 1 | -1) => {
-    setShouldContinuePlaying(true);
-    shouldPlayRef.current = true;
+    userPausedRef.current = false;
     goToVideo(direction);
   };
 
   const handleEnded = () => {
     if (activeIndex === WORK_VIDEOS.length - 1) {
-      setShouldContinuePlaying(false);
-      shouldPlayRef.current = false;
+      userPausedRef.current = true;
       return;
     }
 
-    setShouldContinuePlaying(true);
-    shouldPlayRef.current = true;
+    userPausedRef.current = false;
     goToVideo(1);
   };
 
@@ -108,65 +164,64 @@ export default function WorksGallery() {
     touchStartX.current = null;
   };
 
+  // Autoplay al entrar en viewport (threshold bajo para desktop)
   useEffect(() => {
-    shouldPlayRef.current = shouldContinuePlaying;
-  }, [shouldContinuePlaying]);
-
-  useEffect(() => {
-    if (!shouldContinuePlaying) return;
-
-    const video = videoRef.current;
-    if (!video) return;
-
-    let cancelled = false;
-
-    void playWithSound(video).then((played) => {
-      if (!cancelled && !played) setShouldContinuePlaying(false);
-    });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [activeIndex, playWithSound, shouldContinuePlaying]);
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (!carousel) return;
+    const section = sectionRef.current;
+    if (!section) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          shouldPlayRef.current = true;
-          setShouldContinuePlaying(true);
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.2) {
+          inViewRef.current = true;
+          if (!userPausedRef.current) {
+            void playActiveVideo();
+          }
           return;
         }
 
-        const video = videoRef.current;
-        if (video) {
-          video.pause();
+        if (!entry.isIntersecting) {
+          inViewRef.current = false;
+          pauseActiveVideo();
         }
-        shouldPlayRef.current = false;
-        setShouldContinuePlaying(false);
       },
       {
-        threshold: 0.45,
+        threshold: [0, 0.2, 0.35, 0.5],
+        rootMargin: '0px 0px -10% 0px',
       }
     );
 
-    observer.observe(carousel);
+    observer.observe(section);
 
     return () => observer.disconnect();
-  }, []);
+  }, [pauseActiveVideo, playActiveVideo]);
 
-  // Si el autoplay con sonido fue bloqueado, desbloquear en la primera interacción.
+  // Al cambiar de video, reproducir si sigue visible
+  useEffect(() => {
+    if (!inViewRef.current || userPausedRef.current) return;
+    void playActiveVideo();
+  }, [activeIndex, playActiveVideo]);
+
+  // Desbloquear sonido con la primera interacción del usuario
   useEffect(() => {
     const unlockSound = () => {
-      if (!shouldPlayRef.current || !soundBlockedRef.current) return;
+      if (!inViewRef.current || userPausedRef.current || !soundBlockedRef.current) return;
 
       const video = videoRef.current;
       if (!video) return;
 
-      void playWithSound(video);
+      ignorePauseRef.current = true;
+      video.defaultMuted = false;
+      video.muted = false;
+      video.volume = 1;
+      soundBlockedRef.current = false;
+
+      if (video.paused) {
+        void video.play().catch(() => undefined);
+      }
+
+      window.setTimeout(() => {
+        ignorePauseRef.current = false;
+      }, 100);
     };
 
     document.addEventListener('pointerdown', unlockSound);
@@ -176,12 +231,13 @@ export default function WorksGallery() {
       document.removeEventListener('pointerdown', unlockSound);
       document.removeEventListener('keydown', unlockSound);
     };
-  }, [playWithSound]);
+  }, []);
 
   const activeVideo = WORK_VIDEOS[activeIndex];
 
   return (
     <section
+      ref={sectionRef}
       id="trabajos"
       className="works-surface px-6 sm:px-8 lg:px-12 py-16 sm:py-20 text-white"
     >
@@ -197,7 +253,6 @@ export default function WorksGallery() {
 
         <ScrollReveal delay={200}>
           <div
-            ref={carouselRef}
             className="video-carousel relative"
             role="region"
             aria-label="Galería de videos Tecni Full Gas"
@@ -208,23 +263,34 @@ export default function WorksGallery() {
           >
             <video
               key={activeVideo.src}
-              ref={videoRef}
+              ref={(element) => {
+                videoRef.current = element;
+                if (element) {
+                  element.defaultMuted = true;
+                  element.muted = true;
+                  element.volume = 1;
+                }
+              }}
               className="work-video"
               controls
+              autoPlay
               preload="auto"
               playsInline
               aria-label={`${activeVideo.title}. Video ${activeIndex + 1} de ${WORK_VIDEOS.length}`}
               onEnded={handleEnded}
-              onPlay={() => setShouldContinuePlaying(true)}
-              onPause={(event) => {
-                if (!event.currentTarget.ended) {
-                  setShouldContinuePlaying(false);
+              onLoadedData={() => {
+                if (inViewRef.current && !userPausedRef.current) {
+                  void playActiveVideo();
                 }
               }}
-              onVolumeChange={(event) => {
-                if (!event.currentTarget.muted) {
-                  setShouldContinuePlaying(true);
-                }
+              onPlay={() => {
+                userPausedRef.current = false;
+              }}
+              onPause={() => {
+                if (ignorePauseRef.current) return;
+                if (!inViewRef.current) return;
+                if (videoRef.current?.ended) return;
+                userPausedRef.current = true;
               }}
             >
               <source src={activeVideo.src} type="video/mp4" />
@@ -258,7 +324,7 @@ export default function WorksGallery() {
                   aria-label={`Ver video ${index + 1}`}
                   aria-current={index === activeIndex ? 'true' : undefined}
                   onClick={() => {
-                    setShouldContinuePlaying(true);
+                    userPausedRef.current = false;
                     setActiveIndex(index);
                   }}
                 />
