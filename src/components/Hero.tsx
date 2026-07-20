@@ -20,7 +20,7 @@ export default function Hero() {
               Soluciones en Gas con <span className="text-tf-accent">Garantía</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/[0.85] mt-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Instalación, mantenimiento y reparación profesional de sistemas de gas. Confía en
+              Instalación, mantenimiento y reparación profesional de sistemas de gas. Confía enn
               {COMPANY_NAME} para la seguridad de tu hogar y negocio.
             </p>
 
@@ -35,7 +35,7 @@ export default function Hero() {
             </div>
 
             <p className="text-white/75 mt-6">
-              <strong>Servimos a:</strong> {COMPANY_LOCATION}
+              <strong>Servimos en:</strong> {COMPANY_LOCATION}
             </p>
 
             <ClientCarousel />
