@@ -29,8 +29,8 @@ const WORK_VIDEOS = [
 
 export default function WorksGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const sectionRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const touchStartX = useRef<number | null>(null);
   const inViewRef = useRef(false);
   const userPausedRef = useRef(false);
