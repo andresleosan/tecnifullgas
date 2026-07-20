@@ -4,7 +4,7 @@ import { COMPANY_NAME, WHATSAPP_URL } from '../utils/constants';
 import Button from './common/Button';
 
 const NAV_LINKS = [
-  { id: 'servicios', label: 'Servicios' },
+  { id: 'inicio', label: 'Inicio' },
   { id: 'nuestros-servicios', label: 'Nuestros Servicios' },
   { id: 'trabajos', label: 'Trabajos' },
   { id: 'como-funciona', label: 'Cómo funciona' },

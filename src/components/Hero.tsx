@@ -7,7 +7,7 @@ import { WHATSAPP_URL, COMPANY_LOCATION, COMPANY_NAME } from '../utils/constants
 export default function Hero() {
   return (
     <section
-      id="servicios"
+      id="inicio"
       className="hero-surface px-6 sm:px-8 lg:px-12 pt-28 sm:pt-32 lg:pt-40 pb-20 sm:pb-24 lg:pb-28"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

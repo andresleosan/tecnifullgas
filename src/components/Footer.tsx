@@ -27,10 +27,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <button
-                  onClick={() => smoothScroll('servicios')}
+                  onClick={() => smoothScroll('inicio')}
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
-                  Servicios
+                  Inicio
                 </button>
               </li>
               <li>
