@@ -906,6 +906,94 @@
       "norm_label": "postcss.config.js"
     },
     {
+      "label": "seo-assets.py",
+      "file_type": "code",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_seo_assets",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "seo-assets.py"
+    },
+    {
+      "label": "find_font()",
+      "file_type": "code",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_find_font",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "find_font()"
+    },
+    {
+      "label": "save_png_quantized()",
+      "file_type": "code",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_save_png_quantized",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "save_png_quantized()"
+    },
+    {
+      "label": "make_og_image()",
+      "file_type": "code",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_make_og_image",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "make_og_image()"
+    },
+    {
+      "label": "make_icons()",
+      "file_type": "code",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L157",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_make_icons",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "make_icons()"
+    },
+    {
+      "label": "compress_service_images()",
+      "file_type": "code",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_compress_service_images",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "compress_service_images()"
+    },
+    {
+      "label": "Genera los assets SEO optimizados para Tecni Full Gas. No toca originales. Crea:",
+      "file_type": "rationale",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_rationale_1",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "genera los assets seo optimizados para tecni full gas. no toca originales. crea:"
+    },
+    {
+      "label": "Guarda PNG optimizado: paleta + compresion maxima.",
+      "file_type": "rationale",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "scripts_seo_assets_rationale_47",
+      "community": 41,
+      "community_name": "seo-assets.py",
+      "norm_label": "guarda png optimizado: paleta + compresion maxima."
+    },
+    {
       "label": "App.tsx",
       "file_type": "code",
       "source_file": "src/App.tsx",
@@ -1250,7 +1338,7 @@
       "label": "Services()",
       "file_type": "code",
       "source_file": "src/components/Services.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "src_components_services_services",
       "community": 5,
@@ -1509,6 +1597,17 @@
       "community": 5,
       "community_name": "Card Component",
       "norm_label": "smoothscroll()"
+    },
+    {
+      "label": "getWebpPath()",
+      "file_type": "code",
+      "source_file": "src/utils/helpers.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_utils_helpers_getwebppath",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "getwebppath()"
     },
     {
       "label": "tailwind.config.js",
@@ -4976,6 +5075,116 @@
       "norm_label": "\ud83d\udccb resumen: estado de fases"
     },
     {
+      "label": "seo-pasos-manuales.md",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "seo-pasos-manuales.md"
+    },
+    {
+      "label": "SEO \u2014 Pasos manuales pendientes",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "seo \u2014 pasos manuales pendientes"
+    },
+    {
+      "label": "1. Google Search Console \u2014 enviar sitemap",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_1_google_search_console_enviar_sitemap",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "1. google search console \u2014 enviar sitemap"
+    },
+    {
+      "label": "2. Bing Webmaster Tools \u2014 mismo sitemap",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_2_bing_webmaster_tools_mismo_sitemap",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "2. bing webmaster tools \u2014 mismo sitemap"
+    },
+    {
+      "label": "3. Direcci\u00f3n postal completa",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_3_direcci\u00f3n_postal_completa",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "3. direccion postal completa"
+    },
+    {
+      "label": "4. Geolocalizaci\u00f3n exacta",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_4_geolocalizaci\u00f3n_exacta",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "4. geolocalizacion exacta"
+    },
+    {
+      "label": "5. lastmod din\u00e1mico en sitemap.xml",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_5_lastmod_din\u00e1mico_en_sitemap_xml",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "5. lastmod dinamico en sitemap.xml"
+    },
+    {
+      "label": "6. Merchant / Facebook",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_6_merchant_facebook",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "6. merchant / facebook"
+    },
+    {
+      "label": "7. Google Business Profile (ex G My Business)",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_7_google_business_profile_ex_g_my_business",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "7. google business profile (ex g my business)"
+    },
+    {
+      "label": "Estado",
+      "file_type": "document",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "docs_seo_pasos_manuales_estado",
+      "community": 33,
+      "community_name": "SEO \u2014 Pasos manuales pendientes",
+      "norm_label": "estado"
+    },
+    {
       "label": "sistema-de-diseno.md",
       "file_type": "document",
       "source_file": "docs/sistema-de-diseno.md",
@@ -6553,9 +6762,9 @@
       "label": "DDD Document Driven Development",
       "file_type": "rationale",
       "source_file": "README.md",
-      "community": 1,
+      "community": 0,
       "norm_label": "ddd document driven development",
-      "community_name": "Agent Instructions & Audit",
+      "community_name": "Project Documentation",
       "id": "readme_ddd_document_driven_development"
     },
     {
@@ -7595,6 +7804,95 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L218",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets",
+      "target": "scripts_seo_assets_compress_service_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets",
+      "target": "scripts_seo_assets_find_font",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets",
+      "target": "scripts_seo_assets_make_icons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets",
+      "target": "scripts_seo_assets_make_og_image",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets",
+      "target": "scripts_seo_assets_save_png_quantized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets_rationale_1",
+      "target": "scripts_seo_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets_make_og_image",
+      "target": "scripts_seo_assets_find_font",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/seo-assets.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_seo_assets_rationale_47",
+      "target": "scripts_seo_assets_save_png_quantized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
       "source_location": "L13",
       "weight": 1.0,
@@ -8395,7 +8693,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Services.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_services",
@@ -8425,6 +8723,42 @@
       "source": "src_components_services",
       "target": "src_utils_constants_services_expanded",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_services",
+      "target": "src_utils_helpers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_services",
+      "target": "src_utils_helpers_getwebppath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Services.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_services_services",
+      "target": "src_utils_helpers_getwebppath"
     },
     {
       "relation": "contains",
@@ -8650,6 +8984,17 @@
       "_origin": "ast",
       "source": "src_utils_constants",
       "target": "src_utils_constants_services_expanded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/helpers.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_utils_helpers",
+      "target": "src_utils_helpers_getwebppath",
       "confidence_score": 1.0
     },
     {
@@ -12777,6 +13122,105 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales",
+      "target": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_1_google_search_console_enviar_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_2_bing_webmaster_tools_mismo_sitemap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_3_direcci\u00f3n_postal_completa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_4_geolocalizaci\u00f3n_exacta",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_5_lastmod_din\u00e1mico_en_sitemap_xml",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_6_merchant_facebook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_7_google_business_profile_ex_g_my_business",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/seo-pasos-manuales.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_seo_pasos_manuales_seo_pasos_manuales_pendientes",
+      "target": "docs_seo_pasos_manuales_estado",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/sistema-de-diseno.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -14447,5 +14891,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c8e12af0b4bbfe71edf5c98bb11c3f575619ca75"
+  "built_at_commit": "d6eb87af903ba4409b31937581df21cd6c52361e"
 }

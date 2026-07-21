@@ -268,15 +268,15 @@
       "norm_label": "agent"
     },
     {
-      "label": "Cronos3.3",
+      "label": "Cronos V3",
       "file_type": "code",
       "source_file": "opencode.json",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "opencode_agent_cronos3_3",
+      "id": "opencode_agent_cronos_v3",
       "community": 6,
       "community_name": "CTA Component",
-      "norm_label": "cronos3.3"
+      "norm_label": "cronos v3"
     },
     {
       "label": "description",
@@ -284,7 +284,7 @@
       "source_file": "opencode.json",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "opencode_cronos3_3_description",
+      "id": "opencode_cronos_v3_description",
       "community": 6,
       "community_name": "CTA Component",
       "norm_label": "description"
@@ -295,7 +295,7 @@
       "source_file": "opencode.json",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "opencode_cronos3_3_mode",
+      "id": "opencode_cronos_v3_mode",
       "community": 6,
       "community_name": "CTA Component",
       "norm_label": "mode"
@@ -306,7 +306,7 @@
       "source_file": "opencode.json",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "opencode_cronos3_3_model",
+      "id": "opencode_cronos_v3_model",
       "community": 6,
       "community_name": "CTA Component",
       "norm_label": "model"
@@ -317,7 +317,7 @@
       "source_file": "opencode.json",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "opencode_cronos3_3_tools",
+      "id": "opencode_cronos_v3_tools",
       "community": 6,
       "community_name": "CTA Component",
       "norm_label": "tools"
@@ -920,7 +920,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 5,
@@ -1041,7 +1041,7 @@
       "label": "Footer()",
       "file_type": "code",
       "source_file": "src/components/Footer.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "src_components_footer_footer",
       "community": 5,
@@ -1129,7 +1129,7 @@
       "label": "HeroCarousel()",
       "file_type": "code",
       "source_file": "src/components/HeroCarousel.tsx",
-      "source_location": "L27",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "src_components_herocarousel_herocarousel",
       "community": 5,
@@ -1173,7 +1173,7 @@
       "label": "NuestrasRedes()",
       "file_type": "code",
       "source_file": "src/components/NuestrasRedes.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "src_components_nuestrasredes_nuestrasredes",
       "community": 5,
@@ -1212,6 +1212,28 @@
       "community": 5,
       "community_name": "Card Component",
       "norm_label": "scrollreveal()"
+    },
+    {
+      "label": "SeoSchema.tsx",
+      "file_type": "code",
+      "source_file": "src/components/SeoSchema.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_seoschema",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "seoschema.tsx"
+    },
+    {
+      "label": "SeoSchema()",
+      "file_type": "code",
+      "source_file": "src/components/SeoSchema.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "src_components_seoschema_seoschema",
+      "community": 5,
+      "community_name": "Card Component",
+      "norm_label": "seoschema()"
     },
     {
       "label": "Services.tsx",
@@ -1379,21 +1401,10 @@
       "norm_label": "service"
     },
     {
-      "label": "WhyChooseUs",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "src_types_index_whychooseus",
-      "community": 5,
-      "community_name": "Card Component",
-      "norm_label": "whychooseus"
-    },
-    {
       "label": "Step",
       "file_type": "code",
       "source_file": "src/types/index.ts",
-      "source_location": "L15",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "src_types_index_step",
       "community": 5,
@@ -1404,7 +1415,7 @@
       "label": "FAQItem",
       "file_type": "code",
       "source_file": "src/types/index.ts",
-      "source_location": "L21",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "src_types_index_faqitem",
       "community": 5,
@@ -1415,7 +1426,7 @@
       "label": "ButtonProps",
       "file_type": "code",
       "source_file": "src/types/index.ts",
-      "source_location": "L27",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "src_types_index_buttonprops",
       "community": 5,
@@ -1426,7 +1437,7 @@
       "label": "CardProps",
       "file_type": "code",
       "source_file": "src/types/index.ts",
-      "source_location": "L37",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "src_types_index_cardprops",
       "community": 5,
@@ -1445,21 +1456,10 @@
       "norm_label": "constants.ts"
     },
     {
-      "label": "WHY_CHOOSE_US",
-      "file_type": "code",
-      "source_file": "src/utils/constants.ts",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "src_utils_constants_why_choose_us",
-      "community": 5,
-      "community_name": "Card Component",
-      "norm_label": "why_choose_us"
-    },
-    {
       "label": "HOW_IT_WORKS",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L40",
+      "source_location": "L9",
       "_origin": "ast",
       "id": "src_utils_constants_how_it_works",
       "community": 5,
@@ -1470,7 +1470,7 @@
       "label": "FAQ_ITEMS",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L60",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "src_utils_constants_faq_items",
       "community": 5,
@@ -1481,7 +1481,7 @@
       "label": "SERVICES_EXPANDED",
       "file_type": "code",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L93",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "src_utils_constants_services_expanded",
       "community": 5,
@@ -1509,17 +1509,6 @@
       "community": 5,
       "community_name": "Card Component",
       "norm_label": "smoothscroll()"
-    },
-    {
-      "label": "openWhatsApp()",
-      "file_type": "code",
-      "source_file": "src/utils/helpers.ts",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "src_utils_helpers_openwhatsapp",
-      "community": 5,
-      "community_name": "Card Component",
-      "norm_label": "openwhatsapp()"
     },
     {
       "label": "tailwind.config.js",
@@ -6423,8 +6412,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "docs_tech_stack_configuraciones_importantes",
-      "community": 32,
-      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "\ud83d\udd27 configuraciones importantes"
     },
     {
@@ -6434,8 +6423,8 @@
       "source_location": "L149",
       "_origin": "ast",
       "id": "docs_tech_stack_tailwind_configuration_tailwind_config_js",
-      "community": 32,
-      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "tailwind configuration (tailwind.config.js)"
     },
     {
@@ -6445,8 +6434,8 @@
       "source_location": "L172",
       "_origin": "ast",
       "id": "docs_tech_stack_typescript_configuration_tsconfig_json",
-      "community": 32,
-      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "typescript configuration (tsconfig.json)"
     },
     {
@@ -6456,8 +6445,8 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "docs_tech_stack_vite_configuration_vite_config_ts",
-      "community": 32,
-      "community_name": "\ud83d\udce6 DEPENDENCIAS PRINCIPALES",
+      "community": 0,
+      "community_name": "Project Documentation",
       "norm_label": "vite configuration (vite.config.ts)"
     },
     {
@@ -6989,7 +6978,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "opencode_agent",
-      "target": "opencode_agent_cronos3_3",
+      "target": "opencode_agent_cronos_v3",
       "confidence_score": 1.0
     },
     {
@@ -6999,8 +6988,8 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_agent_cronos3_3",
-      "target": "opencode_cronos3_3_description",
+      "source": "opencode_agent_cronos_v3",
+      "target": "opencode_cronos_v3_description",
       "confidence_score": 1.0
     },
     {
@@ -7010,8 +6999,8 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_agent_cronos3_3",
-      "target": "opencode_cronos3_3_mode",
+      "source": "opencode_agent_cronos_v3",
+      "target": "opencode_cronos_v3_mode",
       "confidence_score": 1.0
     },
     {
@@ -7021,8 +7010,8 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_agent_cronos3_3",
-      "target": "opencode_cronos3_3_model",
+      "source": "opencode_agent_cronos_v3",
+      "target": "opencode_cronos_v3_model",
       "confidence_score": 1.0
     },
     {
@@ -7032,8 +7021,8 @@
       "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_agent_cronos3_3",
-      "target": "opencode_cronos3_3_tools",
+      "source": "opencode_agent_cronos_v3",
+      "target": "opencode_cronos_v3_tools",
       "confidence_score": 1.0
     },
     {
@@ -7043,7 +7032,7 @@
       "source_location": "L28",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_cronos3_3_tools",
+      "source": "opencode_cronos_v3_tools",
       "target": "opencode_tools_bash",
       "confidence_score": 1.0
     },
@@ -7054,7 +7043,7 @@
       "source_location": "L27",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_cronos3_3_tools",
+      "source": "opencode_cronos_v3_tools",
       "target": "opencode_tools_edit",
       "confidence_score": 1.0
     },
@@ -7065,7 +7054,7 @@
       "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "opencode_cronos3_3_tools",
+      "source": "opencode_cronos_v3_tools",
       "target": "opencode_tools_write",
       "confidence_score": 1.0
     },
@@ -7607,7 +7596,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app",
@@ -7775,6 +7764,30 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_components_seoschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app",
+      "target": "src_components_seoschema_seoschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
@@ -7792,18 +7805,6 @@
       "_origin": "ast",
       "source": "src_app",
       "target": "src_components_worksgallery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app",
-      "target": "src_components_worksgallery_worksgallery",
       "confidence_score": 1.0
     },
     {
@@ -7985,7 +7986,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/Footer.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_footer",
@@ -8003,6 +8004,42 @@
       "source": "src_components_footer",
       "target": "src_utils_constants",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_footer",
+      "target": "src_utils_helpers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_footer",
+      "target": "src_utils_helpers_smoothscroll",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/Footer.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_footer_footer",
+      "target": "src_utils_helpers_smoothscroll"
     },
     {
       "relation": "imports_from",
@@ -8160,7 +8197,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/HeroCarousel.tsx",
-      "source_location": "L27",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_herocarousel",
@@ -8230,7 +8267,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/NuestrasRedes.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_components_nuestrasredes",
@@ -8247,6 +8284,18 @@
       "_origin": "ast",
       "source": "src_components_nuestrasredes",
       "target": "src_components_scrollreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/NuestrasRedes.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_nuestrasredes",
+      "target": "src_utils_constants",
       "confidence_score": 1.0
     },
     {
@@ -8293,6 +8342,53 @@
       "_origin": "ast",
       "source": "src_components_worksgallery",
       "target": "src_components_scrollreveal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SeoSchema.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_seoschema",
+      "target": "src_components_seoschema_seoschema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SeoSchema.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_seoschema",
+      "target": "src_utils_constants",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SeoSchema.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_seoschema",
+      "target": "src_utils_constants_faq_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SeoSchema.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_seoschema",
+      "target": "src_utils_constants_services_expanded",
       "confidence_score": 1.0
     },
     {
@@ -8448,7 +8544,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/types/index.ts",
-      "source_location": "L27",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_types_index",
@@ -8459,7 +8555,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/types/index.ts",
-      "source_location": "L37",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_types_index",
@@ -8470,7 +8566,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/types/index.ts",
-      "source_location": "L21",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_types_index",
@@ -8492,22 +8588,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/types/index.ts",
-      "source_location": "L15",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_types_index",
       "target": "src_types_index_step",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_types_index",
-      "target": "src_types_index_whychooseus",
       "confidence_score": 1.0
     },
     {
@@ -8538,7 +8623,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L60",
+      "source_location": "L29",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
@@ -8549,7 +8634,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L40",
+      "source_location": "L9",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
@@ -8560,33 +8645,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/utils/constants.ts",
-      "source_location": "L93",
+      "source_location": "L62",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_utils_constants",
       "target": "src_utils_constants_services_expanded",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/utils/constants.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_utils_constants",
-      "target": "src_utils_constants_why_choose_us",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/utils/helpers.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_utils_helpers",
-      "target": "src_utils_helpers_openwhatsapp",
       "confidence_score": 1.0
     },
     {
@@ -14384,5 +14447,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e810f6fd13bec93792a1f40bac3daccf77e94b36"
+  "built_at_commit": "c8e12af0b4bbfe71edf5c98bb11c3f575619ca75"
 }

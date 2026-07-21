@@ -1,5 +1,6 @@
 import ScrollReveal from './ScrollReveal';
 import { SERVICES_EXPANDED } from '../utils/constants';
+import { getWebpPath } from '../utils/helpers';
 
 export default function Services() {
   return (
@@ -30,14 +31,20 @@ export default function Services() {
           {SERVICES_EXPANDED.map((service, index) => (
             <ScrollReveal key={service.id} delay={index * 100}>
               <article className="group relative overflow-hidden rounded-[28px] bg-slate-950 shadow-[0_22px_60px_rgba(15,23,42,0.14)] transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(15,23,42,0.24)]">
-                <img
-                  src={service.image}
-                  alt={`${service.title} — ${service.description} Servicio de Tecni Full Gas en Medellín`}
-                  width={service.imageWidth}
-                  height={service.imageHeight}
-                  loading="lazy"
-                  className="block h-auto w-full transition-transform duration-500 ease-out group-hover:scale-105"
-                />
+                <picture>
+                  <source
+                    srcSet={getWebpPath(service.image)}
+                    type="image/webp"
+                  />
+                  <img
+                    src={service.image}
+                    alt={`${service.title} — ${service.description} Servicio de Tecni Full Gas en Medellín`}
+                    width={service.imageWidth}
+                    height={service.imageHeight}
+                    loading="lazy"
+                    className="block h-auto w-full transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-colors duration-500 group-hover:from-black/80 group-hover:via-black/30" />
                 <div className="absolute inset-0 bg-white/0 transition-colors duration-500 group-hover:bg-white/5" />
 

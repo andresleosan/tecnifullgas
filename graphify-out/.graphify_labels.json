@@ -32,11 +32,13 @@
   "30": "Archivos Afectados",
   "31": "✅ SÍ CONSTRUIMOS",
   "32": "📦 DEPENDENCIAS PRINCIPALES",
+  "33": "SEO — Pasos manuales pendientes",
   "34": "opencode.json",
   "35": "graphify.js",
   "36": "Section.tsx",
   "37": "Progress Ledger",
   "38": "postcss.config.js",
   "39": "tailwind.config.js",
-  "40": "vite.config.ts"
+  "40": "vite.config.ts",
+  "41": "seo-assets.py"
 }
