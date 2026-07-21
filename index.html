@@ -1,24 +1,152 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Iconos y PWA -->
     <link rel="icon" type="image/png" href="/img/FavIcon.png" />
     <link rel="apple-touch-icon" href="/img/Logo.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://tecnifullgas.pages.dev/" />
+
+    <!-- Preload LCP: primera imagen del hero -->
+    <link rel="preload" as="image" href="/img/Calentador.png" fetchpriority="high" />
+
+    <!-- Metadata primaria -->
+    <title>Reparación de Calentadores de Gas en Medellín | Tecni Full Gas</title>
     <meta
       name="description"
-      content="Servicios técnicos de gas, instalación, mantenimiento y reparación. Medellín y alrededores. Respuesta rápida y profesional."
+      content="Servicio técnico de gas en Medellín: reparación y mantenimiento de calentadores, estufas y campanas. Detección de fugas de gas. Respuesta rápida y profesional en Medellín y alrededores."
     />
-    <meta property="og:title" content="Tecni Full Gas - Servicios Técnicos de Gas" />
+    <meta
+      name="keywords"
+      content="reparación de calentadores de gas en Medellín, mantenimiento de calentadores Medellín, servicio técnico calentadores Medellín, reparación de estufas Medellín, reparación de campanas Medellín, fugas de gas Medellín, instalación de gas Medellín, Tecni Full Gas"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Tecni Full Gas" />
+    <meta name="language" content="Spanish" />
+
+    <!-- Geo / SEO Local -->
+    <meta name="geo.region" content="CO-ANT" />
+    <meta name="geo.placename" content="Medellín" />
+    <meta name="geo.position" content="6.2442;-75.5812" />
+    <meta name="ICBM" content="6.2442, -75.5812" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tecni Full Gas" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:url" content="https://tecnifullgas.pages.dev/" />
+    <meta
+      property="og:title"
+      content="Reparación de Calentadores de Gas en Medellín | Tecni Full Gas"
+    />
     <meta
       property="og:description"
-      content="Instalación, mantenimiento y reparación de sistemas de gas. Atención profesional, respuesta rápida."
+      content="Reparación y mantenimiento de calentadores, estufas y campanas en Medellín. Detección de fugas de gas. Atención profesional y rápida en Medellín y alrededores."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/img/Logo.png" />
-    <meta name="robots" content="index, follow" />
-    <title>Tecni Full Gas - Servicios Técnicos de Gas en Medellín</title>
+    <meta property="og:image" content="https://tecnifullgas.pages.dev/img/Logo.png" />
+    <meta property="og:image:alt" content="Logo de Tecni Full Gas — servicios técnicos de gas en Medellín" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tecnifullgas" />
+    <meta name="twitter:creator" content="@tecnifullgas" />
+    <meta
+      name="twitter:title"
+      content="Reparación de Calentadores de Gas en Medellín | Tecni Full Gas"
+    />
+    <meta
+      name="twitter:description"
+      content="Reparación y mantenimiento de calentadores, estufas y campanas en Medellín. Detección de fugas de gas. Atención profesional y rápida."
+    />
+    <meta name="twitter:image" content="https://tecnifullgas.pages.dev/img/Logo.png" />
+    <meta name="twitter:image:alt" content="Logo de Tecni Full Gas" />
+
+    <!-- Schema.org: Organization + LocalBusiness (estático) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://tecnifullgas.pages.dev/#organization",
+            "name": "Tecni Full Gas",
+            "url": "https://tecnifullgas.pages.dev/",
+            "logo": "https://tecnifullgas.pages.dev/img/Logo.png",
+            "description": "Servicio técnico de gas en Medellín: reparación y mantenimiento de calentadores, estufas y campanas, detección de fugas de gas.",
+            "sameAs": [
+              "https://www.instagram.com/tecnifullgas",
+              "https://www.facebook.com/profile.php?id=61590600920439"
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+573014065931",
+                "contactType": "customer service",
+                "areaServed": ["CO-ANT", "Medellín"],
+                "availableLanguage": ["Spanish"],
+                "contactOption": "TollFree"
+              }
+            ]
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://tecnifullgas.pages.dev/#localbusiness",
+            "name": "Tecni Full Gas",
+            "image": "https://tecnifullgas.pages.dev/img/Logo.png",
+            "url": "https://tecnifullgas.pages.dev/",
+            "telephone": "+573014065931",
+            "priceRange": "$$",
+            "description": "Reparación de calentadores de gas, estufas y campanas en Medellín. Mantenimiento, detección de fugas de gas y servicio técnico en Medellín y alrededores.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Medellín",
+              "addressRegion": "Antioquia",
+              "addressCountry": "CO"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 6.2442,
+              "longitude": -75.5812
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Medellín"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "15:00"
+              }
+            ],
+            "parentOrganization": {
+              "@id": "https://tecnifullgas.pages.dev/#organization"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Theme color (movil) -->
+    <meta name="theme-color" content="#0B1E3A" />
   </head>
   <body>
     <div id="root"></div>

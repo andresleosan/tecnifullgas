@@ -10,15 +10,21 @@ import {
 const HERO_SLIDES = [
   {
     src: '/img/Calentador.png',
-    alt: 'Calentador atendido por Tecni Full Gas',
+    alt: 'Reparación de calentadores de gas en Medellín realizada por Tecni Full Gas',
+    width: 531,
+    height: 663,
   },
   {
     src: '/img/Cocina.png',
-    alt: 'Cocina revisada por servicio tecnico especializado',
+    alt: 'Reparación y mantenimiento de estufas de gas en Medellín por Tecni Full Gas',
+    width: 714,
+    height: 712,
   },
   {
     src: '/img/Servicios.png',
-    alt: 'Servicios Tecni Full Gas para sistemas de gas',
+    alt: 'Servicio técnico de gas en Medellín — calentadores, estufas, campanas y fugas de gas',
+    width: 718,
+    height: 713,
   },
 ];
 
@@ -99,8 +105,11 @@ export default function HeroCarousel() {
           key={slide.src}
           src={slide.src}
           alt={slide.alt}
+          width={slide.width}
+          height={slide.height}
           className={`hero-carousel-slide ${index === activeIndex ? 'is-active' : ''}`}
           loading={index === 0 ? 'eager' : 'lazy'}
+          fetchPriority={index === 0 ? 'high' : 'low'}
         />
       ))}
 

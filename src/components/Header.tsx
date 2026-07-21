@@ -38,7 +38,9 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <img
             src="/img/Logo.png"
-            alt={COMPANY_NAME}
+            alt="Logo de Tecni Full Gas — servicios técnicos de gas en Medellín"
+            width={48}
+            height={48}
             className="w-12 h-12 rounded-full object-cover shadow-lg shadow-black/30 ring-1 ring-white/30"
           />
           <span className="text-xl sm:text-2xl font-bold text-white hidden sm:inline">

@@ -2,7 +2,7 @@ import Button from './common/Button';
 import ClientCarousel from './ClientCarousel';
 import HeroCarousel from './HeroCarousel';
 import ScrollReveal from './ScrollReveal';
-import { WHATSAPP_URL, COMPANY_LOCATION, COMPANY_NAME } from '../utils/constants';
+import { WHATSAPP_URL, COMPANY_LOCATION } from '../utils/constants';
 
 export default function Hero() {
   return (
@@ -17,10 +17,12 @@ export default function Hero() {
               Servicios Técnicos Certificados
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08]">
-              Soluciones en Gas con <span className="text-tf-accent">Garantía</span>
+              Soluciones en Gas con <span className="text-tf-accent">Garantía</span> en Medellín
             </h1>
             <p className="text-lg sm:text-xl text-white/[0.85] mt-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Instalación, mantenimiento y reparación profesional de sistemas de gas. Confía en Tecni Full Gas para la seguridad de tu hogar y negocio.
+              Instalación, mantenimiento y reparación profesional de calentadores, estufas y campanas
+              de gas. Confía en Tecni Full Gas para la seguridad de tu hogar y negocio en Medellín y
+              alrededores.
             </p>
 
             <div className="mt-8 flex justify-center lg:justify-start">

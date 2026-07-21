@@ -1,17 +1,28 @@
-{
-  "name": "Tecni Full Gas",
+﻿{
+  "name": "Tecni Full Gas — Servicios Técnicos de Gas en Medellín",
   "short_name": "Tecni Full Gas",
-  "description": "Servicios técnicos de gas, instalación, mantenimiento y reparación en Medellín y alrededores.",
+  "description": "Servicio técnico de gas en Medellín: reparación y mantenimiento de calentadores, estufas y campanas. Detección de fugas de gas en Medellín y alrededores.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#0B1E3A",
   "theme_color": "#0B1E3A",
+  "lang": "es-CO",
+  "dir": "ltr",
+  "categories": ["business", "home", "repair"],
   "icons": [
     {
       "src": "/img/FavIcon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "/img/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

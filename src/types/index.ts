@@ -3,6 +3,9 @@ export interface Service {
   title: string;
   image: string;
   description: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  keywords?: string[];
 }
 
 export interface Step {

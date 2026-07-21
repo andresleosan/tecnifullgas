@@ -8,10 +8,12 @@ import NuestrasRedes from './components/NuestrasRedes';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import SeoSchema from './components/SeoSchema';
 
 function App() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#F8FAFC]">
+      <SeoSchema />
       <Header />
       <Hero />
       <Services />

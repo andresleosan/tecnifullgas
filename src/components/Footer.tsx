@@ -11,13 +11,16 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <img
                 src="/img/Logo.png"
-                alt={COMPANY_NAME}
+                alt="Logo de Tecni Full Gas — servicios técnicos de gas en Medellín"
+                width={40}
+                height={40}
                 className="w-10 h-10 rounded-full object-cover"
               />
               <h3 className="text-xl font-bold">{COMPANY_NAME}</h3>
             </div>
             <p className="text-gray-300 text-sm">
-              Servicios técnicos de gas profesionales y confiables en Medellín y sus alrededores.
+              Servicios técnicos de gas profesionales y confiables en Medellín y sus alrededores:
+              reparación de calentadores, estufas, campanas y detección de fugas de gas.
             </p>
           </div>
 
@@ -32,6 +35,7 @@ export default function Footer() {
                 >
                   Inicio
                 </button>
+                <a href="#inicio" className="sr-only">Inicio</a>
               </li>
               <li>
                 <button
@@ -40,6 +44,7 @@ export default function Footer() {
                 >
                   Nuestros servicios
                 </button>
+                <a href="#nuestros-servicios" className="sr-only">Nuestros servicios</a>
               </li>
               <li>
                 <button
@@ -48,6 +53,7 @@ export default function Footer() {
                 >
                   Trabajos
                 </button>
+                <a href="#trabajos" className="sr-only">Trabajos</a>
               </li>
               <li>
                 <button
@@ -56,6 +62,7 @@ export default function Footer() {
                 >
                   Cómo funciona
                 </button>
+                <a href="#como-funciona" className="sr-only">Cómo funciona</a>
               </li>
               <li>
                 <button
@@ -64,6 +71,7 @@ export default function Footer() {
                 >
                   Preguntas frecuentes
                 </button>
+                <a href="#faq" className="sr-only">Preguntas frecuentes</a>
               </li>
             </ul>
           </div>

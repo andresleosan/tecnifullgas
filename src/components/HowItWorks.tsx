@@ -1,5 +1,5 @@
 import ScrollReveal from './ScrollReveal';
-import { COMPANY_NAME, HOW_IT_WORKS } from '../utils/constants';
+import { HOW_IT_WORKS } from '../utils/constants';
 
 const LOGO_SRC = '/img/Logo.png';
 
@@ -31,7 +31,9 @@ export default function HowItWorks() {
                   <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-full bg-white shadow-2xl shadow-black/25 ring-4 ring-white/15">
                     <img
                       src={LOGO_SRC}
-                      alt={COMPANY_NAME}
+                      alt={`Tecni Full Gas — servicios técnicos de gas en Medellín (paso ${step.number}: ${step.title})`}
+                      width={128}
+                      height={128}
                       className="h-full w-full scale-[2.75] object-contain"
                       loading="lazy"
                     />

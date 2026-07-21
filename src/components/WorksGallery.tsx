@@ -11,19 +11,19 @@ import ScrollReveal from './ScrollReveal';
 const WORK_VIDEOS = [
   {
     src: '/videos/Video1.mp4',
-    title: 'Resultado Tecni Full Gas 1',
+    title: 'Reparación de calentadores de gas en Medellín — resultado Tecni Full Gas 1',
   },
   {
     src: '/videos/Video3.mp4',
-    title: 'Resultado Tecni Full Gas 3',
+    title: 'Servicio técnico de gas en Medellín — resultado Tecni Full Gas 3',
   },
   {
     src: '/videos/Video4.mp4',
-    title: 'Resultado Tecni Full Gas 4',
+    title: 'Reparación de estufas y campanas — resultado Tecni Full Gas 4',
   },
   {
     src: '/videos/Video5.mp4',
-    title: 'Resultado Tecni Full Gas 5',
+    title: 'Detección de fugas de gas y reparación — resultado Tecni Full Gas 5',
   },
 ];
 

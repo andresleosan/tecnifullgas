@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://tecnifullgas.pages.dev/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tecnifullgas.pages.dev/img/Logo.png</image:loc>
+      <image:title>Tecni Full Gas — Servicios técnicos de gas en Medellín</image:title>
+    </image:image>
+  </url>
+
+  <!-- Anclas de sección (SPA, una sola pasada de render) -->
+  <url>
+    <loc>https://tecnifullgas.pages.dev/#nuestros-servicios</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tecnifullgas.pages.dev/#como-funciona</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tecnifullgas.pages.dev/#trabajos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tecnifullgas.pages.dev/#faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tecnifullgas.pages.dev/#nuestras-redes</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tecnifullgas.pages.dev/#cta-final</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

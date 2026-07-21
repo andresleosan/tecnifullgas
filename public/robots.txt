@@ -1,0 +1,15 @@
+# robots.txt — Tecni Full Gas
+# SEO seguro: permite indexación completa de la landing.
+
+User-agent: *
+Allow: /
+Disallow:
+
+# Recursos estáticos: sin restricción
+User-agent: Googlebot
+Allow: /
+Allow: /img/
+Allow: /videos/
+
+# Sitemap principal
+Sitemap: https://tecnifullgas.pages.dev/sitemap.xml
