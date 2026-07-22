@@ -21,7 +21,7 @@ export default function Hero() {
             </h1>
             <p className="text-lg sm:text-xl text-white/[0.85] mt-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Instalación, mantenimiento y reparación profesional de calentadores, estufas y campanas
-              de gas. Confía en Tecni Full Gas para la seguridad de tu hogar y negocio en Medellín y
+              de cocina. Confía en Tecni Full Gas para la seguridad de tu hogar y negocio en Medellín y
               alrededores.
             </p>
 

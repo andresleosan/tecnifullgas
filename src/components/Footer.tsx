@@ -1,4 +1,4 @@
-import { WHATSAPP_URL, INSTAGRAM_URL, COMPANY_NAME } from '../utils/constants';
+import { WHATSAPP_URL, WHATSAPP_NUMBER, INSTAGRAM_URL, COMPANY_NAME } from '../utils/constants';
 import { smoothScroll } from '../utils/helpers';
 
 export default function Footer() {
@@ -88,7 +88,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-tf-accent hover:text-white transition-colors"
                 >
-                  3014065931
+                  {WHATSAPP_NUMBER}
                 </a>
               </p>
               <p className="text-sm">

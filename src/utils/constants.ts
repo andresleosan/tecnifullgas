@@ -1,7 +1,11 @@
 import { Service } from '../types';
 
 export const WHATSAPP_NUMBER = '3014065931';
-export const WHATSAPP_URL = 'https://wa.me/573014065931';
+
+const WHATSAPP_MESSAGE =
+  'Hola, acabo de ver su página web y estoy interesado en contratar sus servicios. Me brindan más información por favor.';
+
+export const WHATSAPP_URL = `https://wa.me/573014065931?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas';
 export const COMPANY_NAME = 'Tecni Full Gas';
 export const COMPANY_LOCATION = 'Medellín y alrededores';
