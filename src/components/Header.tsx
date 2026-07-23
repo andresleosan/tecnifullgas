@@ -30,8 +30,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-40 border-b border-white/[0.08] transition-all duration-300 ${
         scrolled
-          ? 'bg-[#0B1E3A]/95 backdrop-blur-[14px] shadow-xl shadow-[#0B1E3A]/20 py-2'
-          : 'bg-[#0B1E3A]/[0.88] backdrop-blur-[14px] py-4'
+          ? 'bg-[#0B1E3A]/95 backdrop-blur-[14px] shadow-xl shadow-[#0B1E3A]/20 py-3'
+          : 'bg-[#0B1E3A]/[0.88] backdrop-blur-[14px] py-5'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -97,24 +97,33 @@ export default function Header() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-[#102A55]/95 backdrop-blur-md px-6 pb-4">
-          {NAV_LINKS.map((link) => (
-            <button
-              key={link.id}
-              onClick={() => handleNav(link.id)}
-              className="block w-full text-left py-3 text-white hover:text-tf-accent active:text-tf-accent transition-colors font-semibold"
-            >
-              {link.label}
-            </button>
-          ))}
-          <Button
-            variant="primary"
-            text="Contáctanos por WhatsApp"
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full mt-2 text-center"
-          />
+        <div className="md:hidden border-t border-white/10 bg-[#102A55]/95 backdrop-blur-md px-6 pt-3 pb-8">
+          <nav className="flex flex-col">
+            {NAV_LINKS.map((link, index) => (
+              <button
+                key={link.id}
+                onClick={() => handleNav(link.id)}
+                className={`block w-full text-left py-4 first:pt-3 text-white hover:text-tf-accent active:text-tf-accent focus-visible:text-tf-accent outline-none transition-colors font-semibold ${
+                  index < NAV_LINKS.length - 1
+                    ? 'border-b border-white/5'
+                    : ''
+                }`}
+              >
+                {link.label}
+              </button>
+            ))}
+          </nav>
+
+          <div className="mt-6 pt-6 border-t border-white/10">
+            <Button
+              variant="primary"
+              text="Contáctanos por WhatsApp"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center mb-2"
+            />
+          </div>
         </div>
       )}
     </header>
