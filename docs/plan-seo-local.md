@@ -15,11 +15,11 @@ Google Business Profile está creado con dirección oculta y sigue pendiente de
 verificación por video a cargo de los propietarios. Ese trámite no bloquea las
 mejoras ni la medición del posicionamiento orgánico de la web.
 
-GA4 y su vínculo con Search Console ya están configurados. La nueva versión del
-sitio con consentimiento y medición pasó la validación local y tiene autorización
-explícita del usuario para push y publicación. Este registro es previo al
-despliegue; no se ha confirmado publicación ni recepción de eventos. El registro
-de configuración, pruebas y reversión está en
+GA4 y su vínculo con Search Console ya están configurados. La versión `6dd53a6`
+con consentimiento y medición se publicó correctamente en Cloudflare con
+autorización explícita del usuario. La comprobación de producción y la recepción
+de datos de una sesión de prueba en GA4 están confirmadas; no representan
+clientes ni resultados comerciales. El registro de configuración, pruebas y reversión está en
 [seo-implementacion.md](seo-implementacion.md).
 
 Se conserva el diseño, las fotos originales, la mascota, los videos, los
@@ -33,10 +33,10 @@ se reservan para la ficha de Google y el respaldo.
 | Opción | Trabajo | Estado o criterio |
 | --- | --- | --- |
 | Base técnica | Dominio principal, redirecciones, HTML inicial, metadatos y sitemap. | Publicada y comprobada; tres páginas indexadas. |
-| SEO local recomendado | Medir consultas y contactos con consentimiento; completar la ficha y los enlaces de redes. | Configuración preparada y publicación de medición autorizada; pendiente desplegar y verificar. Video y redes quedan a los propietarios. |
+| SEO local recomendado | Medir consultas y contactos con consentimiento; completar la ficha y los enlaces de redes. | Medición publicada y recepción de datos de prueba confirmada. Comenzar seguimiento real; video y redes quedan a los propietarios. |
 | Crecimiento | Revisar consultas y mejorar textos sin cambiar el diseño; investigación o seguimiento con OpenSEO opcional. | Decidir con datos y una necesidad concreta, sin contratar todavía. |
 
-La prioridad es comenzar la medición. Maps considera relevancia, distancia y
+La prioridad es reunir datos reales de rendimiento. Maps considera relevancia, distancia y
 prominencia; no existe una primera posición universal para Medellín.
 [Google: posicionamiento local](https://support.google.com/business/answer/7091?hl=es).
 
@@ -103,18 +103,20 @@ cuentas ni perfiles durante esta revisión ni se necesita pedir otro inicio de s
 ## Medición y decisiones siguientes
 
 Línea base del **16 de octubre de 2026**: **tres URLs indexadas**, sitemap de tres
-URLs correctamente procesado y todavía sin datos de rendimiento. Las búsquedas
+URLs correctamente procesado y todavía sin datos de rendimiento orgánico ni
+comercial. La recepción de la sesión de prueba en GA4 valida la instrumentación.
+Las búsquedas
 de marca y dominio exacto revisadas ese día no mostraron la web en la primera
 página observada. Indexación no demuestra ranking, visitas ni contactos; no
 extrapolar esa búsqueda a todas las ubicaciones o dispositivos.
 
-La medición preparada respeta la decisión del visitante: no se envía medición antes
+La medición publicada respeta la decisión del visitante: no se envía medición antes
 de aceptar; rechazar o revocar la detiene y Privacidad permite reabrir la elección.
 GPC o DNT la bloquean. La preferencia dura 180 días. GA4 conserva usuarios y
 eventos dos meses, sin reinicio por actividad; Google signals, medición mejorada
 y las opciones adicionales de compartir datos están desactivados.
 
-Después de publicar, confirmar recepción real de datos y comparar periodos de
+Con la recepción de prueba ya confirmada, reunir datos reales y comparar periodos de
 **28 días**: consultas sin marca, impresiones, clics orgánicos, contactos recibidos
 y trabajos contratados. `contact_click` es una intención de contacto marcada
 como evento clave, sin valor monetario; no demuestra conversación, cliente ni

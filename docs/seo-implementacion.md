@@ -1,10 +1,10 @@
 # Implementación de SEO local
 
 Registro al 16 de octubre de 2026. La portada y las páginas de calentadores y
-estufas ya están publicadas e indexadas. **La nueva versión con consentimiento,
-privacidad y medición está validada localmente y tiene autorización explícita
-del usuario para push y publicación. Este registro es previo al despliegue;
-no se ha confirmado publicación ni recepción de eventos de GA4.** La referencia
+estufas ya están publicadas e indexadas. **La versión `6dd53a6` con consentimiento,
+privacidad y medición se publicó correctamente en Cloudflare con autorización
+explícita del usuario. Se verificó la producción y GA4 confirmó recepción de
+datos de una sesión de prueba, sin atribuirles clientes ni ventas.** La referencia
 para revertir esta nueva actualización es el commit `888ac98`.
 
 ## Alcance y preservación visual
@@ -55,13 +55,13 @@ advertencia de borrado existente ni confirmación irreversible. La UI indica
 con código», sin una regla derivada que duplique el evento. Mide intención de
 contacto, no conversación, lead validado ni venta.
 
-El código preparado usa consentimiento básico: la etiqueta y la medición
+El código publicado usa consentimiento básico: la etiqueta y la medición
 permanecen bloqueadas hasta aceptar. La preferencia dura 180 días. Rechazar o
 revocar detiene la medición; Privacidad permite reabrir la decisión. GPC o DNT
 la bloquean. Se envían URL y referrer limpios; los clics solo añaden método,
 ubicación y servicio, sin `href` ni mensajes. No se envían datos personales de
-contacto. No confundir la configuración externa completada con la nueva versión
-del sitio, que todavía no se ha publicado.
+contacto. La recepción en producción se confirmó con la sesión de prueba
+detallada a continuación.
 
 Evidencia local de configuración en `qa/reports/`:
 `ga4-dimensiones-2026-10-16.png`, `ga4-contacto-evento-clave-2026-10-16.png`,
@@ -84,10 +84,37 @@ El agente principal confirmó estas comprobaciones del 16 de octubre:
   revocación, navegación de las tres rutas y política comprobados; sin
   desbordamiento horizontal ni errores de consola. Medios y diseño preservados.
 
-Estos resultados corresponden al entorno local; no prueban que la actualización
-ya esté desplegada ni que Google Analytics esté recibiendo eventos. Tras publicar
-la versión autorizada, repetir las comprobaciones públicas y confirmar recepción en GA4 con
-consentimiento antes de presentar métricas.
+Estas pruebas corresponden al entorno local, incluida la revisión móvil de
+390 px. El build de Cloudflare también terminó correctamente. La comprobación
+de producción se registra por separado a continuación.
+
+## Publicación y comprobación de producción
+
+Publicación autorizada completada correctamente en Cloudflare Pages:
+
+- Commit `6dd53a6347a8d27a577e631bdc94173d5fe03d08`.
+- Deployment `a12bdf2b-2a6c-4a6f-a77a-beadfde1fa67`.
+- URL del despliegue: `https://a12bdf2b.tecnifullgas.pages.dev`.
+
+El agente principal comparó el HTML público de las tres rutas SEO y privacidad
+con la versión probada: idéntico tras normalizar CR/LF. El JavaScript
+`index-BNYV61Ez.js` fue idéntico byte a byte. La comprobación pública confirmó
+HTTP 200/404/301/308, canonical, JSON-LD, robots y sitemap de tres URLs correctos;
+privacidad conserva `noindex`.
+
+CUA en producción y escritorio confirmó ausencia de script de medición antes
+de aceptar y tras rechazar, persistencia del rechazo y carga del ID correcto
+al aceptar. El video estaba visible y reproduciéndose (`paused=false`, tiempo
+2,32 s), sin desbordamiento horizontal ni errores de consola. No se registra
+una comprobación móvil en producción; la evidencia de 390 px es local.
+
+GA4 en tiempo real confirmó **un usuario de prueba**, **dos `page_view`**, **un
+`contact_click` como evento clave**, **un `first_visit`** y **un `session_start`**.
+Estos datos validan recepción e instrumentación, no prueban visitas orgánicas,
+conversaciones, clientes ni éxito comercial.
+
+Evidencia: [GA4 en producción](../qa/reports/ga4-produccion-6dd53a6.jpg) y
+[web en producción](../qa/reports/seo-produccion-6dd53a6.jpg).
 
 ## Search Console: línea base pública
 
@@ -113,10 +140,11 @@ correcta, rastreo e indexación permitidos; su canónica declarada es la ruta de
 estufas en www y Google selecciona «URL inspeccionada». El sitemap fuente es el
 indicado arriba.
 
-Son **tres URLs indexadas**; esta evidencia no corresponde a un despliegue nuevo
-ni demuestra posiciones o tráfico. Las búsquedas de marca y dominio exacto
+Son **tres URLs indexadas**; estas inspecciones preceden a la publicación de
+`6dd53a6` y no demuestran posiciones ni tráfico. Las búsquedas de marca y dominio exacto
 revisadas ese día no mostraron la web en la primera página observada. Se registra
-como línea base técnica y de visibilidad, sin datos de rendimiento todavía.
+como línea base técnica y de visibilidad, sin datos de rendimiento orgánico ni
+comercial todavía. La sesión de prueba de GA4 no constituye esa línea base.
 Registrar consultas, impresiones, clics, contactos y trabajos para comparar
 periodos de 28 días, con fechas y contexto de cada revisión.
 
@@ -145,10 +173,11 @@ modificaron perfiles durante la revisión.
 
 ## Siguiente verificación y reversión
 
-Pendientes de esta versión autorizada: publicación, comprobación pública y
-recepción de eventos tras consentimiento; línea base cuantitativa. Los
-propietarios harán el video de la ficha y añadirán la web en redes por separado.
-No se presentan métricas de tráfico ni se afirma medición activa en producción.
+Publicación, comprobación pública y recepción de datos de prueba completadas.
+El siguiente paso es establecer una línea base cuantitativa de rendimiento real.
+Los propietarios harán el video de la ficha y añadirán la web en redes por
+separado. No se presentan los datos propios de prueba como tráfico orgánico ni
+resultados comerciales.
 
 Reversión de esta actualización en Cloudflare Pages al despliegue conservado,
 confirmado en su dashboard:

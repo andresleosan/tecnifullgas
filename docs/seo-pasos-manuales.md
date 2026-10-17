@@ -4,15 +4,15 @@ Actualizado el 16 de octubre de 2026. El contenido y las prioridades están en
 [plan-seo-local.md](plan-seo-local.md); la configuración y evidencia técnica, en
 [seo-implementacion.md](seo-implementacion.md).
 
-## Estado previo a publicación
+## Estado publicado
 
 La portada y las páginas de calentadores y estufas están publicadas en
 `https://www.tecnifullgas.com/` e indexadas según sus inspecciones individuales
 en Search Console del 16 de octubre. El sitemap se procesó correctamente ese
-día con tres URLs. La nueva versión con consentimiento, privacidad y medición
-está validada localmente y tiene autorización explícita del usuario para push y
-publicación. Este registro es previo al despliegue: todavía no se ha confirmado
-su publicación ni la recepción de eventos de GA4.
+día con tres URLs. La versión `6dd53a6`, con consentimiento, privacidad y
+medición, se publicó correctamente en Cloudflare con autorización explícita del
+usuario. La verificación pública confirmó rutas, SEO y consentimiento; GA4
+recibió datos de una sesión de prueba. Esto no demuestra clientes ni ventas.
 
 La referencia para revertir esta nueva actualización es el commit `888ac98`.
 El detalle del despliegue conservado está en el registro técnico. Mantener DNS,
@@ -40,22 +40,24 @@ el TXT de Google y los registros MX y SPF. Sitemap:
 `https://www.tecnifullgas.com/sitemap.xml`.
 
 La línea base del **16 de octubre de 2026** es de **tres URLs indexadas**, sin
-datos de rendimiento todavía. En las búsquedas de marca y dominio exacto
+datos de rendimiento orgánico ni comercial todavía. En las búsquedas de marca y dominio exacto
 revisadas ese día, la web no apareció en la primera página observada. Esa
 observación depende de consulta, lugar y dispositivo; indexación no equivale a
 posición ni tráfico. El detalle de rastreo y canonicals está en el registro técnico.
 
-Después de publicar la actualización autorizada:
+En producción se comprobaron las tres rutas y privacidad, 404 real, redirecciones,
+canonical, JSON-LD, robots y sitemap. En escritorio se verificó ausencia de
+script antes de aceptar y tras rechazar, persistencia del rechazo y carga del ID
+al aceptar; video visible reproduciéndose, sin desbordamiento ni errores de
+consola. La revisión móvil a 390 px corresponde al entorno local.
 
-1. Comprobar las tres rutas y privacidad, navegación y medios originales; una
-   ruta inexistente debe conservar su 404 real y `noindex`.
-2. Verificar que no se envía medición antes de aceptar, que rechazar o revocar
-   detiene la medición y que Privacidad permite volver a decidir. GPC o DNT
-   deben mantenerla bloqueada.
-3. Confirmar en GA4 la recepción de visitas y `contact_click` tras aceptar,
-   distinguiendo la comprobación propia de contactos reales. No asignar ventas
-   ni importes a esos clics. Las dimensiones pueden tardar en poblar informes.
-4. Registrar una línea base cuantitativa en Search Console y comparar periodos
+Próximos pasos:
+
+1. Mantener estas comprobaciones de rutas, medios y consentimiento tras futuras
+   actualizaciones, incluido reabrir y revocar desde Privacidad y bloqueo por GPC/DNT.
+2. Distinguir los datos propios de prueba de contactos reales. No asignar ventas
+   ni importes a `contact_click`; sus dimensiones pueden tardar en poblar informes.
+3. Registrar una línea base cuantitativa en Search Console y comparar periodos
    de 28 días: consultas sin marca, impresiones, clics, contactos y trabajos
    contratados. Anotar consulta exacta, fecha, lugar y dispositivo al revisar SERP.
 
