@@ -13,8 +13,11 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <ScrollReveal>
           <div className="text-center lg:text-left">
+            <span className="inline-block px-4 py-1.5 border border-white/15 bg-white/10 text-white text-sm font-semibold rounded-full mb-6">
+              Servicio técnico a domicilio
+            </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white leading-[1.08]">
-              Reparación y mantenimiento de <span className="text-tf-accent">gas en Medellín</span>
+              Reparación de gas con <span className="text-tf-accent">Garantía</span> en Medellín
             </h1>
             <p className="text-lg sm:text-xl text-white/[0.85] mt-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Servicio técnico a domicilio para calentadores y estufas de todas las marcas.
@@ -24,7 +27,7 @@ export default function Hero() {
             <div className="mt-8 flex justify-center lg:justify-start">
               <Button
                 variant="primary"
-                text="Consultar servicio por WhatsApp"
+                text="Consultar por WhatsApp"
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -32,12 +35,7 @@ export default function Hero() {
             </div>
 
             <p className="text-white/75 mt-6">
-              <strong>Atención a domicilio:</strong> {COMPANY_LOCATION}
-            </p>
-
-            <p className="mt-4 max-w-xl text-sm leading-6 text-white/85">
-              Garantía de 3 meses en repuestos y 6 meses en mano de obra.
-              Consulta las condiciones para el trabajo que necesitas.
+              <strong>Servimos en:</strong> {COMPANY_LOCATION}
             </p>
 
             <ClientCarousel />

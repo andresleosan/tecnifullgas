@@ -1,5 +1,4 @@
 import { WHATSAPP_URL, WHATSAPP_NUMBER, INSTAGRAM_URL, COMPANY_NAME } from '../utils/constants';
-import { SERVICE_PAGES } from '../data/servicePages';
 
 export default function Footer() {
   return (
@@ -68,13 +67,6 @@ export default function Footer() {
                   Preguntas frecuentes
                 </a>
               </li>
-              {SERVICE_PAGES.map((page) => (
-                <li key={page.id}>
-                  <a href={`/${page.slug}`} className="text-gray-300 transition-colors hover:text-tf-accent">
-                    Reparación de {page.id} en Medellín
-                  </a>
-                </li>
-              ))}
             </ul>
           </div>
 

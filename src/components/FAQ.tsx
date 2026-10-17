@@ -19,7 +19,7 @@ export default function FAQ() {
           <div className="lg:col-span-3 space-y-3">
             {FAQ_ITEMS.map((item, index) => (
               <ScrollReveal key={item.id} delay={index * 80}>
-                <details className="group rounded-xl border border-white/80 bg-white/75 px-5 shadow-sm">
+                <details name="preguntas-frecuentes" className="group rounded-xl border border-white/80 bg-white/75 px-5 shadow-sm">
                   <summary className="flex w-full cursor-pointer list-none items-center justify-between py-4 text-left text-lg font-semibold text-tf-dark transition-colors hover:text-tf-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                     <span>{item.question}</span>
                     <span
