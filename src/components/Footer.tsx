@@ -1,5 +1,5 @@
 import { WHATSAPP_URL, WHATSAPP_NUMBER, INSTAGRAM_URL, COMPANY_NAME } from '../utils/constants';
-import { smoothScroll } from '../utils/helpers';
+import { SERVICE_PAGES } from '../data/servicePages';
 
 export default function Footer() {
   return (
@@ -29,50 +29,52 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Enlaces rápidos</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <button
-                  onClick={() => smoothScroll('inicio')}
+                <a
+                  href="/"
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Inicio
-                </button>
-                <a href="#inicio" className="sr-only">Inicio</a>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => smoothScroll('nuestros-servicios')}
+                <a
+                  href="/#nuestros-servicios"
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Nuestros servicios
-                </button>
-                <a href="#nuestros-servicios" className="sr-only">Nuestros servicios</a>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => smoothScroll('trabajos')}
+                <a
+                  href="/#trabajos"
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Trabajos
-                </button>
-                <a href="#trabajos" className="sr-only">Trabajos</a>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => smoothScroll('como-funciona')}
+                <a
+                  href="/#como-funciona"
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Cómo funciona
-                </button>
-                <a href="#como-funciona" className="sr-only">Cómo funciona</a>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => smoothScroll('faq')}
+                <a
+                  href="/#faq"
                   className="text-gray-300 hover:text-tf-accent transition-colors"
                 >
                   Preguntas frecuentes
-                </button>
-                <a href="#faq" className="sr-only">Preguntas frecuentes</a>
+                </a>
               </li>
+              {SERVICE_PAGES.map((page) => (
+                <li key={page.id}>
+                  <a href={`/${page.slug}`} className="text-gray-300 transition-colors hover:text-tf-accent">
+                    Reparación de {page.id} en Medellín
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 

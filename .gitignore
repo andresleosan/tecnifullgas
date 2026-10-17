@@ -32,6 +32,7 @@ build/
 out/
 *.log
 coverage/
+.wrangler/
 
 # Reportes de QA generados en cada corrida
 qa/reports/

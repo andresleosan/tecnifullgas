@@ -1,10 +1,14 @@
 export const smoothScroll = (elementId: string) => {
   const element = document.getElementById(elementId);
-  if (!element) return;
+  if (!element) {
+    window.location.assign(`/#${encodeURIComponent(elementId)}`);
+    return;
+  }
 
   const headerOffset = 88;
   const top = element.getBoundingClientRect().top + window.scrollY - headerOffset;
-  window.scrollTo({ top, behavior: 'smooth' });
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top, behavior: reducedMotion ? 'auto' : 'smooth' });
 };
 
 /**

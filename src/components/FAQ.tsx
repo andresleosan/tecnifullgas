@@ -1,14 +1,7 @@
-import { useState } from 'react';
 import ScrollReveal from './ScrollReveal';
 import { FAQ_ITEMS } from '../utils/constants';
 
 export default function FAQ() {
-  const [activeId, setActiveId] = useState<string | null>(null);
-
-  const toggleFAQ = (id: string) => {
-    setActiveId(activeId === id ? null : id);
-  };
-
   return (
     <section id="faq" className="faq-surface px-6 sm:px-8 lg:px-12 py-16 sm:py-20">
       <div className="max-w-6xl mx-auto">
@@ -26,27 +19,20 @@ export default function FAQ() {
           <div className="lg:col-span-3 space-y-3">
             {FAQ_ITEMS.map((item, index) => (
               <ScrollReveal key={item.id} delay={index * 80}>
-                <div className="rounded-xl border border-white/80 bg-white/75 px-5 shadow-sm">
-                  <button
-                    onClick={() => toggleFAQ(item.id)}
-                    className="w-full flex justify-between items-center py-4 text-left text-lg font-semibold text-tf-dark hover:text-tf-hover transition-colors"
-                    aria-expanded={activeId === item.id}
-                  >
+                <details className="group rounded-xl border border-white/80 bg-white/75 px-5 shadow-sm">
+                  <summary className="flex w-full cursor-pointer list-none items-center justify-between py-4 text-left text-lg font-semibold text-tf-dark transition-colors hover:text-tf-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
                     <span>{item.question}</span>
                     <span
-                      className={`transform transition-transform duration-300 ml-4 ${
-                        activeId === item.id ? 'rotate-180' : ''
-                      }`}
+                      className="ml-4 transform transition-transform duration-300 group-open:rotate-180"
+                      aria-hidden="true"
                     >
                       ▼
                     </span>
-                  </button>
-                  {activeId === item.id && (
+                  </summary>
                     <div className="whitespace-pre-line text-tf-text leading-relaxed pb-4">
                       {item.answer}
                     </div>
-                  )}
-                </div>
+                </details>
               </ScrollReveal>
             ))}
           </div>
@@ -58,6 +44,8 @@ export default function FAQ() {
               <img
                 src="/img/Fulli.png"
                 alt="Fulli — asistente experto en gas"
+                width={256}
+                height={256}
                 className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full shadow-xl hover:rotate-3 transition-transform duration-300"
                 loading="lazy"
               />

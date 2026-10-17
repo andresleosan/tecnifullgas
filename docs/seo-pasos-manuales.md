@@ -1,104 +1,71 @@
-# SEO — Pasos manuales pendientes
+# SEO ? Configuraci?n y pr?ximos pasos
 
-Esta lista documenta las acciones SEO que no se pueden automatizar desde el código
-y requieren intervención del operador. Generar la fecha de completado al ejecutar cada una.
+Actualizado el 16 de octubre de 2026. El detalle de contenido y prioridades est? en
+[plan-seo-local.md](plan-seo-local.md); las pruebas de esta actualizaci?n est?n en
+[seo-implementacion.md](seo-implementacion.md).
 
-## 1. Google Search Console — enviar sitemap
+## Google Search Console
 
-1. Abrir https://search.google.com/search-console
-2. Añadir una propiedad de tipo **Dominio** con el valor `tecnifullgas.com` (sin protocolo ni `www`)
-3. Copiar el registro TXT de verificación que entrega Google. En Porkbun, abrir DNS de `tecnifullgas.com`, añadir ese TXT en la raíz (Host vacío) y conservar los registros existentes. Si se cambia el proveedor de DNS, crear el TXT en el proveedor autoritativo
-4. Volver a Search Console y verificar la propiedad cuando el TXT sea visible
-5. Cuando `https://www.tecnifullgas.com/` esté activo con HTTPS, en "Sitemaps" -> añadir `https://www.tecnifullgas.com/sitemap.xml`
-6. En "Inspección de URLs" -> probar `https://www.tecnifullgas.com/` y comprobar su URL canónica
-7. Solicitar indexación de la home una vez verificada
+La propiedad de dominio `tecnifullgas.com` est? verificada por DNS con
+`tecnifullgas@gmail.com`. Conservar el TXT de Google y los registros MX y SPF.
+El sitemap `https://www.tecnifullgas.com/sitemap.xml` figura ?Correcto? y Google
+ha descubierto la portada publicada. Esto no acredita indexaci?n ni tr?fico.
 
-El sitemap está preparado en `public/sitemap.xml` y referenciado en `public/robots.txt`.
-Incluye solo la home: las anclas de sección pertenecen a la misma página y no se envían como URL independientes.
-La verificación en Google y la publicación del dominio requieren comprobarse por separado.
+Tras publicar las p?ginas preparadas de calentadores y estufas:
 
-## 2. Bing Webmaster Tools — mismo sitemap
+1. Comprobar las tres URLs, sus canonical y el sitemap publicado.
+2. Volver a enviar el sitemap e inspeccionar las URLs desde Search Console.
+3. Solicitar indexaci?n si procede y registrar el resultado real.
+4. Comparar consultas, impresiones y clics en periodos de 28 d?as; relacionarlos
+   con consultas comerciales y trabajos contratados sin confundir clic y venta.
 
-1. Abrir https://www.bing.com/webmasters
-2. Añadir sitio `https://www.tecnifullgas.com/`
-3. Enviar sitemap.xml
+## Google Business Profile
 
-## 3. Dirección postal completa
+Ficha creada con autorizaci?n como **Tecni Full Gas**, servicio a domicilio,
+categor?a **Servicio de reparaci?n de electrodom?sticos**, cobertura Medell?n y
+?rea metropolitana, tel?fono `3014065931`, web principal y WhatsApp.
 
-Schema.org `LocalBusiness` lleva hoy `addressLocality: Medellín`, `addressRegion: Antioquia`, sin calle.
+La direcci?n facilitada se usa ?nicamente para verificaci?n y Google indica que
+no ser? p?blica. No a?adirla al sitio, a JSON-LD ni como punto de atenci?n.
+La ficha sigue pendiente de verificaci?n: Google solo ofrece enviar un video.
+El propietario debe grabar en una toma continua el entorno, el nombre comercial
+impreso y equipos o una prueba de administraci?n. Seguir las indicaciones de
+Google desde la cuenta de la empresa; no crear otra ficha para repetir el tr?mite.
 
-Cuando tengas la dirección física, actualiza:
+Despu?s, completar horarios confirmados, servicios reales, descripci?n y fotos
+propias. No usar la mascota como prueba de trabajos ni a?adir categor?as que no
+correspondan. Pedir rese?as reales sin incentivos ni selecci?n de opiniones.
 
-- `index.html` -> bloque JSON-LD `LocalBusiness` -> `address` (añadir `streetAddress`)
-- `src/components/SeoSchema.tsx` -> igual (se replica en runtime)
-- Opcional: rich result "PostalAddress" con `postalCode` (código postal de Medellín: 0500xx)
+## Contenido y datos estructurados
 
-## 4. Geolocalización exacta
+Se usa `Organization`, `WebSite`, `Service` y breadcrumbs para las p?ginas de
+servicio. Los metadatos est?n centralizados en `src/seo.ts` y el prerender los
+incluye en el HTML de cada URL. No duplicar JSON-LD en `index.html` ni a?adir
+coordenadas aproximadas, direcci?n privada, valoraciones o acreditaciones.
 
-Hoy: `latitude 6.2442, longitude -75.5812` (centro de Medellín, un punto aproximado).
-Si tienes la dirección exacta, conviértela a coords en https://www.google.com/maps y reemplaza:
-- `index.html` -> `geo.position` meta + JSON-LD `geo` (LocalBusiness)
-- `SeoSchema.tsx` -> igual
+Datos confirmados: solo domicilios, Medell?n y ?rea metropolitana, calentadores
+y estufas de cualquier marca, garant?a de 3 meses en repuestos y 6 en mano de obra.
+Confirmar horarios y festivos, precio de visita y condiciones de garant?a antes
+de ampliarlos. Las redes publicadas est?n en `src/seo.ts` y los componentes;
+actualizarlas juntas si cambian. Incluir `lastmod` en sitemap solo si refleja
+una modificaci?n real, sin regenerarlo por cada compilaci?n.
 
-## 5. lastmod dinámico en sitemap.xml
+## Dominio principal y reversi?n
 
-`sitemap.xml` no incluye `<lastmod>` porque el sitio es una landing estática sin CMS.
-Si más adelante se añaden secciones/blog, regenerar el sitemap con fecha de modificación de cada archivo.
+Dominio principal: `https://www.tecnifullgas.com/`. DNS autoritativos en Porkbun;
+CNAME `www` hacia `tecnifullgas.pages.dev`, asociado al proyecto Cloudflare Pages
+`tecnifullgas`. La ra?z redirige con 301 a www desde Porkbun. La regla y lista
+`tecnifullgas_pages_to_www` redirigen pages.dev con 301 y conservan ruta y consulta.
 
-## 6. Merchant / Facebook
+Las redirecciones, HTTPS, robots y sitemap se comprobaron p?blicamente el
+16 de octubre de 2026. Mantenerlas al publicar mejoras de contenido.
+Para revertir esta actualizaci?n SEO, restaurar el despliegue inmediatamente
+anterior en Cloudflare Pages; no cambiar DNS ni correo. El commit base anterior
+al trabajo SEO es `0d2f8e2`. El rollback antiguo `1b62d590-3c1d-4597-a2ae-23082e3a7c64`
+corresponde al cambio de dominio y no debe usarse para una incidencia solo de SEO.
 
-`sameAs` en Schema.org Organization incluye hoy:
-- `https://www.instagram.com/tecnifullgas`
-- `https://www.facebook.com/profile.php?id=61590600920439`
+## Pendientes posteriores
 
-Si el Facebook cambia de URL vanity, actualizar en `index.html` (schema) y `NuestrasRedes.tsx`.
-
-## 7. Google Business Profile (ex G My Business)
-
-Acción **fuera del código**:https://business.google.com
-- Crear ficha de "Tecnico de gas" / "Reparacion de electrodomesticos" en Medellín
-- Categoria principal: "Servicio de reparacion de electrodomesticos"
-- Categoria secundaria: "Plomero" o "Gasfitero"
-- Subir fotos de trabajos (los videos /img/Fulli.png / Carousel de clientes)
-- Asociar URL: https://www.tecnifullgas.com/
-- Horario: L-V 8-18, S 8-15, D cerrado (coincide con schema JSON-LD)
-
-Esto es lo que mas impacta SEO local para "reparacion de calentadores Medellín".
-
-## Estado
-
-- [ ] Google Search Console - sitemap enviado
-- [ ] Bing Webmaster Tools - sitemap enviado
-- [ ] Direccion postal cargada en schema
-- [ ] Geo coords exactas
-- [ ] Google Business Profile creado
-
-## Dominio principal y reversión
-
-Dominio principal: `https://www.tecnifullgas.com/`. El registro CNAME `www` en
-Porkbun apunta a `tecnifullgas.pages.dev` y el dominio está asociado al proyecto
-`tecnifullgas` de Cloudflare Pages. Los DNS autoritativos siguen en Porkbun;
-conservar MX y SPF de correo.
-
-La redirección raíz en Porkbun tiene destino `https://www.tecnifullgas.com`,
-código 301, inclusión de ruta y wildcard desactivado. La lista de Cloudflare
-`tecnifullgas_pages_to_www` lleva `tecnifullgas.pages.dev/` al mismo dominio con
-301, conservando ruta y consulta. La lista requiere su regla habilitada.
-
-Antes de cerrar el cambio, comprobar HTTP y HTTPS con y sin www, el origen
-pages.dev, una ruta con consulta y las URLs de canonical, robots y sitemap.
-El destino www debe responder 200 y las variantes deben converger sin bucles.
-
-Verificación pública del 16 de octubre de 2026 a las 20:41 (Bogotá): www
-respondió 200 con canonical correcto; HTTP y HTTPS sin www, HTTP de www y
-pages.dev redirigieron con 301. Una ruta con consulta conservó ambos valores.
-Robots y sitemap publicados respondieron 200 y usaron el dominio principal.
-
-Para revertir la publicación de metadatos, usar Rollback en Cloudflare Pages
-al despliegue previo `1b62d590-3c1d-4597-a2ae-23082e3a7c64` (commit `917f87e`).
-Si la incidencia es de dominio, deshabilitar primero la regla de redirección de
-Tecnifullgas para recuperar el acceso directo a pages.dev. El registro `www`
-añadido puede retirarse para volver al wildcard anterior `uixie.porkbun.com`.
-El forward previo de Porkbun era temporal (302) hacia
-`http://tecnifullgas-com.l.ink`, con ruta y wildcard activados. No modificar
-registros de correo al revertir.
+Bing Webmaster Tools es opcional: a?adir el sitio principal y enviar el mismo
+sitemap cuando se decida configurarlo. OpenSEO tampoco es necesario para iniciar
+la medici?n y no est? instalado ni contratado.

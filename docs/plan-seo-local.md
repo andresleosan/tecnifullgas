@@ -1,10 +1,12 @@
 # Plan SEO local de Tecnifullgas
 
-Revisión: 16 de octubre de 2026. Objetivo: recibir consultas de personas que necesitan reparación de gas doméstico en Medellín y convertirlas en trabajos contratados. Este documento propone siguientes pasos; las páginas y acciones comerciales descritas todavía no se han ejecutado.
+Revisión: 16 de octubre de 2026. Objetivo: recibir consultas de personas que necesitan reparación de gas doméstico en Medellín y el área metropolitana y convertirlas en trabajos contratados. La web principal y la verificación de Search Console están resueltas. Las dos nuevas páginas de servicios están preparadas, pero todavía no se han publicado. Google Business Profile está creado; Google exige un video del propietario para verificarlo.
 
 ## Lo que ya está resuelto
 
 Está publicada la web en `https://www.tecnifullgas.com/`. El subdominio `tecnifullgas.pages.dev` redirige con HTTP 301 al dominio principal. Canonical, metadatos sociales, datos estructurados, robots y sitemap usan www. El sitemap contiene únicamente la home y su imagen; las anclas de la landing no representan páginas independientes.
+
+La propiedad de dominio `tecnifullgas.com` ya está verificada por DNS en Google Search Console con la cuenta `tecnifullgas@gmail.com`. El sitemap de www, `https://www.tecnifullgas.com/sitemap.xml`, se envió correctamente. La verificación y el envío no demuestran por sí solos que las páginas estén indexadas ni que reciban tráfico.
 
 La comprobación pública del 16 de octubre a las 20:41 (Bogotá) confirmó redirecciones 301 desde HTTP y HTTPS sin www hacia el dominio principal, conservando ruta y parámetros. Redirigir y declarar canonical coherentes ayuda a consolidar versiones; Google conserva la decisión final sobre la URL canónica. [Google: consolidación de URL](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls).
 
@@ -13,36 +15,36 @@ La comprobación pública del 16 de octubre a las 20:41 (Bogotá) confirmó redi
 | Opción | Trabajo | Cuándo elegirla |
 | --- | --- | --- |
 | Base técnica | Dominio, redirecciones y señales SEO publicados y comprobados. | Punto de partida completado. |
-| SEO local recomendado | Ficha real de Google Business Profile, Search Console y dos páginas de servicios. | Siguiente inversión de esfuerzo para captar consultas pertinentes. |
+| SEO local recomendado | Search Console verificado y sitemap enviado; publicar las dos páginas preparadas y completar Google Business Profile. | Alcance en curso para captar consultas pertinentes. |
 | Crecimiento | Más casos y servicios según demanda observada; OpenSEO opcional. | Cuando haya datos y una necesidad repetida de investigación o seguimiento. |
 
 Para empezar recomiendo la segunda opción. Tener dominio propio facilita una identidad coherente; no asegura posiciones. En Maps intervienen relevancia, distancia y prominencia, por lo que no existe una primera posición universal para toda Medellín. [Google: posicionamiento local](https://support.google.com/business/answer/7091?hl=es).
 
-## Prioridades antes de ampliar contenido
+## Datos confirmados y prioridades
 
-**1. Confirmar información del negocio.** Verificar teléfono publicado `3014065931`, servicios exactos, municipios atendidos, horarios y festivos, condiciones de desplazamiento, costo del diagnóstico y atención de urgencias. Diferenciar reparación de aparatos e intervención en redes: no asumir que se ofrecen ambas. Confirmar si hay atención presencial o únicamente visitas a domicilio.
+**1. Incorporar los datos comerciales confirmados.** La atención es exclusivamente a domicilio en Medellín y el área metropolitana. Se atienden calentadores y estufas a gas de cualquier marca. La garantía confirmada es de **3 meses en repuestos y 6 meses en mano de obra**. No publicar una dirección de atención al público: no existe esa modalidad.
 
-El hero anuncia servicios certificados y garantía; también se anuncian repuestos originales. Solicitar soportes y condiciones antes de reforzar esas afirmaciones. No atribuir autorizaciones de marcas o empresas de servicios públicos sin evidencia. Las fotografías y casos deben ser propios o tener permiso de publicación.
+Quedan por precisar los horarios y festivos, las condiciones de desplazamiento, el costo de la visita o diagnóstico, la disponibilidad y el alcance detallado de las garantías. El teléfono publicado es `3014065931`. No anunciar atención de urgencias, certificaciones, autorizaciones de marcas, avales de empresas de servicios públicos o repuestos originales sin respaldo. Atender cualquier marca no equivale a ser un servicio autorizado por esas marcas. Las fotografías y casos deben ser propios o tener permiso de publicación.
 
-**2. Corregir datos estructurados tras verificar hechos.** El schema ubica el negocio en `6.2442, -75.5812`, centro aproximado de Medellín: no demuestra una sede. Sustituir por ubicación verdadera cuando corresponda o retirar esas coordenadas. Revisar `contactOption: TollFree`, declarado para el celular: mantenerlo solo si existe una condición real de llamada gratuita. Revisar tipo de negocio, horarios y dirección sin inventar datos para superar un validador. [Google: LocalBusiness](https://developers.google.com/search/docs/appearance/structured-data/local-business).
+**2. Revisar el contenido y los datos estructurados antes de publicar la actualización.** Retirar coordenadas aproximadas que no acreditan una sede y la condición `TollFree` si no corresponde al celular. Representar los servicios y el área atendida sin exponer la dirección privada utilizada para la verificación de Google. No inventar dirección, horarios o acreditaciones para superar un validador. [Google: LocalBusiness](https://developers.google.com/search/docs/appearance/structured-data/local-business).
 
-**3. Activar medición y ficha.** Verificar la propiedad de dominio `tecnifullgas.com` en Search Console, enviar el sitemap e inspeccionar la home. No se dispone aquí de evidencia de tráfico ni indexación de la cuenta. Revisar si ya existe una ficha para evitar duplicados. Si no se reciben clientes en la dirección, ocultarla y configurar el área real de servicio. Solicitar reseñas auténticas sin incentivos ni seleccionar solo clientes satisfechos. [Google: áreas de servicio](https://support.google.com/business/answer/9157481?hl=es), [política de contribuciones](https://support.google.com/contributionpolicy/answer/7400114?hl=es).
+**3. Verificar la ficha y comprobar indexación.** El usuario autorizó crear Google Business Profile, aceptar sus términos y usar su dirección privada para verificar. La ficha está creada como servicio a domicilio, con la dirección oculta; Google ofrece únicamente un video de verificación. El propietario debe grabar en una toma continua el entorno, nombre comercial impreso y equipo o prueba de administración. La ficha aún no está verificada. Search Console ya está verificado y el sitemap figura «Correcto» con una página descubierta: el siguiente trabajo es inspeccionar la home y, después de publicar, las nuevas páginas. No se ha confirmado aquí su indexación ni se presentan resultados de tráfico. Solicitar reseñas auténticas sin incentivos ni seleccionar solo clientes satisfechos. [Google: áreas de servicio](https://support.google.com/business/answer/9157481?hl=es), [política de contribuciones](https://support.google.com/contributionpolicy/answer/7400114?hl=es).
 
-## Consultas y páginas propuestas
+## Consultas y páginas preparadas
 
-Son hipótesis iniciales; no se han verificado volúmenes ni dificultad. Las URLs se crearían solo si se confirma el servicio y existe contenido útil distinto.
+Las consultas son hipótesis iniciales; no se han verificado volúmenes ni dificultad. Los dos servicios están confirmados y sus páginas están preparadas con contenido distinto. Las URLs siguientes todavía no están publicadas.
 
 | Intención | Consultas iniciales | Destino |
 | --- | --- | --- |
 | Contratar servicio general | reparación de gas doméstico Medellín; técnico de gas Medellín | `/` |
-| Reparar calentador | reparación de calentadores a gas Medellín; servicio técnico de calentadores Medellín | `/reparacion-calentadores-gas-medellin/` |
-| Reparar estufa | reparación de estufas a gas Medellín; mantenimiento de estufas Medellín | `/reparacion-estufas-gas-medellin/` |
+| Reparar calentador | reparación de calentadores a gas Medellín; servicio técnico de calentadores Medellín | `/reparacion-calentadores-gas-medellin` |
+| Reparar estufa | reparación de estufas a gas Medellín; mantenimiento de estufas Medellín | `/reparacion-estufas-gas-medellin` |
 | Evaluar contratación | costo de visita; cobertura; garantía de reparación | Secciones de cada servicio |
 | Encontrar la empresa | Tecnifullgas teléfono; Tecni Full Gas WhatsApp | Home y ficha |
 
-La página de **calentadores** explicaría qué equipos se atienden, síntomas que pueden motivar una consulta, alcance del diagnóstico, proceso de visita y cotización, cobertura, condiciones de garantía y un caso documentado. Cerraría con preguntas sobre costo de visita, disponibilidad y datos que enviar por WhatsApp. Faltan marcas atendidas, modalidades de servicio y evidencia del caso. No incluir instrucciones para intervenir el aparato.
+La página de **calentadores** explica motivos para solicitar revisión, mantenimiento o reparación, atención a cualquier marca, visita a domicilio, cotización y garantías confirmadas. Incluye preguntas de contratación y WhatsApp contextual. No contiene instrucciones para intervenir el aparato. Un caso de trabajo documentado se podrá añadir cuando exista evidencia y permiso para publicarlo.
 
-La página de **estufas** precisaría tipos de aparatos y trabajos ofrecidos, qué incluye revisión o mantenimiento, cómo se autoriza un presupuesto, disponibilidad de repuestos, cobertura y un caso propio. Respondería condiciones de visita y garantía, con contacto visible. Faltan alcance real, política de repuestos y condiciones económicas. Cada página tendría título, H1, fotos y canonical propios, enlace desde la home y entrada en sitemap.
+La página de **estufas** diferencia las consultas de encendido, hornillas, horno y estado general, y explica revisión, mantenimiento, repuestos y coordinación a domicilio. Presenta la cobertura y garantías confirmadas, preguntas de contratación y contacto visible. Cada página tiene título, descripción, H1 y fotografía propios. Antes de publicar, comprobar canonical, enlaces desde la home y entre servicios, inclusión en sitemap y respuesta HTTP correcta. El sitemap ya enviado se actualizará con estas URLs al publicar la nueva versión.
 
 Como referencias de estructura consultadas hoy, [Dismogas](https://dismogas.com/reparacion-y-mantenimiento-de-estufas/) separa alcance y contacto; [ServiTec Medellín](https://servitecmedellin.com/calentadores/) dedica una página al equipo y ofrece agendamiento. Son ejemplos observados, sin posiciones verificadas. No copiar sus textos ni adoptar sus garantías, acreditaciones o recomendaciones técnicas.
 

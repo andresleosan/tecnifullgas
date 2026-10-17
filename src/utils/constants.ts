@@ -8,7 +8,7 @@ const WHATSAPP_MESSAGE =
 export const WHATSAPP_URL = `https://wa.me/573014065931?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 export const INSTAGRAM_URL = 'https://www.instagram.com/tecnifullgas';
 export const COMPANY_NAME = 'Tecni Full Gas';
-export const COMPANY_LOCATION = 'Medellín y alrededores';
+export const COMPANY_LOCATION = 'Medellín y área metropolitana';
 
 export const HOW_IT_WORKS = [
   {
@@ -20,7 +20,7 @@ export const HOW_IT_WORKS = [
     number: 2,
     title: 'Visita',
     description:
-      'Nuestro equipo llega a tu ubicación rápidamente. Realizamos un diagnóstico profesional y te explicamos la solución.',
+      'Coordinamos una visita a tu domicilio. Revisamos el equipo y te explicamos el diagnóstico y el trabajo propuesto.',
   },
   {
     number: 3,
@@ -41,25 +41,25 @@ export const FAQ_ITEMS = [
     id: 'q2',
     question: '¿Atienden en toda Medellín?',
     answer:
-      'Sí, atendemos Medellín y sus alrededores. Podemos evaluar disponibilidad en otras ciudades. Contáctanos para confirmar tu ubicación.',
+      'Atendemos a domicilio en Medellín y el área metropolitana. Indícanos tu municipio y barrio para coordinar la visita y confirmar disponibilidad.',
   },
   {
     id: 'q3',
     question: '¿Cuál es el costo de los servicios?',
     answer:
-      'Los precios dependen del servicio requerido y la complejidad. Te haremos una cotización sin costo después del diagnóstico inicial.',
+      'El valor depende del equipo y del trabajo requerido. Antes de agendar, consulta el costo de la visita y el diagnóstico. El presupuesto de reparación se confirma al revisar el equipo.',
   },
   {
     id: 'q4',
     question: '¿Ofrecen garantía en los trabajos?',
     answer:
-      'Garantizamos la calidad de nuestro trabajo y el profesionalismo. Contáctanos para detalles específicos sobre cobertura en cada servicio.',
+      'Ofrecemos 3 meses de garantía en repuestos y 6 meses en mano de obra. Consulta las condiciones de cobertura correspondientes al trabajo realizado.',
   },
   {
     id: 'q5',
     question: '¿Puedo contactar de noche?',
     answer:
-      'Sí, puedes escribirnos por WhatsApp en cualquier momento. Nuestro equipo responde lo más pronto posible.',
+      'Puedes dejar tu mensaje por WhatsApp en cualquier momento. La respuesta y las visitas se coordinan dentro del horario de atención.',
   },
 ];
 
@@ -119,7 +119,7 @@ export const SERVICES_EXPANDED: Service[] = [
     image: '/img/Repuestos.png',
     imageWidth: 1952,
     imageHeight: 806,
-    description: 'Suministro e instalación de repuestos originales.',
-    keywords: ['repuestos para calentadores de gas', 'repuestos originales de gas', 'repuestos estufas Medellín'],
+    description: 'Suministro e instalación de repuestos para equipos de gas.',
+    keywords: ['repuestos para calentadores de gas', 'repuestos para equipos de gas', 'repuestos estufas Medellín'],
   },
 ];

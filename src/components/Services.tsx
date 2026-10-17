@@ -1,6 +1,7 @@
 import ScrollReveal from './ScrollReveal';
 import { SERVICES_EXPANDED } from '../utils/constants';
 import { getWebpPath } from '../utils/helpers';
+import { SERVICE_PAGES } from '../data/servicePages';
 
 export default function Services() {
   return (
@@ -11,15 +12,9 @@ export default function Services() {
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-            <p className="text-sm font-semibold uppercase tracking-wider text-tf-accent">
-              Servicios técnicos de gas en Medellín
-            </p>
-            <h2 className="mt-4 text-3xl font-black text-tf-dark sm:text-5xl">
-              Nuestros Servicios
+            <h2 className="text-3xl font-black text-tf-dark sm:text-5xl">
+              Servicio técnico de gas a domicilio
             </h2>
-            <p className="mt-4 text-lg font-semibold text-[#173B78] sm:text-2xl">
-              Soluciones completas para cada necesidad
-            </p>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
               Atención técnica confiable para calentadores, estufas, campanas y fugas de gas, con
               diagnóstico claro y soluciones pensadas para la seguridad de tu espacio en Medellín.
@@ -58,6 +53,13 @@ export default function Services() {
             </ScrollReveal>
           ))}
         </div>
+        <nav aria-label="Información sobre reparaciones" className="mt-10 flex flex-col items-start justify-center gap-5 sm:flex-row sm:items-center sm:gap-8">
+          {SERVICE_PAGES.map((page) => (
+            <a key={page.id} href={`/${page.slug}`} className="font-semibold text-tf-dark underline decoration-tf-accent decoration-2 underline-offset-4 transition-colors hover:text-[#9A4500] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-tf-dark">
+              Reparación de {page.id} a gas en Medellín
+            </a>
+          ))}
+        </nav>
       </div>
     </section>
   );
