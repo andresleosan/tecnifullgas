@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FAQ_ITEMS, SERVICES_EXPANDED } from '../utils/constants';
 
-const SITE_URL = 'https://tecnifullgas.pages.dev';
+const SITE_URL = 'https://www.tecnifullgas.com';
 const ORG_ID = `${SITE_URL}/#organization`;
 const LOCALBUSINESS_ID = `${SITE_URL}/#localbusiness`;
 

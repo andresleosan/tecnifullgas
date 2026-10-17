@@ -12,4 +12,4 @@ Allow: /img/
 Allow: /videos/
 
 # Sitemap principal
-Sitemap: https://tecnifullgas.pages.dev/sitemap.xml
+Sitemap: https://www.tecnifullgas.com/sitemap.xml
