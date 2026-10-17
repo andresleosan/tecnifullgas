@@ -89,6 +89,11 @@ Antes de cerrar el cambio, comprobar HTTP y HTTPS con y sin www, el origen
 pages.dev, una ruta con consulta y las URLs de canonical, robots y sitemap.
 El destino www debe responder 200 y las variantes deben converger sin bucles.
 
+Verificación pública del 16 de octubre de 2026 a las 20:41 (Bogotá): www
+respondió 200 con canonical correcto; HTTP y HTTPS sin www, HTTP de www y
+pages.dev redirigieron con 301. Una ruta con consulta conservó ambos valores.
+Robots y sitemap publicados respondieron 200 y usaron el dominio principal.
+
 Para revertir la publicación de metadatos, usar Rollback en Cloudflare Pages
 al despliegue previo `1b62d590-3c1d-4597-a2ae-23082e3a7c64` (commit `917f87e`).
 Si la incidencia es de dominio, deshabilitar primero la regla de redirección de
