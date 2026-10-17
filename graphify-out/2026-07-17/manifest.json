@@ -124,11 +124,6 @@
     "ast_hash": "f1f2f6c762c4908991b93c1ff9387232",
     "semantic_hash": "f1f2f6c762c4908991b93c1ff9387232"
   },
-  "AGENTS.md": {
-    "mtime": 1784167638.775953,
-    "ast_hash": "3f1401f6204ef4e47c3a98ddf7edea71",
-    "semantic_hash": "3f1401f6204ef4e47c3a98ddf7edea71"
-  },
   "AUDITORIA.md": {
     "mtime": 1783899179.526714,
     "ast_hash": "9d07b921f73a215542272515ac43e108",
@@ -198,11 +193,6 @@
     "mtime": 1779598258.859199,
     "ast_hash": "2ad5ed6ba3a9a6f99ab926be0aa48e65",
     "semantic_hash": "2ad5ed6ba3a9a6f99ab926be0aa48e65"
-  },
-  "opencode.json": {
-    "mtime": 1784308997.4923532,
-    "ast_hash": "4a2435ef21a845c8a4ac80648789299c",
-    "semantic_hash": ""
   },
   "src/components/ClientCarousel.tsx": {
     "mtime": 1784322986.6086762,
