@@ -1,6 +1,5 @@
 import { SERVICE_PAGES, type ServicePageData } from '../data/servicePages';
 import { WHATSAPP_NUMBER, WHATSAPP_URL } from '../utils/constants';
-import WorkPhotos from './WorkPhotos';
 
 export default function ServicePage({ page }: { page: ServicePageData }) {
   const serviceName = page.id === 'calentadores' ? 'calentadores' : 'estufas';
@@ -85,8 +84,6 @@ export default function ServicePage({ page }: { page: ServicePageData }) {
           </section>
         ))}
       </div>
-
-      <WorkPhotos service={page.id} />
 
       <section aria-labelledby="preguntas-servicio" className="bg-tf-bg-light px-6 py-12 sm:px-8 sm:py-16 lg:px-12">
         <div className="mx-auto max-w-4xl">

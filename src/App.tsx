@@ -3,7 +3,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
 import WorksGallery from './components/WorksGallery';
-import WorkPhotos from './components/WorkPhotos';
 import FAQ from './components/FAQ';
 import NuestrasRedes from './components/NuestrasRedes';
 import CTA from './components/CTA';
@@ -32,7 +31,6 @@ function App({ pathname = '/' }: { pathname?: string }) {
           <Services />
           <HowItWorks />
           <WorksGallery />
-          <WorkPhotos />
           <FAQ />
           <NuestrasRedes />
           <CTA />

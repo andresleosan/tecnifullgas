@@ -33,24 +33,6 @@ for (const page of pages) {
   for (const other of otherPages) {
     assert(html.includes(`href="${other.path}"`), `${page.path}: enlace rastreable a ${other.path}`);
   }
-  const workImages = [...html.matchAll(/<img\b[^>]*src="(\/img\/trabajos\/[^"]+)"[^>]*>/g)];
-  assert(workImages.length > 0, `${page.path}: fotos de trabajos en HTML inicial`);
-  for (const [image, src] of workImages) {
-    assert.match(image, /alt="[^"]{10,}"/, `${src}: descripción de la foto`);
-    assert.match(image, /width="[1-9]\d*"/, `${src}: ancho definido`);
-    assert.match(image, /height="[1-9]\d*"/, `${src}: alto definido`);
-    assert.match(image, /loading="lazy"/, `${src}: carga diferida fuera del hero`);
-    assert((await readFile(`dist${src}`)).length > 0, `${src}: archivo publicado`);
-    assert((await readFile(`dist${src.replace(/\.jpg$/, '.webp')}`)).length > 0, `${src}: versión WebP`);
-  }
-  const responsiveSources = [...html.matchAll(/<source\b[^>]*srcset="(\/img\/trabajos\/[^"]+)"[^>]*>/gi)];
-  assert.equal(responsiveSources.length, workImages.length, `${page.path}: variantes adaptadas a la pantalla`);
-  for (const [, candidates] of responsiveSources) {
-    for (const candidate of candidates.split(',')) {
-      const src = candidate.trim().split(/\s+/)[0];
-      assert((await readFile(`dist${src}`)).length > 0, `${src}: variante disponible`);
-    }
-  }
   console.log(`SEO HTML correcto: ${page.path}`);
 }
 
