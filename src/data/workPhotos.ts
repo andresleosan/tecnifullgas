@@ -1,0 +1,133 @@
+export type WorkPhoto = {
+  id: string;
+  src: string;
+  fallback: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+  services: Array<'calentadores' | 'estufas' | 'fugas'>;
+};
+
+export const WORK_PHOTOS: WorkPhoto[] = [
+  {
+    id: 'calentador-gas-con-garantia',
+    src: '/img/trabajos/calentador-gas-con-garantia.webp',
+    fallback: '/img/trabajos/calentador-gas-con-garantia.jpg',
+    alt: 'Calentador a gas de pared con una etiqueta de servicio de Tecnifullgas',
+    caption: 'Calentador a gas con sello de Tecnifullgas',
+    width: 1200,
+    height: 1600,
+    services: ['calentadores'],
+  },
+  {
+    id: 'revision-cubierta-empotrada-gas',
+    src: '/img/trabajos/revision-cubierta-empotrada-gas.webp',
+    fallback: '/img/trabajos/revision-cubierta-empotrada-gas.jpg',
+    alt: 'Collage de una cubierta de gas empotrada con sus quemadores y componentes',
+    caption: 'Revisión de una cubierta de gas empotrada',
+    width: 1080,
+    height: 1080,
+    services: ['estufas'],
+  },
+  {
+    id: 'revision-estufa-horno-gas',
+    src: '/img/trabajos/revision-estufa-horno-gas.webp',
+    fallback: '/img/trabajos/revision-estufa-horno-gas.jpg',
+    alt: 'Collage de una estufa con horno, conexiones y componentes abiertos durante la revisión',
+    caption: 'Revisión de una estufa con horno a gas',
+    width: 1080,
+    height: 1080,
+    services: ['estufas'],
+  },
+  {
+    id: 'mantenimiento-cubierta-gas',
+    src: '/img/trabajos/mantenimiento-cubierta-gas.webp',
+    fallback: '/img/trabajos/mantenimiento-cubierta-gas.jpg',
+    alt: 'Collage de una cubierta de gas con piezas desmontadas y conexiones internas visibles',
+    caption: 'Mantenimiento de una cubierta a gas',
+    width: 1080,
+    height: 1080,
+    services: ['estufas'],
+  },
+  {
+    id: 'mantenimiento-calentador-gas',
+    src: '/img/trabajos/mantenimiento-calentador-gas.webp',
+    fallback: '/img/trabajos/mantenimiento-calentador-gas.jpg',
+    alt: 'Collage de calentadores a gas abiertos y piezas desmontadas durante el mantenimiento',
+    caption: 'Mantenimiento de calentadores a gas',
+    width: 1080,
+    height: 1080,
+    services: ['calentadores'],
+  },
+  {
+    id: 'revision-calentador-gas',
+    src: '/img/trabajos/revision-calentador-gas.webp',
+    fallback: '/img/trabajos/revision-calentador-gas.jpg',
+    alt: 'Interior de un calentador a gas con intercambiador y conexiones visibles',
+    caption: 'Revisión de un calentador a gas',
+    width: 1200,
+    height: 1600,
+    services: ['calentadores'],
+  },
+  {
+    id: 'revision-interna-estufa-gas',
+    src: '/img/trabajos/revision-interna-estufa-gas.webp',
+    fallback: '/img/trabajos/revision-interna-estufa-gas.jpg',
+    alt: 'Interior de una estufa de gas abierto con quemadores, tuberías y cables visibles',
+    caption: 'Revisión interna de una estufa a gas',
+    width: 1600,
+    height: 1200,
+    services: ['estufas'],
+  },
+  {
+    id: 'limpieza-estufa-gas',
+    src: '/img/trabajos/limpieza-estufa-gas.webp',
+    fallback: '/img/trabajos/limpieza-estufa-gas.jpg',
+    alt: 'Estufa a gas abierta con la cubierta levantada y los componentes internos a la vista',
+    caption: 'Limpieza de una estufa a gas',
+    width: 1200,
+    height: 1600,
+    services: ['estufas'],
+  },
+  {
+    id: 'limpieza-calentador-gas',
+    src: '/img/trabajos/limpieza-calentador-gas.webp',
+    fallback: '/img/trabajos/limpieza-calentador-gas.jpg',
+    alt: 'Interior de un calentador a gas con espuma de limpieza sobre el intercambiador',
+    caption: 'Limpieza de un calentador a gas',
+    width: 900,
+    height: 1600,
+    services: ['calentadores'],
+  },
+  {
+    id: 'medicion-calentador-gas',
+    src: '/img/trabajos/medicion-calentador-gas.webp',
+    fallback: '/img/trabajos/medicion-calentador-gas.jpg',
+    alt: 'Instrumento de medición durante la revisión de un calentador a gas',
+    caption: 'Medición durante la revisión de un calentador',
+    width: 895,
+    height: 1377,
+    services: ['calentadores'],
+  },
+  {
+    id: 'revision-conexiones-gas',
+    src: '/img/trabajos/revision-conexiones-gas.webp',
+    fallback: '/img/trabajos/revision-conexiones-gas.jpg',
+    alt: 'Collage de un instrumento de medición junto a conexiones de calentadores a gas',
+    caption: 'Revisión de conexiones de gas',
+    width: 1080,
+    height: 1080,
+    services: ['calentadores', 'fugas'],
+  },
+  {
+    id: 'sellos-garantia-tecnifullgas',
+    src: '/img/trabajos/sellos-garantia-tecnifullgas.webp',
+    fallback: '/img/trabajos/sellos-garantia-tecnifullgas.jpg',
+    alt: 'Plancha de etiquetas de garantía con el nombre y el logo de Tecnifullgas',
+    caption: 'Sellos de garantía de Tecnifullgas',
+    width: 1200,
+    height: 1600,
+    services: ['calentadores', 'estufas'],
+  },
+];

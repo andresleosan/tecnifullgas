@@ -1,4 +1,5 @@
 import { getServicePage, SERVICE_PAGES } from './data/servicePages';
+import { WORK_PHOTOS } from './data/workPhotos';
 
 export const SITE_URL = 'https://www.tecnifullgas.com';
 
@@ -86,7 +87,10 @@ export function getSeoMetadata(pathname: string): SeoMetadata {
       name: service.heading,
       description: service.description,
       url,
-      image: `${SITE_URL}${service.image}`,
+      image: [service.image, ...WORK_PHOTOS
+        .filter((photo) => photo.services.includes(service.id))
+        .map((photo) => photo.src)]
+        .map((image) => `${SITE_URL}${image}`),
       provider: { '@id': ORGANIZATION_ID },
       areaServed: AREA_SERVED,
     };
