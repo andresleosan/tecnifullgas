@@ -24,7 +24,8 @@ documentación del producto está en `docs/`.
 ## Comandos
 
 - Desarrollo: `npm run dev`
-- Compilación: `npm run build` (TypeScript, Vite, prerender y validación SEO)
+- Compilación: `npm run build` (TypeScript, Vite, prerender, SEO y regresiones de analítica/multimedia)
+- Regresiones de comportamiento sin red: `npm run check:behavior`
 - Lint: `npm run lint` (`eslint src --ext ts,tsx`)
 - Vista previa: `npm run preview`
 

@@ -1,82 +1,167 @@
 # Implementación de SEO local
 
-Alcance autorizado: portada y dos páginas de servicio, contenido en HTML inicial,
-metadatos propios, enlaces rastreables y respuesta 404 para rutas inexistentes.
-Preferencia explícita del usuario: conservar el diseño y las fotos originales,
-la mascota y los videos de la web; mantener las mejoras de texto y SEO técnico.
-No añadir bloques visuales. Integrar los enlaces de servicio en los títulos de
-las tarjetas existentes y preservar el cambio preexistente del encabezado.
-No se añaden dependencias ni servicios de pago.
+Registro al 16 de octubre de 2026. La portada y las páginas de calentadores y
+estufas ya están publicadas e indexadas. **La nueva versión con consentimiento,
+privacidad y medición está validada localmente y tiene autorización explícita
+del usuario para push y publicación. Este registro es previo al despliegue;
+no se ha confirmado publicación ni recepción de eventos de GA4.** La referencia
+para revertir esta nueva actualización es el commit `888ac98`.
 
-Datos confirmados: servicio solo a domicilio en Medellín y área metropolitana,
-todas las marcas, garantía de tres meses en repuestos y seis meses en mano de obra.
-La dirección facilitada se reserva para verificación de Google, sin publicación.
+## Alcance y preservación visual
 
-- [x] Crear páginas distintas de calentadores y estufas con dudas de contratación.
-- [x] Generar HTML estático con React/Vite y metadatos por URL; hidratar sin duplicados.
-- [x] Enlazar desde los títulos de las tarjetas existentes; regreso a la portada desde servicios.
-- [x] Comprobar HTML sin JavaScript, canonicals, sitemap, JSON-LD, 404 y navegación móvil.
-- [x] Verificar Search Console por DNS con la cuenta de Tecnifullgas y enviar sitemap.
-- [ ] Completar la verificación de la ficha de Google creada con autorización.
-- [x] Publicar la actualización SEO con autorización del usuario y verificar producción.
+Se conserva el diseño original, fotos, mascota, videos, carruseles, orden y marca.
+Los textos SEO y enlaces a servicios permanecen; estos últimos se integran en
+los títulos de tarjetas existentes. La galería de fotos nuevas fue revertida por
+pedido del usuario y se reserva para Google Business Profile y el respaldo.
+La excepción visual autorizada para esta actualización es un aviso pequeño con
+Aceptar y Rechazar, un botón Privacidad y la página de privacidad.
 
-Publicación SEO inicial del 16 de octubre de 2026: commit `53e27fd`, despliegue
-`947e6539-b0cd-4892-a3a0-b46ce14e6efb`. La comprobación pública confirmó las tres
-rutas con HTTP 200, H1 y canonical correctos, una ruta inexistente con 404 real
-y sitemap de tres URLs. El sitemap se volvió a enviar a Search Console.
+Datos confirmados: solo domicilios en Medellín y área metropolitana, calentadores
+y estufas de cualquier marca, garantía de tres meses en repuestos y seis meses
+en mano de obra. La dirección de verificación permanece privada. No se añaden
+certificaciones, autorizaciones de marcas ni servicios de pago.
 
-La galería web del commit `160627a` se revirtió por pedido del usuario mediante
-`acdd956`, ya enviado. Las fotos nuevas se reservan para Google Business Profile
-y el respaldo, sin cambiar la multimedia original de la web. La composición y
-las clases originales de Hero y Services quedaron restauradas. El build con
-prerender y comprobaciones SEO pasó, lint no tiene errores y Chrome verificó
-los enlaces de tarjetas y el acordeón con una sola pregunta abierta.
-Git confirmó que imágenes, videos y componentes de carruseles coinciden con
-`0d2f8e2`; la mascota conserva su archivo y estilos originales.
+Las páginas ofrecen contenido distinto en HTML inicial con React/Vite, metadatos
+propios, canonical, `Organization`, `WebSite`, `Service` y breadcrumbs; navegación
+rastreable y 404 real para rutas inexistentes. `src/seo.ts` centraliza metadatos.
+Las mejoras multimedia conservan fuente en SSR, `preload="auto"`, orden y marca;
+corrigen la coordinación de `requestAnimationFrame` y carreras entre estados,
+sin introducir carga diferida en los medios.
 
-Validación de la publicación SEO inicial, 16 de octubre de 2026:
+## GA4 y consentimiento
 
-- `npm run build`: TypeScript, Vite y prerender de tres páginas y una 404 correctos.
-- `node scripts/check-seo.mjs`: HTML inicial, títulos únicos, un H1 y canonical por
-  página, enlaces, contacto, JSON-LD, privacidad y sitemap correctos. El build
-  ejecuta estas comprobaciones antes de permitir una publicación.
-- `npm run lint`: cero errores; un aviso previo en `ClientCarousel.tsx` por
-  `paused` sin usar.
-- `npm audit --omit=dev`: cero vulnerabilidades reportadas en dependencias de producción.
-- Cloudflare Pages local, Wrangler 4.151.1: tres rutas con HTTP 200; ruta inexistente
-  con HTTP 404 y `noindex`; barra final con 301 y extensión `.html` con 308,
-  conservando los parámetros.
-- Chrome, escritorio y 390 px: menú, regreso a la portada, enlaces entre servicios,
-  FAQ y contacto comprobados; sin errores de hidratación ni desbordamiento horizontal.
+Cuenta **412268233**, propiedad **559283199**, flujo web principal **16146219173**,
+ID público **G-WKNRX9FN2C**. Cuenta y flujo creados con contratos autorizados por
+el usuario. Configuración: Colombia, GMT-5 y COP; opciones adicionales de
+compartir datos desactivadas. Search Console de tipo Dominio para
+`tecnifullgas.com` quedó vinculada al flujo y la UI confirmó «VINCULACIÓN CREADA».
 
-Search Console está verificado y el sitemap de las tres URLs se reenvió.
-El informe de índice de la home seguía indicando «no indexada», con último
-rastreo del 12 de octubre asociado a la antigua redirección de parking. La prueba
-en tiempo real del 16 de octubre a las 21:30 (Bogotá) indicó «La URL está
-disponible para Google» y que puede indexarse. Google aceptó las tres solicitudes
-de indexación: home, calentadores y estufas. La indexación efectiva sigue
-pendiente; la aceptación no demuestra que las páginas ya estén indexadas.
+Configuración verificada en la UI de Analytics:
 
-La ficha de Google fue creada con la cuenta `tecnifullgas@gmail.com`, como servicio
-a domicilio, categoría «Servicio de reparación de electrodomésticos», cobertura
-Medellín y área metropolitana, teléfono y web publicados. La dirección se envió
-con autorización solo para verificación y Google indica que no será pública.
-Google ofrece únicamente video: requiere una grabación continua del entorno,
-nombre comercial impreso y equipo o prueba de administración. Este paso físico
-queda a cargo del propietario; la ficha aún no está verificada.
+| Ajuste | Valor |
+| --- | --- |
+| Conservación de datos de usuarios y eventos | Dos meses en ambos casos |
+| Reinicio del plazo con actividad nueva | Desactivado |
+| Google signals | Desactivado |
+| Medición mejorada | Desactivada |
+| Método de contacto | Dimensión de evento, parámetro `contact_method` |
+| Ubicación del enlace | Dimensión de evento, parámetro `placement` |
+| Servicio consultado | Dimensión de evento, parámetro `service` |
+| `contact_click` | Evento clave, una vez por evento, sin valor monetario predeterminado |
 
-Fotos: las 12 imágenes de trabajos, el logo y la portada se añadieron a Google
-Business Profile y figuran PENDIENTE de verificación por video. Esas incorporaciones
-se conservan. La galería de fotos nuevas en la web fue revertida por pedido del
-usuario; mantener el diseño y la multimedia originales.
-Los 14 originales quedaron resguardados en
-`F:/Proyectos/tecnifullgas/fotos-originales`, con SHA-256 verificado. Mantener
-los originales intactos; las fotos nuevas se reservan para la ficha y el respaldo.
+La reducción de retención se guardó con confirmación de éxito; no apareció
+advertencia de borrado existente ni confirmación irreversible. La UI indica
+24 horas para aplicar ese cambio. `contact_click` se registró mediante «Crear
+con código», sin una regla derivada que duplique el evento. Mide intención de
+contacto, no conversación, lead validado ni venta.
+
+El código preparado usa consentimiento básico: la etiqueta y la medición
+permanecen bloqueadas hasta aceptar. La preferencia dura 180 días. Rechazar o
+revocar detiene la medición; Privacidad permite reabrir la decisión. GPC o DNT
+la bloquean. Se envían URL y referrer limpios; los clics solo añaden método,
+ubicación y servicio, sin `href` ni mensajes. No se envían datos personales de
+contacto. No confundir la configuración externa completada con la nueva versión
+del sitio, que todavía no se ha publicado.
+
+Evidencia local de configuración en `qa/reports/`:
+`ga4-dimensiones-2026-10-16.png`, `ga4-contacto-evento-clave-2026-10-16.png`,
+`ga4-search-console-vinculado-2026-10-16.png`,
+`ga4-signals-desactivado-2026-10-16.png` y
+`ga4-retencion-minima-2026-10-16.jpg`. La última captura de retención sustituye
+como estado vigente a la anterior, conservada como evidencia histórica.
+
+## Validación local previa a publicar
+
+El agente principal confirmó estas comprobaciones del 16 de octubre:
+
+- Build con TypeScript, Vite, prerender y comprobaciones SEO correcto.
+- Lint con **cero errores y cero avisos**; auditoría de dependencias de producción
+  con **cero vulnerabilidades reportadas**.
+- **13 pruebas de analytics y siete de multimedia** aprobadas.
+- Cloudflare Pages local: HTTP 200 en las tres rutas SEO y privacidad, esta última
+  con `noindex`; 404 real con `noindex`; redirecciones 301/308 conservando consultas.
+- CUA en Chrome, escritorio y **390 px**: rechazo, reapertura, recarga, aceptación,
+  revocación, navegación de las tres rutas y política comprobados; sin
+  desbordamiento horizontal ni errores de consola. Medios y diseño preservados.
+
+Estos resultados corresponden al entorno local; no prueban que la actualización
+ya esté desplegada ni que Google Analytics esté recibiendo eventos. Tras publicar
+la versión autorizada, repetir las comprobaciones públicas y confirmar recepción en GA4 con
+consentimiento antes de presentar métricas.
+
+## Search Console: línea base pública
+
+Propiedad `sc-domain:tecnifullgas.com` verificada por DNS con la cuenta
+`tecnifullgas@gmail.com`. Sitemap `https://www.tecnifullgas.com/sitemap.xml`
+correctamente procesado el **16/10/26**, con **tres URLs**.
+
+Las inspecciones individuales del 16 de octubre de 2026 confirmaron «La URL
+está en Google» y «La página está indexada» en:
+
+- `https://www.tecnifullgas.com/`.
+- `https://www.tecnifullgas.com/reparacion-calentadores-gas-medellin`.
+- `https://www.tecnifullgas.com/reparacion-estufas-gas-medellin`.
+
+La portada registra último rastreo **21:32:46**, hora mostrada en Search Console,
+por Googlebot para smartphones: obtención correcta, rastreo e indexación
+permitidos. Canónica declarada `https://www.tecnifullgas.com/`; Google selecciona
+«URL inspeccionada».
+
+Calentadores y estufas muestran HTTPS y **un Breadcrumb válido** cada una. Estufas
+registra último rastreo **21:46:16** por Googlebot para smartphones, obtención
+correcta, rastreo e indexación permitidos; su canónica declarada es la ruta de
+estufas en www y Google selecciona «URL inspeccionada». El sitemap fuente es el
+indicado arriba.
+
+Son **tres URLs indexadas**; esta evidencia no corresponde a un despliegue nuevo
+ni demuestra posiciones o tráfico. Las búsquedas de marca y dominio exacto
+revisadas ese día no mostraron la web en la primera página observada. Se registra
+como línea base técnica y de visibilidad, sin datos de rendimiento todavía.
+Registrar consultas, impresiones, clics, contactos y trabajos para comparar
+periodos de 28 días, con fechas y contexto de cada revisión.
+
+## Ficha de Google y redes
+
+Google Business Profile fue creado con autorización como servicio a domicilio,
+categoría «Servicio de reparación de electrodomésticos», cobertura Medellín y
+área metropolitana, teléfono y web. La dirección queda oculta y solo se facilitó
+para verificación. Google ofrece únicamente video: los propietarios harán la
+grabación y el trámite; la ficha sigue sin verificar. Esto no bloquea el trabajo
+orgánico de la web.
+
+Las 12 fotos, logo y portada añadidos figuran pendientes de verificación. Los
+14 originales permanecen intactos en
+`F:/Proyectos/tecnifullgas/fotos-originales`, con SHA-256 verificado; no reactivar
+la galería web retirada.
+
+Instagram y Facebook se revisaron como visitante, sin acceso administrador.
+Instagram enlaza WhatsApp y Facebook; Facebook enlaza Instagram. El enlace de
+Instagram a Facebook corresponde al mismo ID de página y el alias actual es
+correcto. Ambos perfiles carecen de enlace a `https://www.tecnifullgas.com/`.
+El usuario confirmó que los propietarios añadirán estos enlaces con sus accesos
+administradores. Este paso y el video de la ficha quedan asignados a ellos y no
+bloquean el trabajo web de hoy; no se solicita otro inicio de sesión. No se
+modificaron perfiles durante la revisión.
+
+## Siguiente verificación y reversión
+
+Pendientes de esta versión autorizada: publicación, comprobación pública y
+recepción de eventos tras consentimiento; línea base cuantitativa. Los
+propietarios harán el video de la ficha y añadirán la web en redes por separado.
+No se presentan métricas de tráfico ni se afirma medición activa en producción.
+
+Reversión de esta actualización en Cloudflare Pages al despliegue conservado,
+confirmado en su dashboard:
+
+- Commit `888ac9839d77944d8a4ab8ce1cecc27d1e17ad99` (`888ac98`).
+- Deployment `cad37f17-eed9-460f-9210-dc6e3c1faaa2`.
+- URL del despliegue: `https://cad37f17.tecnifullgas.pages.dev`.
+
+El rollback a ese despliegue conserva el dominio, el SEO y la multimedia
+originales, y retira el aviso y la nueva medición del sitio. No modificar DNS ni
+correo. No volver al commit `160627a`, que contiene la galería ya revertida.
+La publicación SEO inicial autorizada fue el commit `53e27fd`, despliegue
+`947e6539-b0cd-4892-a3a0-b46ce14e6efb`.
 
 Fuentes: [Google y JavaScript](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics),
 [rutas de Pages](https://developers.cloudflare.com/pages/configuration/serving-pages/).
-
-Referencia anterior a la publicación SEO inicial:
-`73b826b2-4d25-4910-a086-22a54bab8bc8`, correspondiente al commit `0d2f8e2`.
-Las correcciones de diseño deben conservar textos, URLs y SEO aprobados, DNS,
-correo y redirecciones del dominio principal.

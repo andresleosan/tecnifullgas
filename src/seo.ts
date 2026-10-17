@@ -35,6 +35,7 @@ const organization = {
   '@type': 'Organization',
   '@id': ORGANIZATION_ID,
   name: 'Tecni Full Gas',
+  alternateName: 'Tecnifullgas',
   url: `${SITE_URL}/`,
   logo: `${SITE_URL}/img/Logo.png`,
   description: HOME_DESCRIPTION,
@@ -58,6 +59,7 @@ const website = {
   '@id': WEBSITE_ID,
   url: `${SITE_URL}/`,
   name: 'Tecni Full Gas',
+  alternateName: 'Tecnifullgas',
   inLanguage: 'es-CO',
   publisher: { '@id': ORGANIZATION_ID },
 };

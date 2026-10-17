@@ -28,7 +28,7 @@ export default function NuestrasRedes() {
                 <h3 className="text-2xl font-bold">Instagram</h3>
               </div>
               <p className="text-lg opacity-90 mb-8 leading-relaxed">
-                Conoce nuestros trabajos, promociones y contenido diario.
+                Conoce nuestros trabajos, promociones y novedades.
               </p>
               <Button
                 variant="secondary"

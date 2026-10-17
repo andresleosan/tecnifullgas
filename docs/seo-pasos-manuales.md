@@ -1,102 +1,106 @@
 # SEO — Configuración y próximos pasos
 
-Actualizado el 16 de octubre de 2026. El detalle de contenido y prioridades está en
-[plan-seo-local.md](plan-seo-local.md); las pruebas y la publicación están en
+Actualizado el 16 de octubre de 2026. El contenido y las prioridades están en
+[plan-seo-local.md](plan-seo-local.md); la configuración y evidencia técnica, en
 [seo-implementacion.md](seo-implementacion.md).
 
-## Publicación y dominio principal
+## Estado previo a publicación
 
-Publicación SEO inicial autorizada: commit `53e27fd`, despliegue
-`947e6539-b0cd-4892-a3a0-b46ce14e6efb`. Están activas la portada y las páginas:
+La portada y las páginas de calentadores y estufas están publicadas en
+`https://www.tecnifullgas.com/` e indexadas según sus inspecciones individuales
+en Search Console del 16 de octubre. El sitemap se procesó correctamente ese
+día con tres URLs. La nueva versión con consentimiento, privacidad y medición
+está validada localmente y tiene autorización explícita del usuario para push y
+publicación. Este registro es previo al despliegue: todavía no se ha confirmado
+su publicación ni la recepción de eventos de GA4.
 
-- `https://www.tecnifullgas.com/reparacion-calentadores-gas-medellin`
-- `https://www.tecnifullgas.com/reparacion-estufas-gas-medellin`
+La referencia para revertir esta nueva actualización es el commit `888ac98`.
+El detalle del despliegue conservado está en el registro técnico. Mantener DNS,
+correo, redirecciones y SEO ya publicados al actualizarla.
 
-La comprobación pública confirmó las tres rutas con HTTP 200, H1 y canonical
-correctos, una ruta inexistente con 404 real y sitemap de tres URLs.
+## Dominio y diseño
 
 Dominio principal: `https://www.tecnifullgas.com/`. DNS autoritativos en Porkbun;
 CNAME `www` hacia `tecnifullgas.pages.dev`, asociado al proyecto Cloudflare Pages
 `tecnifullgas`. La raíz redirige con 301 a www desde Porkbun. La regla y lista
-`tecnifullgas_pages_to_www` redirigen pages.dev con 301 y conservan ruta y consulta.
-Mantener estas redirecciones, HTTPS, robots y sitemap al actualizar contenido.
+`tecnifullgas_pages_to_www` redirigen pages.dev con 301, conservando ruta y consulta.
+Mantener HTTPS, robots, canonicals y sitemap coherentes con www.
 
-## Diseño y multimedia
+Conservar diseño, fotos originales, mascota, videos, carruseles y orden visual.
+Los enlaces de servicio permanecen dentro de los títulos de tarjetas existentes.
+El usuario autorizó una excepción concreta: un aviso pequeño con **Aceptar** y
+**Rechazar**, un botón **Privacidad** y la página de privacidad. Las fotos nuevas
+se reservan para Google Business Profile y el respaldo; no reactivar su galería web.
 
-El usuario exige conservar el diseño, las fotos originales, la mascota y los videos de la web. Se mantienen los textos SEO y la base técnica; los enlaces a servicios se integran en los títulos de tarjetas existentes, sin bloques nuevos. La galería web añadida se revirtió por pedido con `acdd956`. La composición y las clases originales de Hero y Services quedaron restauradas y verificadas; imágenes, videos y carruseles coinciden con la versión anterior al SEO.
+## Search Console y seguimiento
 
-Las fotos nuevas se destinan únicamente a Google Business Profile y al respaldo.
-Conservar las imágenes originales, la mascota y los videos actuales de la web.
+La propiedad de dominio `sc-domain:tecnifullgas.com` está verificada por DNS con
+la cuenta de la empresa y ya vinculada al flujo web principal de GA4. Conservar
+el TXT de Google y los registros MX y SPF. Sitemap:
+`https://www.tecnifullgas.com/sitemap.xml`.
 
-## Google Search Console
+La línea base del **16 de octubre de 2026** es de **tres URLs indexadas**, sin
+datos de rendimiento todavía. En las búsquedas de marca y dominio exacto
+revisadas ese día, la web no apareció en la primera página observada. Esa
+observación depende de consulta, lugar y dispositivo; indexación no equivale a
+posición ni tráfico. El detalle de rastreo y canonicals está en el registro técnico.
 
-La propiedad de dominio `tecnifullgas.com` está verificada por DNS con
-`tecnifullgas@gmail.com`. Conservar el TXT de Google y los registros MX y SPF.
-Se volvió a enviar `https://www.tecnifullgas.com/sitemap.xml` con las tres URLs
-publicadas. El envío no demuestra indexación ni tráfico.
+Después de publicar la actualización autorizada:
 
-El informe de índice de la home indicaba que no estaba indexada; el último
-rastreo del 12 de octubre reflejaba la antigua redirección de parking.
-La prueba en tiempo real del 16 de octubre a las 21:30 (Bogotá) indicó
-«La URL está disponible para Google» y que puede indexarse. Google aceptó las
-solicitudes de indexación de la home y ambas páginas de servicios: calentadores
-y estufas. La indexación real sigue pendiente; la aceptación de la solicitud
-no demuestra inclusión en el índice.
+1. Comprobar las tres rutas y privacidad, navegación y medios originales; una
+   ruta inexistente debe conservar su 404 real y `noindex`.
+2. Verificar que no se envía medición antes de aceptar, que rechazar o revocar
+   detiene la medición y que Privacidad permite volver a decidir. GPC o DNT
+   deben mantenerla bloqueada.
+3. Confirmar en GA4 la recepción de visitas y `contact_click` tras aceptar,
+   distinguiendo la comprobación propia de contactos reales. No asignar ventas
+   ni importes a esos clics. Las dimensiones pueden tardar en poblar informes.
+4. Registrar una línea base cuantitativa en Search Console y comparar periodos
+   de 28 días: consultas sin marca, impresiones, clics, contactos y trabajos
+   contratados. Anotar consulta exacta, fecha, lugar y dispositivo al revisar SERP.
 
-1. Comprobar la indexación efectiva de la portada y de las páginas de
-   calentadores y estufas.
-2. Inspeccionar cualquier URL con problemas y distinguir informes antiguos
-   de la prueba en tiempo real.
-3. Comparar consultas, impresiones y clics en periodos de 28 días; relacionarlos
-   con contactos y trabajos contratados sin confundir clic y venta.
+GA4 ya tiene las tres dimensiones de evento y `contact_click` como evento clave,
+sin valor monetario. Retención de usuarios y eventos: **dos meses**; reinicio
+por actividad, Google signals y medición mejorada: **desactivados**. Las opciones
+adicionales de compartir datos están desactivadas. El cambio de retención tarda
+24 horas en aplicarse. Los identificadores y el contrato de medición están
+documentados una sola vez en [seo-implementacion.md](seo-implementacion.md).
 
-## Google Business Profile
+## Google Business Profile y redes
 
 Ficha creada con autorización como **Tecni Full Gas**, servicio a domicilio,
 categoría **Servicio de reparación de electrodomésticos**, cobertura Medellín y
 área metropolitana, teléfono `3014065931`, web principal y WhatsApp.
 
-La dirección facilitada se usa únicamente para verificación y permanece oculta.
-No añadirla al sitio, a JSON-LD ni como punto de atención. La ficha sigue pendiente
-de verificación: Google solo ofrece video. El propietario debe grabar en una toma
-continua el entorno, el nombre comercial impreso y equipos o una prueba de
-administración. Seguir las indicaciones de Google desde la cuenta de la empresa;
-no crear otra ficha para repetir el trámite.
+La dirección se usa únicamente para verificación y permanece oculta; no añadirla
+al sitio ni a JSON-LD. Google ofrece únicamente video y los propietarios harán
+la grabación y el trámite. La ficha sigue sin verificar; no crear otra. Este
+pendiente no bloquea la medición ni el posicionamiento orgánico de la web.
 
-Después, completar horarios confirmados, servicios reales, descripción y fotos
-propias. No usar la mascota como prueba de trabajos ni añadir categorías que no
-correspondan. Pedir reseñas reales sin incentivos ni selección de opiniones.
+Las 12 fotos, el logo y la portada se subieron a la ficha y figuran pendientes
+de verificación. Los 14 originales siguen intactos en
+`F:/Proyectos/tecnifullgas/fotos-originales`, con SHA-256 verificado. Completar
+horarios y festivos confirmados; solicitar reseñas auténticas sin incentivos
+ni selección de opiniones.
 
-## Fotografías y garantía
+Instagram y Facebook se revisaron como visitante, sin acceso administrador.
+Instagram enlaza WhatsApp y Facebook; Facebook enlaza Instagram. El enlace de
+Instagram a Facebook corresponde al mismo ID de la página y su alias actual
+es correcto. Falta la URL `https://www.tecnifullgas.com/` en ambos perfiles:
+los propietarios añadirán los enlaces, según confirmó el usuario. Esta tarea
+queda asignada a ellos y no bloquea el trabajo web ni requiere otro inicio de sesión.
 
-Las 12 fotos se subieron correctamente a Google Business Profile; también se
-añadieron logo y portada. Todo figura PENDIENTE de verificación por video y se
-conserva en la ficha. La galería añadida a la web se revirtió por pedido del
-usuario. Las nuevas fotografías se reservan para la ficha y el respaldo.
-Los 14 originales están resguardados en
-`F:/Proyectos/tecnifullgas/fotos-originales`, con SHA-256 verificado.
-Conservar los originales intactos; respetar la restricción de uso de las nuevas fotos.
+## Contenido y pendientes comerciales
 
-## Contenido y datos estructurados
+Mantener `Organization`, `WebSite`, `Service` y breadcrumbs en el HTML inicial,
+sin duplicar JSON-LD. No añadir dirección privada, coordenadas aproximadas,
+valoraciones, certificaciones ni autorizaciones de marcas sin respaldo.
 
-Se usa `Organization`, `WebSite`, `Service` y breadcrumbs para las páginas de
-servicio. Los metadatos están centralizados en `src/seo.ts` y el prerender los
-incluye en el HTML de cada URL. No duplicar JSON-LD en `index.html` ni añadir
-coordenadas aproximadas, dirección privada, valoraciones o acreditaciones.
+Datos confirmados: solo domicilios en Medellín y área metropolitana,
+calentadores y estufas de cualquier marca, garantía de **tres meses en repuestos
+y seis en mano de obra**. Precisar horarios, festivos, costo de visita y
+condiciones de garantía antes de ampliarlos. Actualizar redes en los componentes
+y `src/seo.ts` juntas si cambian. Usar `lastmod` solo para cambios reales.
 
-Datos confirmados: solo domicilios, Medellín y área metropolitana, calentadores
-y estufas de cualquier marca, garantía de 3 meses en repuestos y 6 en mano de obra.
-Confirmar horarios y festivos, precio de visita y condiciones de garantía antes
-de ampliarlos. Las redes publicadas están en `src/seo.ts` y los componentes;
-actualizarlas juntas si cambian. Incluir `lastmod` en sitemap solo si refleja
-una modificación real, sin regenerarlo por cada compilación.
-
-## Reversión y pendientes posteriores
-
-Referencia anterior a la publicación SEO inicial:
-`73b826b2-4d25-4910-a086-22a54bab8bc8`, commit `0d2f8e2`.
-Conservar el SEO aprobado al corregir el diseño. No cambiar DNS ni correo.
-
-Bing Webmaster Tools es opcional: añadir el sitio principal y enviar el mismo
-sitemap cuando se decida configurarlo. OpenSEO tampoco es necesario para iniciar
-la medición y no está instalado ni contratado.
+Bing Webmaster Tools y OpenSEO son opcionales; OpenSEO no está instalado ni
+contratado y no es necesario para iniciar la medición.

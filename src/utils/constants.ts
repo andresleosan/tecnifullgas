@@ -110,7 +110,7 @@ export const SERVICES_EXPANDED: Service[] = [
     image: '/img/Reparaciones.png',
     imageWidth: 1952,
     imageHeight: 806,
-    description: 'Reparación general de todos los sistemas de gas.',
+    description: 'Reparación de equipos a gas según diagnóstico.',
     keywords: ['reparación de sistemas de gas', 'servicio técnico de gas Medellín', 'reparaciones de gas'],
   },
   {

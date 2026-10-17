@@ -16,12 +16,15 @@ export default function ClientCarousel() {
     const track = trackRef.current;
     if (!track) return;
 
-    let animId = 0;
+    let animId: number | null = null;
     let startTime: number | null = null;
     let paused = false;
     let pausedAt = 0;
+    let disposed = false;
 
     const start = (time: number) => {
+      animId = null;
+      if (paused || disposed) return;
       if (startTime === null) startTime = time - pausedAt;
       const elapsed = time - startTime;
       const progress = (elapsed % DURATION) / DURATION;
@@ -30,11 +33,15 @@ export default function ClientCarousel() {
     };
 
     const onMouseEnter = () => {
+      if (paused || disposed) return;
       paused = true;
-      pausedAt = performance.now() - (startTime ?? 0);
+      if (startTime !== null) pausedAt = performance.now() - startTime;
+      if (animId !== null) cancelAnimationFrame(animId);
+      animId = null;
     };
 
     const onMouseLeave = () => {
+      if (!paused || disposed) return;
       startTime = null;
       paused = false;
       animId = requestAnimationFrame(start);
@@ -45,7 +52,9 @@ export default function ClientCarousel() {
     track.addEventListener('mouseleave', onMouseLeave);
 
     return () => {
-      cancelAnimationFrame(animId);
+      disposed = true;
+      if (animId !== null) cancelAnimationFrame(animId);
+      animId = null;
       track.removeEventListener('mouseenter', onMouseEnter);
       track.removeEventListener('mouseleave', onMouseLeave);
     };

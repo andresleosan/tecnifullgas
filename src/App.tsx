@@ -12,6 +12,8 @@ import SeoSchema from './components/SeoSchema';
 import ServicePage from './components/ServicePage';
 import { getServicePage } from './data/servicePages';
 import { normalizePath } from './seo';
+import AnalyticsConsent from './components/AnalyticsConsent';
+import { GA4_MEASUREMENT_ID } from './config/analytics';
 
 function App({ pathname = '/' }: { pathname?: string }) {
   const path = normalizePath(pathname);
@@ -46,6 +48,7 @@ function App({ pathname = '/' }: { pathname?: string }) {
       )}
       <Footer />
       <FloatingWhatsApp />
+      <AnalyticsConsent measurementId={GA4_MEASUREMENT_ID} />
     </div>
   );
 }
