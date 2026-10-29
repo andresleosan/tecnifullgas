@@ -8,7 +8,7 @@ export default function FAQ() {
         <ScrollReveal>
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-tf-dark">Preguntas Frecuentes</h2>
-            <p className="text-xl sm:text-2xl font-semibold text-tf-accent mt-2">
+            <p className="text-xl sm:text-2xl font-semibold text-tf-primary mt-2">
               Resuelve tus dudas antes de contactarnos
             </p>
           </div>

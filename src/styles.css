@@ -111,6 +111,27 @@ section[id] {
   outline-offset: 3px;
 }
 
+.carousel-pause-control {
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: #0b1e3a;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.carousel-pause-control:hover {
+  background: #173b78;
+}
+
+.carousel-pause-control:focus-visible {
+  outline: 3px solid #f58220;
+  outline-offset: 3px;
+}
+
 .services-surface {
   background: linear-gradient(180deg, #f8fafc 0%, #eef3f8 46%, #f8fafc 100%);
 }
@@ -178,6 +199,16 @@ section[id] {
 }
 
 .video-carousel-dot {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 0;
+  background: transparent;
+}
+
+.video-carousel-dot::before {
+  content: '';
   width: 10px;
   height: 10px;
   border: 1px solid rgba(255, 255, 255, 0.55);
@@ -189,7 +220,7 @@ section[id] {
     border-color 0.3s ease;
 }
 
-.video-carousel-dot.is-active {
+.video-carousel-dot.is-active::before {
   border-color: #f58220;
   background: #f58220;
   transform: scale(1.25);
@@ -198,6 +229,21 @@ section[id] {
 .video-carousel-dot:focus-visible {
   outline: 3px solid rgba(245, 130, 32, 0.8);
   outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-carousel-slide,
+  .hero-carousel-control,
+  .media-carousel-control,
+  .video-carousel,
+  .video-carousel-dot::before {
+    transition: none;
+  }
+
+  .hero-carousel-slide,
+  .video-carousel:hover {
+    transform: none;
+  }
 }
 
 .social-surface,

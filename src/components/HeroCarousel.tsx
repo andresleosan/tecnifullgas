@@ -10,19 +10,19 @@ import {
 const HERO_SLIDES = [
   {
     src: '/img/Calentador.png',
-    alt: 'Reparación de calentadores de gas en Medellín realizada por Tecni Full Gas',
+    alt: 'Comparación antes y después de un calentador a gas: partes internas y equipo montado.',
     width: 531,
     height: 663,
   },
   {
     src: '/img/Cocina.png',
-    alt: 'Reparación y mantenimiento de estufas de gas en Medellín por Tecni Full Gas',
+    alt: 'Cubierta de gas con cuatro quemadores encendidos y fotografías de sus componentes internos.',
     width: 714,
     height: 712,
   },
   {
     src: '/img/Servicios.png',
-    alt: 'Servicio técnico de gas en Medellín — calentadores, estufas, campanas y fugas de gas',
+    alt: 'Cartel de Tecnifullgas: mantenimiento de calentadores, estufas y campanas; reparaciones; detección de fugas; instalación de calentadores y estufas; venta de equipos y repuestos. Incluye los lemas Seguridad garantizada, Trabajo profesional y confiable y Atención rápida y eficiente.',
     width: 718,
     height: 713,
   },
@@ -32,12 +32,17 @@ const AUTOPLAY_DELAY = 4000;
 
 export default function HeroCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [reducedMotion, setReducedMotion] = useState(false);
+  const [playbackOverride, setPlaybackOverride] = useState<boolean | null>(null);
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
   const timerRef = useRef<number | null>(null);
   const touchStartX = useRef<number | null>(null);
+  const rotationEnabled = playbackOverride ?? !reducedMotion;
 
   const clearTimer = useCallback(() => {
     if (timerRef.current !== null) {
-      window.clearInterval(timerRef.current);
+      window.clearTimeout(timerRef.current);
       timerRef.current = null;
     }
   }, []);
@@ -46,14 +51,8 @@ export default function HeroCarousel() {
     setActiveIndex((current) => (current + direction + HERO_SLIDES.length) % HERO_SLIDES.length);
   }, []);
 
-  const restartAutoplay = useCallback(() => {
-    clearTimer();
-    timerRef.current = window.setInterval(() => goToSlide(1), AUTOPLAY_DELAY);
-  }, [clearTimer, goToSlide]);
-
   const handleControl = (direction: 1 | -1) => {
     goToSlide(direction);
-    restartAutoplay();
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
@@ -86,9 +85,21 @@ export default function HeroCarousel() {
   };
 
   useEffect(() => {
-    restartAutoplay();
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = () => {
+      setReducedMotion(preference.matches);
+      if (preference.matches) setPlaybackOverride((current) => current === true ? null : current);
+    };
+    updatePreference();
+    preference.addEventListener('change', updatePreference);
+    return () => preference.removeEventListener('change', updatePreference);
+  }, []);
+
+  useEffect(() => {
+    if (!rotationEnabled || hovered || focused) return;
+    timerRef.current = window.setTimeout(() => goToSlide(1), AUTOPLAY_DELAY);
     return clearTimer;
-  }, [clearTimer, restartAutoplay]);
+  }, [activeIndex, clearTimer, focused, goToSlide, hovered, rotationEnabled]);
 
   return (
     <div
@@ -99,12 +110,19 @@ export default function HeroCarousel() {
       onKeyDown={handleKeyDown}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onFocus={() => setFocused(true)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setFocused(false);
+      }}
     >
       {HERO_SLIDES.map((slide, index) => (
         <img
           key={slide.src}
           src={slide.src}
           alt={slide.alt}
+          aria-hidden={index !== activeIndex}
           width={slide.width}
           height={slide.height}
           className={`hero-carousel-slide ${index === activeIndex ? 'is-active' : ''}`}
@@ -112,6 +130,15 @@ export default function HeroCarousel() {
           fetchPriority={index === 0 ? 'high' : 'low'}
         />
       ))}
+
+      <button
+        type="button"
+        className="carousel-pause-control absolute bottom-3 right-3 z-10"
+        aria-label={rotationEnabled ? 'Pausar galería principal' : 'Reanudar galería principal'}
+        onClick={() => setPlaybackOverride(!rotationEnabled)}
+      >
+        {rotationEnabled ? 'Pausar' : 'Reanudar'}
+      </button>
 
       <button
         type="button"

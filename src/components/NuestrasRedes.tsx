@@ -23,7 +23,7 @@ export default function NuestrasRedes() {
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 flex items-center justify-center">
-                  <FaInstagram className="text-3xl text-white" />
+                  <FaInstagram aria-hidden="true" className="text-3xl text-white" />
                 </div>
                 <h3 className="text-2xl font-bold">Instagram</h3>
               </div>
@@ -44,7 +44,7 @@ export default function NuestrasRedes() {
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center">
-                  <FaFacebookF className="text-3xl text-white" />
+                  <FaFacebookF aria-hidden="true" className="text-3xl text-white" />
                 </div>
                 <h3 className="text-2xl font-bold">Facebook</h3>
               </div>

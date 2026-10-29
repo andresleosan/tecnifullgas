@@ -198,6 +198,21 @@ test('storage solo aplica la clave y estado actuales del mismo origen', () => {
   respectSignal.destroy();
 });
 
+test('cookies de analítica restringidas a HTTPS, SameSite Lax y el dominio público', () => {
+  for (const pathname of PATHS) {
+    const f = fixture({ url: `${SITE}${pathname}`, stored: saved('accepted') });
+    const analytics = createAnalytics(ID, f.browser);
+    const config = calls(f).find((entry) => entry[0] === 'config')?.[2] ?? {};
+    const flags = String(config.cookie_flags ?? '').split(';').map((flag) => flag.trim().toLowerCase());
+    assert.deepEqual({
+      secure: flags.includes('secure'),
+      sameSite: flags.find((flag) => flag.startsWith('samesite=')),
+      domain: config.cookie_domain,
+    }, { secure: true, sameSite: 'samesite=lax', domain: f.browser.location.hostname });
+    analytics.destroy();
+  }
+});
+
 test('sin decisión o rechazo no hay tag, eventos ni cola de clics', () => {
   const f = fixture();
   const analytics = createAnalytics(ID, f.browser);

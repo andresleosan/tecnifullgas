@@ -12,7 +12,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-            <p className="text-sm font-semibold uppercase tracking-wider text-tf-accent">
+            <p className="text-sm font-semibold uppercase tracking-wider text-tf-primary">
               Servicios técnicos de gas en Medellín
             </p>
             <h2 className="mt-4 text-3xl font-black text-tf-dark sm:text-5xl">

@@ -127,6 +127,8 @@ export function createAnalytics(measurementId: string, browser: Window = window)
         allow_ad_personalization_signals: false,
         cookie_expires: MAX_AGE / 1000,
         cookie_update: false,
+        cookie_flags: 'Secure;SameSite=Lax',
+        cookie_domain: 'www.tecnifullgas.com',
         page_location: `${SITE}${pathname}`,
         page_referrer: cleanReferrer(),
       });

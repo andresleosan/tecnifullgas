@@ -19,6 +19,7 @@
 | [fases-del-proyecto.md](./fases-del-proyecto.md)               | Fases, subfases, objetivos y criterios     | ✅ Creado |
 | [CONTINUIDAD.md](./CONTINUIDAD.md)                             | Estado del proyecto y guía de reanudación  | ✅ Creado |
 | [copy-y-contenido.md](./copy-y-contenido.md)                   | Textos, CTAs y mensajes                    | ✅ Creado |
+| [auditoria-privacidad-accesibilidad-2026-10-16.md](./auditoria-privacidad-accesibilidad-2026-10-16.md) | Auditoría de nueve puntos, evidencia y pendientes legales/accesibles | Técnica validada localmente; datos legales y medios pendientes |
 
 ---
 

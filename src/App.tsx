@@ -28,7 +28,7 @@ function App({ pathname = '/' }: { pathname?: string }) {
       </a>
       <Header />
       {isHome ? (
-        <main id="contenido-principal">
+        <main id="contenido-principal" tabIndex={-1}>
           <Hero />
           <Services />
           <HowItWorks />
@@ -40,7 +40,7 @@ function App({ pathname = '/' }: { pathname?: string }) {
       ) : servicePage ? (
         <ServicePage page={servicePage} />
       ) : (
-        <main id="contenido-principal" className="mx-auto min-h-[60vh] max-w-4xl px-6 pb-20 pt-40">
+        <main id="contenido-principal" tabIndex={-1} className="mx-auto min-h-[60vh] max-w-4xl px-6 pb-20 pt-40">
           <h1 className="text-4xl font-bold text-tf-dark">No encontramos esta página</h1>
           <p className="mt-6 text-lg text-slate-600">Puedes volver al inicio o consultar nuestros servicios de gas a domicilio en Medellín.</p>
           <a href="/" className="mt-8 inline-block font-semibold text-tf-dark underline underline-offset-4">Volver al inicio</a>

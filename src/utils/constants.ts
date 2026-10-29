@@ -35,7 +35,7 @@ export const FAQ_ITEMS = [
     id: 'q1',
     question: '¿Cuál es el horario de atención?',
     answer:
-      'Lunes a Viernes: 08:00 AM - 06:00 PM\nSábados: 08:00 AM - 03:00 PM\nDomingos y festivos: No laboramos',
+      'Consulta por WhatsApp los días, horarios y disponibilidad antes de agendar la visita.',
   },
   {
     id: 'q2',

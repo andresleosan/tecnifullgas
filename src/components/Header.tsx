@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { smoothScroll } from '../utils/helpers';
 import { COMPANY_NAME, WHATSAPP_URL } from '../utils/constants';
 import Button from './common/Button';
@@ -14,6 +14,7 @@ const NAV_LINKS = [
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -22,16 +23,29 @@ export default function Header() {
   }, []);
 
   const handleNav = (id: string) => {
+    const destination = document.getElementById(id);
+    if (!destination) {
+      window.location.assign(id === 'inicio' ? '/' : `/#${id}`);
+      return;
+    }
     smoothScroll(id);
     setMenuOpen(false);
+    destination.setAttribute('tabindex', '-1');
+    destination.focus({ preventScroll: true });
   };
 
   return (
     <header
+      onKeyDown={(event) => {
+        if (event.key === 'Escape' && menuOpen) {
+          setMenuOpen(false);
+          menuToggleRef.current?.focus();
+        }
+      }}
       className={`fixed top-0 left-0 right-0 z-40 border-b border-white/[0.08] transition-all duration-300 ${
         scrolled
           ? 'bg-[#0B1E3A]/95 backdrop-blur-[14px] shadow-xl shadow-[#0B1E3A]/20 py-3'
-          : 'bg-[#0B1E3A]/[0.88] backdrop-blur-[14px] py-5'
+          : 'bg-[#0B1E3A]/[0.88] backdrop-blur-[14px] py-6'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
@@ -72,11 +86,15 @@ export default function Header() {
         />
 
         <button
+          ref={menuToggleRef}
+          type="button"
           className="md:hidden text-white hover:text-tf-accent transition-colors"
           aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          aria-expanded={menuOpen}
+          aria-controls="menu-movil"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg aria-hidden="true" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {menuOpen ? (
               <path
                 strokeLinecap="round"
@@ -96,14 +114,13 @@ export default function Header() {
         </button>
       </nav>
 
-      {menuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-[#102A55]/95 backdrop-blur-md px-6 pt-3 pb-8">
+        <div id="menu-movil" hidden={!menuOpen} className="md:hidden border-t border-white/10 bg-[#102A55]/95 backdrop-blur-md px-6 py-3">
           <nav className="flex flex-col">
             {NAV_LINKS.map((link, index) => (
               <button
                 key={link.id}
                 onClick={() => handleNav(link.id)}
-                className={`block w-full text-left py-4 first:pt-3 text-white hover:text-tf-accent active:text-tf-accent focus-visible:text-tf-accent outline-none transition-colors font-semibold ${
+                className={`block w-full text-left py-3 text-white hover:text-tf-accent active:text-tf-accent focus-visible:text-tf-accent outline-none transition-colors font-semibold ${
                   index < NAV_LINKS.length - 1
                     ? 'border-b border-white/5'
                     : ''
@@ -114,7 +131,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="mt-6 pt-6 border-t border-white/10">
+          <div className="mt-4 pt-4 border-t border-white/10">
             <Button
               variant="primary"
               text="Contáctanos por WhatsApp"
@@ -125,7 +142,6 @@ export default function Header() {
             />
           </div>
         </div>
-      )}
     </header>
   );
 }

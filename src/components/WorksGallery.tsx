@@ -30,17 +30,19 @@ const WORK_VIDEOS = [
 export default function WorksGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isInView, setIsInView] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const touchStartX = useRef<number | null>(null);
   const inViewRef = useRef(false);
   const userPausedRef = useRef(false);
   const ignorePauseRef = useRef(false);
-  const soundBlockedRef = useRef(false);
   const playAttemptRef = useRef(0);
   const pendingReadyRef = useRef<(() => void) | null>(null);
   const pendingVideoRef = useRef<HTMLVideoElement | null>(null);
   const pauseResetTimerRef = useRef<number | null>(null);
+  const reducedMotionRef = useRef(false);
+  const manualPlaybackRef = useRef(false);
 
   const goToVideo = useCallback((direction: 1 | -1) => {
     setActiveIndex((current) => (current + direction + WORK_VIDEOS.length) % WORK_VIDEOS.length);
@@ -69,16 +71,18 @@ export default function WorksGallery() {
   const playActiveVideo = useCallback(async () => {
     const video = videoRef.current;
     if (!video || !inViewRef.current || userPausedRef.current || pendingVideoRef.current === video) return;
+    if (reducedMotionRef.current && !manualPlaybackRef.current) return;
     if (!video.paused) return;
 
     cancelPendingPlayback();
     const attempt = ++playAttemptRef.current;
     pendingVideoRef.current = video;
     const isCurrent = () => attempt === playAttemptRef.current
-      && video === videoRef.current && inViewRef.current && !userPausedRef.current;
+      && video === videoRef.current && inViewRef.current && !userPausedRef.current
+      && (!reducedMotionRef.current || manualPlaybackRef.current);
     ignorePauseRef.current = true;
 
-    // 1) Arrancar muteado: autoplay confiable en desktop y mobile
+    // La reproducción automática permanece sin sonido; los controles nativos lo habilitan.
     video.defaultMuted = true;
     video.muted = true;
     video.volume = 1;
@@ -120,22 +124,6 @@ export default function WorksGallery() {
         return;
       }
 
-      // 2) Intentar activar sonido tras el play muteado
-      video.defaultMuted = false;
-      video.muted = false;
-
-      if (video.paused) {
-        video.muted = true;
-        soundBlockedRef.current = true;
-        await video.play();
-        if (!isCurrent()) {
-          video.pause();
-          return;
-        }
-      } else {
-        soundBlockedRef.current = video.muted;
-      }
-
       resetPauseGuardAfter(100);
     } catch {
       if (attempt === playAttemptRef.current) ignorePauseRef.current = false;
@@ -168,7 +156,23 @@ export default function WorksGallery() {
     }
   }, [cancelPendingPlayback]);
 
+  useEffect(() => {
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const updatePreference = () => {
+      reducedMotionRef.current = preference.matches;
+      setReducedMotion(preference.matches);
+      if (preference.matches) {
+        manualPlaybackRef.current = false;
+        pauseActiveVideo();
+      }
+    };
+    updatePreference();
+    preference.addEventListener('change', updatePreference);
+    return () => preference.removeEventListener('change', updatePreference);
+  }, [pauseActiveVideo]);
+
   const handleControl = (direction: 1 | -1) => {
+    manualPlaybackRef.current = true;
     userPausedRef.current = false;
     goToVideo(direction);
   };
@@ -184,6 +188,7 @@ export default function WorksGallery() {
   };
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (event.target !== event.currentTarget) return;
     if (event.key === 'ArrowLeft') {
       event.preventDefault();
       handleControl(-1);
@@ -227,6 +232,7 @@ export default function WorksGallery() {
 
         if (!entry.isIntersecting) {
           inViewRef.current = false;
+          manualPlaybackRef.current = false;
           setIsInView(false);
           pauseActiveVideo();
         }
@@ -254,42 +260,7 @@ export default function WorksGallery() {
   useEffect(() => {
     if (isInView && !userPausedRef.current) void playActiveVideo();
     return cancelPendingPlayback;
-  }, [activeIndex, isInView, cancelPendingPlayback, playActiveVideo]);
-
-  // Desbloquear sonido con la primera interacción del usuario
-  useEffect(() => {
-    const unlockSound = () => {
-      if (!inViewRef.current || userPausedRef.current || !soundBlockedRef.current) return;
-
-      const video = videoRef.current;
-      if (!video) return;
-
-      ignorePauseRef.current = true;
-      video.defaultMuted = false;
-      video.muted = false;
-      video.volume = 1;
-      soundBlockedRef.current = false;
-
-      if (video.paused) {
-        const attempt = playAttemptRef.current;
-        void video.play().then(() => {
-          if (attempt !== playAttemptRef.current || video !== videoRef.current
-            || !inViewRef.current || userPausedRef.current) video.pause();
-        }).catch(() => undefined);
-      }
-
-      resetPauseGuardAfter(100);
-    };
-
-    document.addEventListener('pointerdown', unlockSound);
-    document.addEventListener('keydown', unlockSound);
-
-    return () => {
-      document.removeEventListener('pointerdown', unlockSound);
-      document.removeEventListener('keydown', unlockSound);
-      cancelPendingPlayback();
-    };
-  }, [cancelPendingPlayback, resetPauseGuardAfter]);
+  }, [activeIndex, isInView, reducedMotion, cancelPendingPlayback, playActiveVideo]);
 
   const activeVideo = WORK_VIDEOS[activeIndex];
 
@@ -304,7 +275,7 @@ export default function WorksGallery() {
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold">Resultados que hablan por sí solos</h2>
             <p className="text-xl sm:text-2xl text-white/75 mt-2">
-              Transformamos equipos deteriorados en sistemas seguros y eficientes.
+              Mostramos intervenciones de reparación y mantenimiento de equipos a gas.
             </p>
           </div>
         </ScrollReveal>
@@ -335,6 +306,7 @@ export default function WorksGallery() {
               }}
               onPlay={(event) => {
                 if (event.currentTarget !== videoRef.current) return;
+                if (pendingVideoRef.current !== event.currentTarget) manualPlaybackRef.current = true;
                 userPausedRef.current = false;
               }}
               onPause={(event) => {
@@ -367,7 +339,7 @@ export default function WorksGallery() {
               <span aria-hidden="true">›</span>
             </button>
 
-            <div className="absolute top-5 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+            <div className="absolute top-5 left-1/2 z-10 flex -translate-x-1/2">
               {WORK_VIDEOS.map((video, index) => (
                 <button
                   key={video.src}
@@ -376,6 +348,7 @@ export default function WorksGallery() {
                   aria-label={`Ver video ${index + 1}`}
                   aria-current={index === activeIndex ? 'true' : undefined}
                   onClick={() => {
+                    manualPlaybackRef.current = true;
                     userPausedRef.current = false;
                     setActiveIndex(index);
                   }}

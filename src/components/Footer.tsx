@@ -67,6 +67,21 @@ export default function Footer() {
                   Preguntas frecuentes
                 </a>
               </li>
+              <li>
+                <a href="/privacidad" className="text-gray-300 hover:text-tf-accent transition-colors">
+                  Privacidad
+                </a>
+              </li>
+              <li>
+                <a href="/cookies" className="text-gray-300 hover:text-tf-accent transition-colors">
+                  Cookies
+                </a>
+              </li>
+              <li>
+                <a href="/terminos" className="text-gray-300 hover:text-tf-accent transition-colors">
+                  Términos
+                </a>
+              </li>
             </ul>
           </div>
 

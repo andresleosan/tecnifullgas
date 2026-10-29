@@ -17,7 +17,7 @@ export default function ServicePage({ page }: { page: ServicePageData }) {
     'inline-flex min-h-12 items-center justify-center rounded-lg bg-tf-accent px-6 py-3 text-center font-bold text-tf-dark transition-colors hover:bg-[#ff9a42] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white';
 
   return (
-    <main id="contenido-principal" className="bg-white">
+    <main id="contenido-principal" tabIndex={-1} className="bg-white">
       <section className="hero-surface px-6 pb-14 pt-36 text-white sm:px-8 sm:pb-20 sm:pt-40 lg:px-12">
         <div className="mx-auto max-w-6xl">
           <nav aria-label="Ruta de navegación" className="mb-8 text-sm text-slate-200">
